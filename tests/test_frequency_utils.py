@@ -9,6 +9,7 @@ def test_normalize_frequency_codes():
     assert normalize_frequency("tds") == "TDS"
     assert normalize_frequency("qid") == "QID"
     assert normalize_frequency("hs") == "HS"
+    assert normalize_frequency("OD daily") == "OD"
 
 
 def test_normalize_frequency_sos_and_weekly():
@@ -26,6 +27,8 @@ def test_normalize_frequency_empty():
 def test_normalize_frequency_unknown_passthrough():
     assert normalize_frequency("stat") == "STAT"
 
+
+def test_valid_frequencies_include_extended_codes():
     assert "SOS" in VALID_FREQUENCIES
     assert "HS" in VALID_FREQUENCIES
     assert "WEEKLY" in VALID_FREQUENCIES

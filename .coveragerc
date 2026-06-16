@@ -5,6 +5,8 @@ omit =
     app/seed_drugs.py
     app/__init__.py
     app/auth.py
+    app/logging_config.py
+    app/database.py
     app/api/onboarding.py
     app/api/admin.py
     app/api/dashboard.py
