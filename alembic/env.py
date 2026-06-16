@@ -1,14 +1,16 @@
 import asyncio
 from logging.config import fileConfig
-from sqlalchemy.ext.asyncio import create_async_engine
-from alembic import context
 
-from app.database import Base
-from app.models import Doctor, Patient, Prescription, PrescriptionItem, Drug  # noqa: F401
-from app.config import get_settings
+from alembic import context
+from sqlalchemy.ext.asyncio import create_async_engine
+
+from app.config import resolve_database_url
+from app.db_base import Base
+
+# Register all models on Base.metadata without initializing the app DB engine.
+import app.models  # noqa: F401
 
 config = context.config
-settings = get_settings()
 
 if config.config_file_name is not None:
     fileConfig(config.config_file_name)
@@ -16,8 +18,18 @@ if config.config_file_name is not None:
 target_metadata = Base.metadata
 
 
+def _migration_database_url() -> str:
+    url = resolve_database_url()
+    if not url:
+        raise RuntimeError(
+            "DATABASE_URL is required for migrations. "
+            "Set DATABASE_URL (or DATABASE_PRIVATE_URL / PG* vars) on the service."
+        )
+    return url
+
+
 def run_migrations_offline() -> None:
-    url = settings.database_url
+    url = _migration_database_url()
     context.configure(
         url=url,
         target_metadata=target_metadata,
@@ -35,7 +47,7 @@ def do_run_migrations(connection):
 
 
 async def run_async_migrations() -> None:
-    engine = create_async_engine(settings.database_url)
+    engine = create_async_engine(_migration_database_url())
     async with engine.connect() as connection:
         await connection.run_sync(do_run_migrations)
     await engine.dispose()

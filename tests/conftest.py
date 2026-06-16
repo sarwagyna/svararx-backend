@@ -33,7 +33,8 @@ os.environ["DATABASE_URL"] = os.environ["TEST_DATABASE_URL"]
 from app.config import get_settings
 from app.core.security import create_access_token
 import app.core.security as security_module
-from app.database import Base, get_db
+from app.db_base import Base
+from app.database import get_db
 from app.main import app
 from app.models import Clinic, Doctor, DoctorClinic, Drug, Patient, Prescription, PrescriptionItem
 from app.ml.drug_name_corrector import invalidate_drug_index
