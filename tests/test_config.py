@@ -124,6 +124,27 @@ def test_asyncpg_connect_args_session_pooler_keeps_cache(monkeypatch):
     assert "statement_cache_size" not in args
 
 
+def _settings(**overrides):
+    from app.config import Settings
+
+    base = dict(secret_key="x" * 32, sarvam_api_key="k", groq_api_key="k")
+    base.update(overrides)
+    return Settings(**base)
+
+
+def test_resolve_stt_engine_explicit():
+    assert _settings(stt_engine="whisper").resolve_stt_engine() == "whisper"
+    assert _settings(stt_engine="sarvam").resolve_stt_engine() == "sarvam"
+
+
+def test_resolve_stt_engine_auto_in_production():
+    assert _settings(environment="production").resolve_stt_engine() == "sarvam"
+
+
+def test_resolve_stt_engine_auto_in_development():
+    assert _settings(environment="development").resolve_stt_engine() == "auto"
+
+
 def test_normalize_strips_ssl_query():
     url = "postgresql+asyncpg://postgres:secret@db.example.com:5432/postgres?ssl=require"
     assert (

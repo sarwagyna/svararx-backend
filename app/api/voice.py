@@ -135,7 +135,9 @@ async def transcribe_voice(
         raise HTTPException(status_code=404, detail="Recording not found or expired.")
 
     try:
-        result = await transcribe_wav_dual_engine(wav_bytes, settings.sarvam_api_key)
+        result = await transcribe_wav_dual_engine(
+            wav_bytes, settings.sarvam_api_key, engine=settings.resolve_stt_engine()
+        )
     except ValueError as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc
     except Exception as exc:

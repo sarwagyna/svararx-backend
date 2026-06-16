@@ -133,6 +133,7 @@ async def transcribe_and_structure(
                 audio_bytes=audio_bytes,
                 filename=filename,
                 api_key=settings.sarvam_api_key,
+                engine=settings.resolve_stt_engine(),
             ),
             timeout=settings.stt_timeout_seconds,
         )

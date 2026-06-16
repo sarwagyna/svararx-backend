@@ -292,10 +292,16 @@ async def _try_sarvam_fallback(
 async def transcribe_wav_dual_engine(
     wav_bytes: bytes,
     sarvam_api_key: str,
+    engine: str = "auto",
 ) -> DualEngineResult:
     """
     Run Whisper → optional Sarvam fallback → self-correction → drug correction.
     Input must be 16 kHz mono WAV bytes.
+
+    engine:
+      - "sarvam": skip Whisper entirely (no torch/large-v3 load). Recommended in
+        production where the 3GB Whisper model would OOM.
+      - "whisper"/"auto": Whisper first, Sarvam fallback.
     """
     if len(wav_bytes) < 100:
         raise ValueError("Audio file is empty or too small.")
@@ -312,38 +318,51 @@ async def transcribe_wav_dual_engine(
     confidence = -1.0
     raw_transcript = ""
 
-    async with _whisper_model_lock:
-        try:
-            whisper_result = await asyncio.to_thread(_transcribe_whisper, wav_bytes)
-            raw_transcript = whisper_result["text"]
-            confidence = whisper_result["avg_logprob"]
-            metadata["whisper_avg_logprob"] = confidence
-            metadata["whisper_word_count"] = whisper_result["word_count"]
+    if engine == "sarvam":
+        # Direct Sarvam — no Whisper model load. Raises RuntimeError (→ 503) if
+        # the Sarvam call fails (e.g. missing/invalid SARVAM_API_KEY).
+        if not sarvam_api_key:
+            raise RuntimeError(
+                "SARVAM_API_KEY is not configured. Set it to enable speech-to-text."
+            )
+        raw_transcript = await asyncio.to_thread(
+            _transcribe_sarvam, wav_bytes, sarvam_api_key
+        )
+        engine_used = "sarvam"
+        metadata["tags"] = ["sarvam"]
+    else:
+        async with _whisper_model_lock:
+            try:
+                whisper_result = await asyncio.to_thread(_transcribe_whisper, wav_bytes)
+                raw_transcript = whisper_result["text"]
+                confidence = whisper_result["avg_logprob"]
+                metadata["whisper_avg_logprob"] = confidence
+                metadata["whisper_word_count"] = whisper_result["word_count"]
 
-            if _should_fallback_whisper(whisper_result):
-                logger.info(
-                    "Whisper below threshold (logprob=%.2f, words=%d) — falling back to Sarvam",
-                    confidence,
-                    whisper_result["word_count"],
-                )
+                if _should_fallback_whisper(whisper_result):
+                    logger.info(
+                        "Whisper below threshold (logprob=%.2f, words=%d) — falling back to Sarvam",
+                        confidence,
+                        whisper_result["word_count"],
+                    )
+                    sarvam_text, sarvam_meta = await _try_sarvam_fallback(
+                        wav_bytes, sarvam_api_key, whisper_result
+                    )
+                    raw_transcript = sarvam_text
+                    engine_used = "sarvam" if sarvam_meta.get("tags") == ["sarvam"] else "whisper"
+                    metadata["fallback_reason"] = "low_confidence_or_short"
+                    metadata.update(sarvam_meta)
+            except Exception as exc:
+                logger.warning("Whisper failed (%s) — falling back to Sarvam", exc)
                 sarvam_text, sarvam_meta = await _try_sarvam_fallback(
-                    wav_bytes, sarvam_api_key, whisper_result
+                    wav_bytes, sarvam_api_key, None
                 )
                 raw_transcript = sarvam_text
                 engine_used = "sarvam" if sarvam_meta.get("tags") == ["sarvam"] else "whisper"
-                metadata["fallback_reason"] = "low_confidence_or_short"
+                confidence = -1.0
+                metadata["fallback_reason"] = "whisper_error"
+                metadata["whisper_error"] = str(exc)
                 metadata.update(sarvam_meta)
-        except Exception as exc:
-            logger.warning("Whisper failed (%s) — falling back to Sarvam", exc)
-            sarvam_text, sarvam_meta = await _try_sarvam_fallback(
-                wav_bytes, sarvam_api_key, None
-            )
-            raw_transcript = sarvam_text
-            engine_used = "sarvam" if sarvam_meta.get("tags") == ["sarvam"] else "whisper"
-            confidence = -1.0
-            metadata["fallback_reason"] = "whisper_error"
-            metadata["whisper_error"] = str(exc)
-            metadata.update(sarvam_meta)
 
     after_self_correction = resolve_self_corrections(raw_transcript)
     drug_result = correct_drug_names(after_self_correction)
@@ -367,13 +386,14 @@ async def transcribe_audio(
     audio_bytes: bytes,
     filename: str,
     api_key: str,
+    engine: str = "auto",
 ) -> TranscriptionResult:
     """
     Backward-compatible wrapper used by /transcribe-and-structure.
     Converts arbitrary audio to WAV, runs dual-engine pipeline.
     """
     wav_bytes = await asyncio.to_thread(_ensure_wav_bytes, audio_bytes, filename)
-    result = await transcribe_wav_dual_engine(wav_bytes, api_key)
+    result = await transcribe_wav_dual_engine(wav_bytes, api_key, engine=engine)
 
     return TranscriptionResult(
         raw=result["raw_transcript"],

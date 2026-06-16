@@ -211,6 +211,10 @@ class Settings(BaseSettings):
     sarvam_api_key: str = ""
     groq_api_key: str = ""
 
+    # STT engine: "auto" (Whisper→Sarvam), "whisper", or "sarvam".
+    # Whisper large-v3 needs ~3GB RAM, so production defaults to Sarvam-only.
+    stt_engine: str = "auto"
+
     # Database
     database_url: str = ""
 
@@ -250,6 +254,13 @@ class Settings(BaseSettings):
     @property
     def is_production(self) -> bool:
         return self.environment == "production"
+
+    def resolve_stt_engine(self) -> str:
+        """Effective STT engine. 'auto' uses Sarvam in production (Whisper OOMs)."""
+        engine = (self.stt_engine or "auto").strip().lower()
+        if engine in ("whisper", "sarvam"):
+            return engine
+        return "sarvam" if self.is_production else "auto"
 
     def cors_origin_list(self) -> list[str]:
         if self.cors_origins.strip():
