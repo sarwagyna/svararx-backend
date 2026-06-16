@@ -1,6 +1,7 @@
 """
 GET /api/v1/dashboard — clinic summary stats + recent prescriptions + analytics
 """
+import asyncio
 from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
@@ -8,7 +9,7 @@ from fastapi import APIRouter, Depends
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select, func
 
-from app.database import get_db
+from app.database import AsyncSessionLocal
 from app.models import Clinic, Doctor, DoctorClinic, Prescription, Patient, PatientAllergy
 from app.schemas import (
     ClinicDashboardSummary,
@@ -29,7 +30,6 @@ _IST = ZoneInfo("Asia/Kolkata")
 
 @router.get("/dashboard", response_model=DashboardData)
 async def get_dashboard(
-    db: AsyncSession = Depends(get_db),
     doctor=Depends(get_current_doctor),
     membership=Depends(get_doctor_membership),
     clinic_id: str = Depends(get_doctor_clinic_id),
@@ -38,14 +38,21 @@ async def get_dashboard(
     today_start = now_ist.replace(hour=0, minute=0, second=0, microsecond=0).astimezone(timezone.utc)
     today_end = now_ist.replace(hour=23, minute=59, second=59, microsecond=999999).astimezone(timezone.utc)
 
-    total_patients, total_rx, today_rx = await _fetch_counts(
-        db, doctor.id, membership, clinic_id, today_start, today_end
+    # These four query groups are independent. A single AsyncSession/connection
+    # runs queries serially, so on a high-latency DB link the dashboard waits on
+    # ~15 sequential round-trips. Run each group on its own connection so they
+    # execute concurrently (total time ≈ slowest group instead of their sum).
+    async def _isolated(fn, *args):
+        async with AsyncSessionLocal() as session:
+            return await fn(session, *args)
+
+    counts, recent, analytics, clinic_summary = await asyncio.gather(
+        _isolated(_fetch_counts, doctor.id, membership, clinic_id, today_start, today_end),
+        _isolated(_fetch_recent, doctor.id, membership, clinic_id),
+        _isolated(_fetch_analytics, doctor.id, membership, clinic_id, now_ist),
+        _isolated(_fetch_clinic_summary, doctor, membership, clinic_id, now_ist, today_start, today_end),
     )
-    recent = await _fetch_recent(db, doctor.id, membership, clinic_id)
-    analytics = await _fetch_analytics(db, doctor.id, membership, clinic_id, now_ist)
-    clinic_summary = await _fetch_clinic_summary(
-        db, doctor, membership, clinic_id, now_ist, today_start, today_end
-    )
+    total_patients, total_rx, today_rx = counts
 
     return DashboardData(
         total_patients=total_patients,

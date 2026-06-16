@@ -217,6 +217,8 @@ class Settings(BaseSettings):
 
     # Database
     database_url: str = ""
+    db_pool_size: int = 10
+    db_max_overflow: int = 10
 
     # Redis
     redis_url: str = "redis://localhost:6379/0"

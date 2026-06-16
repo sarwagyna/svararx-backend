@@ -26,6 +26,9 @@ def _ensure_engine():
         settings.database_url,
         echo=settings.environment == "development",
         pool_pre_ping=True,
+        pool_size=settings.db_pool_size,
+        max_overflow=settings.db_max_overflow,
+        pool_recycle=1800,  # recycle before Supabase pooler drops idle conns
         connect_args=asyncpg_connect_args(settings.database_url),
     )
     _async_session_local = async_sessionmaker(
