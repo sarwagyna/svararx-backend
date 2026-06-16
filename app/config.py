@@ -14,9 +14,29 @@ _SUPABASE_DIRECT_HOST = re.compile(r"^db\.([a-z0-9]+)\.supabase\.co$", re.IGNORE
 _RAILWAY_ENV_KEYS = ("RAILWAY_ENVIRONMENT", "RAILWAY_SERVICE_ID", "RAILWAY_PROJECT_ID")
 
 
+_SSL_QUERY_KEYS = {"ssl", "sslmode", "sslrootcert", "sslcert", "sslkey"}
+
+
+def _strip_ssl_query(url: str) -> str:
+    """
+    Remove libpq-style ssl query params. TLS is controlled via connect_args so
+    asyncpg does not receive an `ssl`/`sslmode` it cannot parse, and SQLAlchemy
+    does not complain about SSL being specified twice.
+    """
+    if "?" not in url:
+        return url
+    base, _, query = url.partition("?")
+    kept = [
+        part
+        for part in query.split("&")
+        if part and part.split("=", 1)[0].lower() not in _SSL_QUERY_KEYS
+    ]
+    return f"{base}?{'&'.join(kept)}" if kept else base
+
+
 def normalize_async_database_url(url: str) -> str:
     """Convert postgres:// or postgresql:// URLs to asyncpg driver form."""
-    url = url.strip()
+    url = _strip_ssl_query(url.strip())
     if url.startswith("postgres://"):
         return "postgresql+asyncpg://" + url[len("postgres://") :]
     if url.startswith("postgresql://") and "+asyncpg" not in url:
@@ -82,12 +102,59 @@ def upgrade_supabase_url_for_deploy(url: str) -> str:
     return _build_asyncpg_url(user, password, pooler_host, port, db)
 
 
+def _ssl_context_for(host: str) -> ssl.SSLContext | None:
+    """
+    Build an SSL context for managed Postgres endpoints.
+
+    Supabase (and many hosts) terminate TLS with a certificate that is not in
+    the container's default trust store, which raises
+    "certificate verify failed: self-signed certificate in certificate chain".
+
+    Behaviour:
+      - DB_SSL_CA_CERT (path) or DB_SSL_CA_CERT_PEM (inline PEM) → verify-full.
+      - DB_SSL_MODE=require|prefer (default) → encrypt without chain verification.
+      - DB_SSL_MODE=verify-full → use the system trust store.
+      - DB_SSL_MODE=disable → no TLS.
+    """
+    mode = os.environ.get("DB_SSL_MODE", "require").strip().lower()
+    if mode == "disable":
+        return None
+
+    ca_path = os.environ.get("DB_SSL_CA_CERT", "").strip()
+    ca_pem = os.environ.get("DB_SSL_CA_CERT_PEM", "").strip()
+
+    if ca_path or ca_pem:
+        ctx = ssl.create_default_context(
+            cafile=ca_path or None,
+            cadata=ca_pem or None,
+        )
+        return ctx
+
+    if mode in ("verify-ca", "verify-full"):
+        return ssl.create_default_context()
+
+    ctx = ssl.create_default_context()
+    ctx.check_hostname = False
+    ctx.verify_mode = ssl.CERT_NONE
+    return ctx
+
+
 def asyncpg_connect_args(url: str) -> dict[str, Any]:
-    """TLS is required for Supabase Postgres endpoints."""
+    """TLS is required for Supabase and most managed Postgres endpoints."""
     host = database_hostname(url)
-    if host.endswith(".supabase.co") or host.endswith(".pooler.supabase.com"):
-        return {"ssl": ssl.create_default_context()}
-    return {}
+    needs_tls = (
+        host.endswith(".supabase.co")
+        or host.endswith(".supabase.com")
+        or os.environ.get("DB_SSL_MODE", "").strip().lower()
+        not in ("", "disable")
+    )
+    if not needs_tls:
+        return {}
+
+    ctx = _ssl_context_for(host)
+    if ctx is None:
+        return {}
+    return {"ssl": ctx}
 
 
 def resolve_database_url() -> str:

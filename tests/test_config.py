@@ -93,6 +93,33 @@ def test_upgrade_supabase_direct_on_railway_raises(monkeypatch):
         upgrade_supabase_url_for_deploy(url)
 
 
-def test_asyncpg_connect_args_for_supabase():
+def test_asyncpg_connect_args_for_supabase(monkeypatch):
+    monkeypatch.delenv("DB_SSL_MODE", raising=False)
+    monkeypatch.delenv("DB_SSL_CA_CERT", raising=False)
+    monkeypatch.delenv("DB_SSL_CA_CERT_PEM", raising=False)
     url = "postgresql+asyncpg://postgres:secret@aws-0-ap-south-1.pooler.supabase.com:6543/postgres"
-    assert "ssl" in asyncpg_connect_args(url)
+    args = asyncpg_connect_args(url)
+    assert "ssl" in args
+    ctx = args["ssl"]
+    assert ctx.verify_mode.name == "CERT_NONE"
+
+
+def test_asyncpg_connect_args_no_tls_for_local():
+    url = "postgresql+asyncpg://postgres:secret@localhost:5432/svararx"
+    assert asyncpg_connect_args(url) == {}
+
+
+def test_normalize_strips_ssl_query():
+    url = "postgresql+asyncpg://postgres:secret@db.example.com:5432/postgres?ssl=require"
+    assert (
+        normalize_async_database_url(url)
+        == "postgresql+asyncpg://postgres:secret@db.example.com:5432/postgres"
+    )
+
+
+def test_normalize_strips_sslmode_keeps_others():
+    url = "postgres://u:p@host:5432/db?sslmode=require&application_name=svararx"
+    assert (
+        normalize_async_database_url(url)
+        == "postgresql+asyncpg://u:p@host:5432/db?application_name=svararx"
+    )
