@@ -1,0 +1,3628 @@
+{
+  "entries": [
+    {
+      "alias": "metro foreman",
+      "canonical": "Metformin"
+    },
+    {
+      "alias": "amla deep in",
+      "canonical": "Amlodipine"
+    },
+    {
+      "alias": "para set a mol",
+      "canonical": "Paracetamol"
+    },
+    {
+      "alias": "panto pro zone",
+      "canonical": "Pantoprazole"
+    },
+    {
+      "alias": "atos ta teen",
+      "canonical": "Atorvastatin"
+    },
+    {
+      "alias": "AUGMENTIN",
+      "canonical": "Amoxicillin"
+    },
+    {
+      "alias": "Amoxicillin",
+      "canonical": "Amoxicillin"
+    },
+    {
+      "alias": "Ogmentin",
+      "canonical": "Amoxicillin"
+    },
+    {
+      "alias": "Augmantin",
+      "canonical": "Amoxicillin"
+    },
+    {
+      "alias": "Amoxclav",
+      "canonical": "Amoxicillin"
+    },
+    {
+      "alias": "AMOXIL",
+      "canonical": "Amoxicillin"
+    },
+    {
+      "alias": "Mox",
+      "canonical": "Amoxicillin"
+    },
+    {
+      "alias": "Novamox",
+      "canonical": "Amoxicillin"
+    },
+    {
+      "alias": "ZITHROMAX",
+      "canonical": "Azithromycin"
+    },
+    {
+      "alias": "Azithromycin",
+      "canonical": "Azithromycin"
+    },
+    {
+      "alias": "Azithral",
+      "canonical": "Azithromycin"
+    },
+    {
+      "alias": "Azee",
+      "canonical": "Azithromycin"
+    },
+    {
+      "alias": "CIPLOX",
+      "canonical": "Ciprofloxacin"
+    },
+    {
+      "alias": "Ciprofloxacin",
+      "canonical": "Ciprofloxacin"
+    },
+    {
+      "alias": "Cifran",
+      "canonical": "Ciprofloxacin"
+    },
+    {
+      "alias": "Ciprolet",
+      "canonical": "Ciprofloxacin"
+    },
+    {
+      "alias": "TAXIM-O",
+      "canonical": "Cefixime"
+    },
+    {
+      "alias": "Cefixime",
+      "canonical": "Cefixime"
+    },
+    {
+      "alias": "Taxim O",
+      "canonical": "Cefixime"
+    },
+    {
+      "alias": "Cefix",
+      "canonical": "Cefixime"
+    },
+    {
+      "alias": "Zifi",
+      "canonical": "Cefixime"
+    },
+    {
+      "alias": "MONOCEF",
+      "canonical": "Ceftriaxone"
+    },
+    {
+      "alias": "Ceftriaxone",
+      "canonical": "Ceftriaxone"
+    },
+    {
+      "alias": "Oframax",
+      "canonical": "Ceftriaxone"
+    },
+    {
+      "alias": "Rocephin",
+      "canonical": "Ceftriaxone"
+    },
+    {
+      "alias": "DOXYCAP",
+      "canonical": "Doxycycline"
+    },
+    {
+      "alias": "Doxycycline",
+      "canonical": "Doxycycline"
+    },
+    {
+      "alias": "Doxt",
+      "canonical": "Doxycycline"
+    },
+    {
+      "alias": "Biodoxi",
+      "canonical": "Doxycycline"
+    },
+    {
+      "alias": "METROGYL",
+      "canonical": "Metronidazole"
+    },
+    {
+      "alias": "Metronidazole",
+      "canonical": "Metronidazole"
+    },
+    {
+      "alias": "Flagyl",
+      "canonical": "Metronidazole"
+    },
+    {
+      "alias": "Metron",
+      "canonical": "Metronidazole"
+    },
+    {
+      "alias": "NORFLOX",
+      "canonical": "Norfloxacin"
+    },
+    {
+      "alias": "Norfloxacin",
+      "canonical": "Norfloxacin"
+    },
+    {
+      "alias": "Norbactin",
+      "canonical": "Norfloxacin"
+    },
+    {
+      "alias": "Norflox-TZ",
+      "canonical": "Norfloxacin"
+    },
+    {
+      "alias": "CLAVAM",
+      "canonical": "Amoxicillin"
+    },
+    {
+      "alias": "Moxclav",
+      "canonical": "Amoxicillin"
+    },
+    {
+      "alias": "PAN",
+      "canonical": "Pantoprazole"
+    },
+    {
+      "alias": "Pantoprazole",
+      "canonical": "Pantoprazole"
+    },
+    {
+      "alias": "Pantop",
+      "canonical": "Pantoprazole"
+    },
+    {
+      "alias": "Pantocid",
+      "canonical": "Pantoprazole"
+    },
+    {
+      "alias": "OMEZ",
+      "canonical": "Omeprazole"
+    },
+    {
+      "alias": "Omeprazole",
+      "canonical": "Omeprazole"
+    },
+    {
+      "alias": "Omiron",
+      "canonical": "Omeprazole"
+    },
+    {
+      "alias": "RAZO",
+      "canonical": "Rabeprazole"
+    },
+    {
+      "alias": "Rabeprazole",
+      "canonical": "Rabeprazole"
+    },
+    {
+      "alias": "Rablet",
+      "canonical": "Rabeprazole"
+    },
+    {
+      "alias": "Rabifast",
+      "canonical": "Rabeprazole"
+    },
+    {
+      "alias": "GELUSIL",
+      "canonical": "Aluminium Hydroxide"
+    },
+    {
+      "alias": "Aluminium Hydroxide",
+      "canonical": "Aluminium Hydroxide"
+    },
+    {
+      "alias": "Gelucil",
+      "canonical": "Aluminium Hydroxide"
+    },
+    {
+      "alias": "Jylusil",
+      "canonical": "Aluminium Hydroxide"
+    },
+    {
+      "alias": "DIGENE",
+      "canonical": "Aluminium Hydroxide"
+    },
+    {
+      "alias": "Daijeene",
+      "canonical": "Aluminium Hydroxide"
+    },
+    {
+      "alias": "Dijin",
+      "canonical": "Aluminium Hydroxide"
+    },
+    {
+      "alias": "PANTODAC",
+      "canonical": "Pantoprazole"
+    },
+    {
+      "alias": "Pan-D",
+      "canonical": "Pantoprazole"
+    },
+    {
+      "alias": "Pantop-D",
+      "canonical": "Pantoprazole"
+    },
+    {
+      "alias": "NEXPRO",
+      "canonical": "Esomeprazole"
+    },
+    {
+      "alias": "Esomeprazole",
+      "canonical": "Esomeprazole"
+    },
+    {
+      "alias": "Nexum",
+      "canonical": "Esomeprazole"
+    },
+    {
+      "alias": "Esomac",
+      "canonical": "Esomeprazole"
+    },
+    {
+      "alias": "AMLODAC",
+      "canonical": "Amlodipine"
+    },
+    {
+      "alias": "Amlodipine",
+      "canonical": "Amlodipine"
+    },
+    {
+      "alias": "Amlokind",
+      "canonical": "Amlodipine"
+    },
+    {
+      "alias": "Stamlo",
+      "canonical": "Amlodipine"
+    },
+    {
+      "alias": "TELMA",
+      "canonical": "Telmisartan"
+    },
+    {
+      "alias": "Telmisartan",
+      "canonical": "Telmisartan"
+    },
+    {
+      "alias": "Telmikind",
+      "canonical": "Telmisartan"
+    },
+    {
+      "alias": "Sartel",
+      "canonical": "Telmisartan"
+    },
+    {
+      "alias": "LOSARTAN",
+      "canonical": "Losartan"
+    },
+    {
+      "alias": "Losar",
+      "canonical": "Losartan"
+    },
+    {
+      "alias": "Losacar",
+      "canonical": "Losartan"
+    },
+    {
+      "alias": "ATENOLOL",
+      "canonical": "Atenolol"
+    },
+    {
+      "alias": "Aten",
+      "canonical": "Atenolol"
+    },
+    {
+      "alias": "Tenormin",
+      "canonical": "Atenolol"
+    },
+    {
+      "alias": "METOPROLOL",
+      "canonical": "Metoprolol"
+    },
+    {
+      "alias": "Metolar",
+      "canonical": "Metoprolol"
+    },
+    {
+      "alias": "Betaloc",
+      "canonical": "Metoprolol"
+    },
+    {
+      "alias": "RAMIPRIL",
+      "canonical": "Ramipril"
+    },
+    {
+      "alias": "Cardace",
+      "canonical": "Ramipril"
+    },
+    {
+      "alias": "Ramistar",
+      "canonical": "Ramipril"
+    },
+    {
+      "alias": "AMLOKIND-AT",
+      "canonical": "Amlodipine"
+    },
+    {
+      "alias": "Amlokind AT",
+      "canonical": "Amlodipine"
+    },
+    {
+      "alias": "Amlopres AT",
+      "canonical": "Amlodipine"
+    },
+    {
+      "alias": "Stamlo Beta",
+      "canonical": "Amlodipine"
+    },
+    {
+      "alias": "GLYCOMET",
+      "canonical": "Metformin"
+    },
+    {
+      "alias": "Metformin",
+      "canonical": "Metformin"
+    },
+    {
+      "alias": "Glucophage",
+      "canonical": "Metformin"
+    },
+    {
+      "alias": "JANUVIA",
+      "canonical": "Sitagliptin"
+    },
+    {
+      "alias": "Sitagliptin",
+      "canonical": "Sitagliptin"
+    },
+    {
+      "alias": "Istavel",
+      "canonical": "Sitagliptin"
+    },
+    {
+      "alias": "Sitaglip",
+      "canonical": "Sitagliptin"
+    },
+    {
+      "alias": "VOGLIBOSE",
+      "canonical": "Voglibose"
+    },
+    {
+      "alias": "Volix",
+      "canonical": "Voglibose"
+    },
+    {
+      "alias": "Voglo",
+      "canonical": "Voglibose"
+    },
+    {
+      "alias": "GLIMEPIRIDE",
+      "canonical": "Glimepiride"
+    },
+    {
+      "alias": "Amaryl",
+      "canonical": "Glimepiride"
+    },
+    {
+      "alias": "Glimer",
+      "canonical": "Glimepiride"
+    },
+    {
+      "alias": "DAONIL",
+      "canonical": "Glibenclamide"
+    },
+    {
+      "alias": "Glibenclamide",
+      "canonical": "Glibenclamide"
+    },
+    {
+      "alias": "Glynase",
+      "canonical": "Glibenclamide"
+    },
+    {
+      "alias": "Glucovance",
+      "canonical": "Glibenclamide"
+    },
+    {
+      "alias": "CROCIN",
+      "canonical": "Paracetamol"
+    },
+    {
+      "alias": "Paracetamol",
+      "canonical": "Paracetamol"
+    },
+    {
+      "alias": "Croxin",
+      "canonical": "Paracetamol"
+    },
+    {
+      "alias": "Croceen",
+      "canonical": "Paracetamol"
+    },
+    {
+      "alias": "DOLO",
+      "canonical": "Paracetamol"
+    },
+    {
+      "alias": "Dollo",
+      "canonical": "Paracetamol"
+    },
+    {
+      "alias": "Dolo 650",
+      "canonical": "Paracetamol"
+    },
+    {
+      "alias": "COMBIFLAM",
+      "canonical": "Ibuprofen"
+    },
+    {
+      "alias": "Ibuprofen",
+      "canonical": "Ibuprofen"
+    },
+    {
+      "alias": "Combeeflam",
+      "canonical": "Ibuprofen"
+    },
+    {
+      "alias": "Combiflame",
+      "canonical": "Ibuprofen"
+    },
+    {
+      "alias": "BRUFEN",
+      "canonical": "Ibuprofen"
+    },
+    {
+      "alias": "Broofen",
+      "canonical": "Ibuprofen"
+    },
+    {
+      "alias": "Ibugesic",
+      "canonical": "Ibuprofen"
+    },
+    {
+      "alias": "VOVERAN",
+      "canonical": "Diclofenac"
+    },
+    {
+      "alias": "Diclofenac",
+      "canonical": "Diclofenac"
+    },
+    {
+      "alias": "Voltaren",
+      "canonical": "Diclofenac"
+    },
+    {
+      "alias": "ETORICOX",
+      "canonical": "Etoricoxib"
+    },
+    {
+      "alias": "Etoricoxib",
+      "canonical": "Etoricoxib"
+    },
+    {
+      "alias": "Arcoxia",
+      "canonical": "Etoricoxib"
+    },
+    {
+      "alias": "Etody",
+      "canonical": "Etoricoxib"
+    },
+    {
+      "alias": "MEFTAL-SPAS",
+      "canonical": "Mefenamic Acid"
+    },
+    {
+      "alias": "Mefenamic Acid",
+      "canonical": "Mefenamic Acid"
+    },
+    {
+      "alias": "Meftal Spas",
+      "canonical": "Mefenamic Acid"
+    },
+    {
+      "alias": "Meftalspas",
+      "canonical": "Mefenamic Acid"
+    },
+    {
+      "alias": "Meftall Spas",
+      "canonical": "Mefenamic Acid"
+    },
+    {
+      "alias": "NIMESULIDE",
+      "canonical": "Nimesulide"
+    },
+    {
+      "alias": "Nise",
+      "canonical": "Nimesulide"
+    },
+    {
+      "alias": "Nimulid",
+      "canonical": "Nimesulide"
+    },
+    {
+      "alias": "CETIRIZINE",
+      "canonical": "Cetirizine"
+    },
+    {
+      "alias": "Cetriz",
+      "canonical": "Cetirizine"
+    },
+    {
+      "alias": "Alerid",
+      "canonical": "Cetirizine"
+    },
+    {
+      "alias": "MONTAIR",
+      "canonical": "Montelukast"
+    },
+    {
+      "alias": "Montelukast",
+      "canonical": "Montelukast"
+    },
+    {
+      "alias": "Singulair",
+      "canonical": "Montelukast"
+    },
+    {
+      "alias": "Montair LC",
+      "canonical": "Montelukast"
+    },
+    {
+      "alias": "MONTAIR-LC",
+      "canonical": "Montelukast"
+    },
+    {
+      "alias": "Montairlc",
+      "canonical": "Montelukast"
+    },
+    {
+      "alias": "Montirlc",
+      "canonical": "Montelukast"
+    },
+    {
+      "alias": "LEVOCET",
+      "canonical": "Levocetirizine"
+    },
+    {
+      "alias": "Levocetirizine",
+      "canonical": "Levocetirizine"
+    },
+    {
+      "alias": "Xyzal",
+      "canonical": "Levocetirizine"
+    },
+    {
+      "alias": "ALLEGRA",
+      "canonical": "Fexofenadine"
+    },
+    {
+      "alias": "Fexofenadine",
+      "canonical": "Fexofenadine"
+    },
+    {
+      "alias": "Allergy",
+      "canonical": "Fexofenadine"
+    },
+    {
+      "alias": "Fexova",
+      "canonical": "Fexofenadine"
+    },
+    {
+      "alias": "BECOSULES",
+      "canonical": "Vitamin B Complex"
+    },
+    {
+      "alias": "Vitamin B Complex",
+      "canonical": "Vitamin B Complex"
+    },
+    {
+      "alias": "Becosool",
+      "canonical": "Vitamin B Complex"
+    },
+    {
+      "alias": "Beco sules",
+      "canonical": "Vitamin B Complex"
+    },
+    {
+      "alias": "REVITAL",
+      "canonical": "Multivitamin"
+    },
+    {
+      "alias": "Multivitamin",
+      "canonical": "Multivitamin"
+    },
+    {
+      "alias": "Rivital",
+      "canonical": "Multivitamin"
+    },
+    {
+      "alias": "Revitall",
+      "canonical": "Multivitamin"
+    },
+    {
+      "alias": "SHELCAL",
+      "canonical": "Calcium Carbonate"
+    },
+    {
+      "alias": "Calcium Carbonate",
+      "canonical": "Calcium Carbonate"
+    },
+    {
+      "alias": "Shilcal",
+      "canonical": "Calcium Carbonate"
+    },
+    {
+      "alias": "Shelkal",
+      "canonical": "Calcium Carbonate"
+    },
+    {
+      "alias": "CALCIROL",
+      "canonical": "Cholecalciferol (Vitamin D3)"
+    },
+    {
+      "alias": "Cholecalciferol (Vitamin D3)",
+      "canonical": "Cholecalciferol (Vitamin D3)"
+    },
+    {
+      "alias": "Calciral",
+      "canonical": "Cholecalciferol (Vitamin D3)"
+    },
+    {
+      "alias": "D-Rise",
+      "canonical": "Cholecalciferol (Vitamin D3)"
+    },
+    {
+      "alias": "Drise",
+      "canonical": "Cholecalciferol (Vitamin D3)"
+    },
+    {
+      "alias": "NUROKIND",
+      "canonical": "Mecobalamin (Vitamin B12)"
+    },
+    {
+      "alias": "Mecobalamin (Vitamin B12)",
+      "canonical": "Mecobalamin (Vitamin B12)"
+    },
+    {
+      "alias": "Nurokiind",
+      "canonical": "Mecobalamin (Vitamin B12)"
+    },
+    {
+      "alias": "Mecobal",
+      "canonical": "Mecobalamin (Vitamin B12)"
+    },
+    {
+      "alias": "METHYLCOBALAMIN",
+      "canonical": "Mecobalamin (Vitamin B12)"
+    },
+    {
+      "alias": "Methycobalamin",
+      "canonical": "Mecobalamin (Vitamin B12)"
+    },
+    {
+      "alias": "Methyl B12",
+      "canonical": "Mecobalamin (Vitamin B12)"
+    },
+    {
+      "alias": "FERONIA-XT",
+      "canonical": "Ferrous Ascorbate"
+    },
+    {
+      "alias": "Ferrous Ascorbate",
+      "canonical": "Ferrous Ascorbate"
+    },
+    {
+      "alias": "Feronia XT",
+      "canonical": "Ferrous Ascorbate"
+    },
+    {
+      "alias": "Feroniaxt",
+      "canonical": "Ferrous Ascorbate"
+    },
+    {
+      "alias": "Feronia",
+      "canonical": "Ferrous Ascorbate"
+    },
+    {
+      "alias": "AUTRIN",
+      "canonical": "Ferric Ammonium Citrate"
+    },
+    {
+      "alias": "Ferric Ammonium Citrate",
+      "canonical": "Ferric Ammonium Citrate"
+    },
+    {
+      "alias": "Otrin",
+      "canonical": "Ferric Ammonium Citrate"
+    },
+    {
+      "alias": "Autreen",
+      "canonical": "Ferric Ammonium Citrate"
+    },
+    {
+      "alias": "DEXONA",
+      "canonical": "Dexamethasone"
+    },
+    {
+      "alias": "Dexamethasone",
+      "canonical": "Dexamethasone"
+    },
+    {
+      "alias": "Decadron",
+      "canonical": "Dexamethasone"
+    },
+    {
+      "alias": "WYSOLONE",
+      "canonical": "Prednisolone"
+    },
+    {
+      "alias": "Prednisolone",
+      "canonical": "Prednisolone"
+    },
+    {
+      "alias": "Waisolone",
+      "canonical": "Prednisolone"
+    },
+    {
+      "alias": "ASTHALIN",
+      "canonical": "Salbutamol"
+    },
+    {
+      "alias": "Salbutamol",
+      "canonical": "Salbutamol"
+    },
+    {
+      "alias": "Astallin",
+      "canonical": "Salbutamol"
+    },
+    {
+      "alias": "Ventolin",
+      "canonical": "Salbutamol"
+    },
+    {
+      "alias": "DERIPHYLLIN",
+      "canonical": "Etofylline"
+    },
+    {
+      "alias": "Etofylline",
+      "canonical": "Etofylline"
+    },
+    {
+      "alias": "Deriphyllin retard",
+      "canonical": "Etofylline"
+    },
+    {
+      "alias": "Derifyllin",
+      "canonical": "Etofylline"
+    },
+    {
+      "alias": "ALEX",
+      "canonical": "Chlorpheniramine"
+    },
+    {
+      "alias": "Chlorpheniramine",
+      "canonical": "Chlorpheniramine"
+    },
+    {
+      "alias": "Alexx",
+      "canonical": "Chlorpheniramine"
+    },
+    {
+      "alias": "Alex syrup",
+      "canonical": "Chlorpheniramine"
+    },
+    {
+      "alias": "BENADRYL",
+      "canonical": "Diphenhydramine"
+    },
+    {
+      "alias": "Diphenhydramine",
+      "canonical": "Diphenhydramine"
+    },
+    {
+      "alias": "Benadrill",
+      "canonical": "Diphenhydramine"
+    },
+    {
+      "alias": "Benedryl",
+      "canonical": "Diphenhydramine"
+    },
+    {
+      "alias": "ASCORIL",
+      "canonical": "Salbutamol"
+    },
+    {
+      "alias": "Ascoryl",
+      "canonical": "Salbutamol"
+    },
+    {
+      "alias": "Ascorill",
+      "canonical": "Salbutamol"
+    },
+    {
+      "alias": "AMBROLITE",
+      "canonical": "Ambroxol"
+    },
+    {
+      "alias": "Ambroxol",
+      "canonical": "Ambroxol"
+    },
+    {
+      "alias": "Ambrodil",
+      "canonical": "Ambroxol"
+    },
+    {
+      "alias": "SPORANOX",
+      "canonical": "Itraconazole"
+    },
+    {
+      "alias": "Itraconazole",
+      "canonical": "Itraconazole"
+    },
+    {
+      "alias": "Canditral",
+      "canonical": "Itraconazole"
+    },
+    {
+      "alias": "Itrasys",
+      "canonical": "Itraconazole"
+    },
+    {
+      "alias": "FLUCONAZOLE",
+      "canonical": "Fluconazole"
+    },
+    {
+      "alias": "Flucos",
+      "canonical": "Fluconazole"
+    },
+    {
+      "alias": "Syscan",
+      "canonical": "Fluconazole"
+    },
+    {
+      "alias": "CLOTRIMAZOLE",
+      "canonical": "Clotrimazole"
+    },
+    {
+      "alias": "Candid",
+      "canonical": "Clotrimazole"
+    },
+    {
+      "alias": "Canesten",
+      "canonical": "Clotrimazole"
+    },
+    {
+      "alias": "CANDID-B",
+      "canonical": "Clotrimazole"
+    },
+    {
+      "alias": "Candid B",
+      "canonical": "Clotrimazole"
+    },
+    {
+      "alias": "CandidBee",
+      "canonical": "Clotrimazole"
+    },
+    {
+      "alias": "PHENERGAN",
+      "canonical": "Promethazine"
+    },
+    {
+      "alias": "Promethazine",
+      "canonical": "Promethazine"
+    },
+    {
+      "alias": "Fennergan",
+      "canonical": "Promethazine"
+    },
+    {
+      "alias": "PERINORM",
+      "canonical": "Metoclopramide"
+    },
+    {
+      "alias": "Metoclopramide",
+      "canonical": "Metoclopramide"
+    },
+    {
+      "alias": "Reglan",
+      "canonical": "Metoclopramide"
+    },
+    {
+      "alias": "Metaclopramide",
+      "canonical": "Metoclopramide"
+    },
+    {
+      "alias": "DOMCET",
+      "canonical": "Domperidone"
+    },
+    {
+      "alias": "Domperidone",
+      "canonical": "Domperidone"
+    },
+    {
+      "alias": "Domperi",
+      "canonical": "Domperidone"
+    },
+    {
+      "alias": "Domstal",
+      "canonical": "Domperidone"
+    },
+    {
+      "alias": "ORS",
+      "canonical": "Oral Rehydration Salts"
+    },
+    {
+      "alias": "Oral Rehydration Salts",
+      "canonical": "Oral Rehydration Salts"
+    },
+    {
+      "alias": "Electral",
+      "canonical": "Oral Rehydration Salts"
+    },
+    {
+      "alias": "Oralyte",
+      "canonical": "Oral Rehydration Salts"
+    },
+    {
+      "alias": "Electrul",
+      "canonical": "Oral Rehydration Salts"
+    },
+    {
+      "alias": "Ilectral",
+      "canonical": "Oral Rehydration Salts"
+    },
+    {
+      "alias": "SPORLAC",
+      "canonical": "Saccharomyces Boulardii (Probiotic)"
+    },
+    {
+      "alias": "Saccharomyces Boulardii (Probiotic)",
+      "canonical": "Saccharomyces Boulardii (Probiotic)"
+    },
+    {
+      "alias": "Sporlak",
+      "canonical": "Saccharomyces Boulardii (Probiotic)"
+    },
+    {
+      "alias": "Yeast Plus",
+      "canonical": "Saccharomyces Boulardii (Probiotic)"
+    },
+    {
+      "alias": "ECONORM",
+      "canonical": "Saccharomyces Boulardii (Probiotic)"
+    },
+    {
+      "alias": "Ikonomm",
+      "canonical": "Saccharomyces Boulardii (Probiotic)"
+    },
+    {
+      "alias": "SOFTOVAC",
+      "canonical": "Isabgol"
+    },
+    {
+      "alias": "Isabgol",
+      "canonical": "Isabgol"
+    },
+    {
+      "alias": "Softovec",
+      "canonical": "Isabgol"
+    },
+    {
+      "alias": "Softobac",
+      "canonical": "Isabgol"
+    },
+    {
+      "alias": "DUPHALAC",
+      "canonical": "Lactulose"
+    },
+    {
+      "alias": "Lactulose",
+      "canonical": "Lactulose"
+    },
+    {
+      "alias": "Duphelac",
+      "canonical": "Lactulose"
+    },
+    {
+      "alias": "Laculose",
+      "canonical": "Lactulose"
+    },
+    {
+      "alias": "THYRONORM",
+      "canonical": "Levothyroxine"
+    },
+    {
+      "alias": "Levothyroxine",
+      "canonical": "Levothyroxine"
+    },
+    {
+      "alias": "Thiranorm",
+      "canonical": "Levothyroxine"
+    },
+    {
+      "alias": "Eltroxin",
+      "canonical": "Levothyroxine"
+    },
+    {
+      "alias": "Tiranorm",
+      "canonical": "Levothyroxine"
+    },
+    {
+      "alias": "NEOMERCAZOLE",
+      "canonical": "Carbimazole"
+    },
+    {
+      "alias": "Carbimazole",
+      "canonical": "Carbimazole"
+    },
+    {
+      "alias": "Methimazole",
+      "canonical": "Carbimazole"
+    },
+    {
+      "alias": "ROSUVASTATIN",
+      "canonical": "Rosuvastatin"
+    },
+    {
+      "alias": "Rozavel",
+      "canonical": "Rosuvastatin"
+    },
+    {
+      "alias": "Crestor",
+      "canonical": "Rosuvastatin"
+    },
+    {
+      "alias": "ATORVASTATIN",
+      "canonical": "Atorvastatin"
+    },
+    {
+      "alias": "Atorva",
+      "canonical": "Atorvastatin"
+    },
+    {
+      "alias": "Lipitor",
+      "canonical": "Atorvastatin"
+    },
+    {
+      "alias": "CLONAZEPAM",
+      "canonical": "Clonazepam"
+    },
+    {
+      "alias": "Clonafit",
+      "canonical": "Clonazepam"
+    },
+    {
+      "alias": "Rivotril",
+      "canonical": "Clonazepam"
+    },
+    {
+      "alias": "ALPRAZOLAM",
+      "canonical": "Alprazolam"
+    },
+    {
+      "alias": "Alprax",
+      "canonical": "Alprazolam"
+    },
+    {
+      "alias": "Restyl",
+      "canonical": "Alprazolam"
+    },
+    {
+      "alias": "ZOLFRESH",
+      "canonical": "Zolpidem"
+    },
+    {
+      "alias": "Zolpidem",
+      "canonical": "Zolpidem"
+    },
+    {
+      "alias": "Stilnox",
+      "canonical": "Zolpidem"
+    },
+    {
+      "alias": "GABAPIN",
+      "canonical": "Gabapentin"
+    },
+    {
+      "alias": "Gabapentin",
+      "canonical": "Gabapentin"
+    },
+    {
+      "alias": "Gabaneuron",
+      "canonical": "Gabapentin"
+    },
+    {
+      "alias": "PREGABALIN",
+      "canonical": "Pregabalin"
+    },
+    {
+      "alias": "Pregeb",
+      "canonical": "Pregabalin"
+    },
+    {
+      "alias": "Lyrica",
+      "canonical": "Pregabalin"
+    },
+    {
+      "alias": "SYNDOPA",
+      "canonical": "Levodopa"
+    },
+    {
+      "alias": "Levodopa",
+      "canonical": "Levodopa"
+    },
+    {
+      "alias": "Sindopa",
+      "canonical": "Levodopa"
+    },
+    {
+      "alias": "Sinemet",
+      "canonical": "Levodopa"
+    },
+    {
+      "alias": "FOLVITE",
+      "canonical": "Folic Acid"
+    },
+    {
+      "alias": "Folic Acid",
+      "canonical": "Folic Acid"
+    },
+    {
+      "alias": "Folvik",
+      "canonical": "Folic Acid"
+    },
+    {
+      "alias": "ZINCOVIT",
+      "canonical": "Zinc"
+    },
+    {
+      "alias": "Zinc",
+      "canonical": "Zinc"
+    },
+    {
+      "alias": "Zinkovat",
+      "canonical": "Zinc"
+    },
+    {
+      "alias": "Zincovite",
+      "canonical": "Zinc"
+    },
+    {
+      "alias": "Dolo 650",
+      "canonical": "Dolo 650"
+    },
+    {
+      "alias": "Ranitidine",
+      "canonical": "Ranitidine"
+    },
+    {
+      "alias": "Aspirin",
+      "canonical": "Aspirin"
+    },
+    {
+      "alias": "Insulin",
+      "canonical": "Insulin"
+    },
+    {
+      "alias": "Ondansetron",
+      "canonical": "Ondansetron"
+    },
+    {
+      "alias": "Oral Rehydration Salts tablet",
+      "canonical": "Oral Rehydration Salts"
+    },
+    {
+      "alias": "Oral Rehydration Salts capsule",
+      "canonical": "Oral Rehydration Salts"
+    },
+    {
+      "alias": "Oral Rehydration Salts syrup",
+      "canonical": "Oral Rehydration Salts"
+    },
+    {
+      "alias": "Oral Rehydration Salts injection",
+      "canonical": "Oral Rehydration Salts"
+    },
+    {
+      "alias": "Oral Rehydration Salts 500mg",
+      "canonical": "Oral Rehydration Salts"
+    },
+    {
+      "alias": "Oral Rehydration Salts 650mg",
+      "canonical": "Oral Rehydration Salts"
+    },
+    {
+      "alias": "Oral Rehydration Salts BD",
+      "canonical": "Oral Rehydration Salts"
+    },
+    {
+      "alias": "Oral Rehydration Salts OD",
+      "canonical": "Oral Rehydration Salts"
+    },
+    {
+      "alias": "Ranitidine tablet",
+      "canonical": "Ranitidine"
+    },
+    {
+      "alias": "Ranitidine capsule",
+      "canonical": "Ranitidine"
+    },
+    {
+      "alias": "Ranitidine syrup",
+      "canonical": "Ranitidine"
+    },
+    {
+      "alias": "Ranitidine injection",
+      "canonical": "Ranitidine"
+    },
+    {
+      "alias": "Ranitidine 500mg",
+      "canonical": "Ranitidine"
+    },
+    {
+      "alias": "Ranitidine 650mg",
+      "canonical": "Ranitidine"
+    },
+    {
+      "alias": "Ranitidine BD",
+      "canonical": "Ranitidine"
+    },
+    {
+      "alias": "Ranitidine OD",
+      "canonical": "Ranitidine"
+    },
+    {
+      "alias": "Cetirizine tablet",
+      "canonical": "Cetirizine"
+    },
+    {
+      "alias": "Cetirizine capsule",
+      "canonical": "Cetirizine"
+    },
+    {
+      "alias": "Cetirizine syrup",
+      "canonical": "Cetirizine"
+    },
+    {
+      "alias": "Cetirizine injection",
+      "canonical": "Cetirizine"
+    },
+    {
+      "alias": "Cetirizine 500mg",
+      "canonical": "Cetirizine"
+    },
+    {
+      "alias": "Cetirizine 650mg",
+      "canonical": "Cetirizine"
+    },
+    {
+      "alias": "Cetirizine BD",
+      "canonical": "Cetirizine"
+    },
+    {
+      "alias": "Cetirizine OD",
+      "canonical": "Cetirizine"
+    },
+    {
+      "alias": "Ibuprofen tablet",
+      "canonical": "Ibuprofen"
+    },
+    {
+      "alias": "Ibuprofen capsule",
+      "canonical": "Ibuprofen"
+    },
+    {
+      "alias": "Ibuprofen syrup",
+      "canonical": "Ibuprofen"
+    },
+    {
+      "alias": "Ibuprofen injection",
+      "canonical": "Ibuprofen"
+    },
+    {
+      "alias": "Ibuprofen 500mg",
+      "canonical": "Ibuprofen"
+    },
+    {
+      "alias": "Ibuprofen 650mg",
+      "canonical": "Ibuprofen"
+    },
+    {
+      "alias": "Ibuprofen BD",
+      "canonical": "Ibuprofen"
+    },
+    {
+      "alias": "Ibuprofen OD",
+      "canonical": "Ibuprofen"
+    },
+    {
+      "alias": "Domperidone tablet",
+      "canonical": "Domperidone"
+    },
+    {
+      "alias": "Domperidone capsule",
+      "canonical": "Domperidone"
+    },
+    {
+      "alias": "Domperidone syrup",
+      "canonical": "Domperidone"
+    },
+    {
+      "alias": "Domperidone injection",
+      "canonical": "Domperidone"
+    },
+    {
+      "alias": "Domperidone 500mg",
+      "canonical": "Domperidone"
+    },
+    {
+      "alias": "Domperidone 650mg",
+      "canonical": "Domperidone"
+    },
+    {
+      "alias": "Domperidone BD",
+      "canonical": "Domperidone"
+    },
+    {
+      "alias": "Domperidone OD",
+      "canonical": "Domperidone"
+    },
+    {
+      "alias": "Ciprofloxacin tablet",
+      "canonical": "Ciprofloxacin"
+    },
+    {
+      "alias": "Ciprofloxacin capsule",
+      "canonical": "Ciprofloxacin"
+    },
+    {
+      "alias": "Ciprofloxacin syrup",
+      "canonical": "Ciprofloxacin"
+    },
+    {
+      "alias": "Ciprofloxacin injection",
+      "canonical": "Ciprofloxacin"
+    },
+    {
+      "alias": "Ciprofloxacin 500mg",
+      "canonical": "Ciprofloxacin"
+    },
+    {
+      "alias": "Ciprofloxacin 650mg",
+      "canonical": "Ciprofloxacin"
+    },
+    {
+      "alias": "Ciprofloxacin BD",
+      "canonical": "Ciprofloxacin"
+    },
+    {
+      "alias": "Ciprofloxacin OD",
+      "canonical": "Ciprofloxacin"
+    },
+    {
+      "alias": "Amoxicillin tablet",
+      "canonical": "Amoxicillin"
+    },
+    {
+      "alias": "Amoxicillin capsule",
+      "canonical": "Amoxicillin"
+    },
+    {
+      "alias": "Amoxicillin syrup",
+      "canonical": "Amoxicillin"
+    },
+    {
+      "alias": "Amoxicillin injection",
+      "canonical": "Amoxicillin"
+    },
+    {
+      "alias": "Amoxicillin 500mg",
+      "canonical": "Amoxicillin"
+    },
+    {
+      "alias": "Amoxicillin 650mg",
+      "canonical": "Amoxicillin"
+    },
+    {
+      "alias": "Amoxicillin BD",
+      "canonical": "Amoxicillin"
+    },
+    {
+      "alias": "Amoxicillin OD",
+      "canonical": "Amoxicillin"
+    },
+    {
+      "alias": "Ambroxol tablet",
+      "canonical": "Ambroxol"
+    },
+    {
+      "alias": "Ambroxol capsule",
+      "canonical": "Ambroxol"
+    },
+    {
+      "alias": "Ambroxol syrup",
+      "canonical": "Ambroxol"
+    },
+    {
+      "alias": "Ambroxol injection",
+      "canonical": "Ambroxol"
+    },
+    {
+      "alias": "Ambroxol 500mg",
+      "canonical": "Ambroxol"
+    },
+    {
+      "alias": "Ambroxol 650mg",
+      "canonical": "Ambroxol"
+    },
+    {
+      "alias": "Ambroxol BD",
+      "canonical": "Ambroxol"
+    },
+    {
+      "alias": "Ambroxol OD",
+      "canonical": "Ambroxol"
+    },
+    {
+      "alias": "Calcium Carbonate tablet",
+      "canonical": "Calcium Carbonate"
+    },
+    {
+      "alias": "Calcium Carbonate capsule",
+      "canonical": "Calcium Carbonate"
+    },
+    {
+      "alias": "Calcium Carbonate syrup",
+      "canonical": "Calcium Carbonate"
+    },
+    {
+      "alias": "Calcium Carbonate injection",
+      "canonical": "Calcium Carbonate"
+    },
+    {
+      "alias": "Calcium Carbonate 500mg",
+      "canonical": "Calcium Carbonate"
+    },
+    {
+      "alias": "Calcium Carbonate 650mg",
+      "canonical": "Calcium Carbonate"
+    },
+    {
+      "alias": "Calcium Carbonate BD",
+      "canonical": "Calcium Carbonate"
+    },
+    {
+      "alias": "Calcium Carbonate OD",
+      "canonical": "Calcium Carbonate"
+    },
+    {
+      "alias": "Salbutamol tablet",
+      "canonical": "Salbutamol"
+    },
+    {
+      "alias": "Salbutamol capsule",
+      "canonical": "Salbutamol"
+    },
+    {
+      "alias": "Salbutamol syrup",
+      "canonical": "Salbutamol"
+    },
+    {
+      "alias": "Salbutamol injection",
+      "canonical": "Salbutamol"
+    },
+    {
+      "alias": "Salbutamol 500mg",
+      "canonical": "Salbutamol"
+    },
+    {
+      "alias": "Salbutamol 650mg",
+      "canonical": "Salbutamol"
+    },
+    {
+      "alias": "Salbutamol BD",
+      "canonical": "Salbutamol"
+    },
+    {
+      "alias": "Salbutamol OD",
+      "canonical": "Salbutamol"
+    },
+    {
+      "alias": "Itraconazole tablet",
+      "canonical": "Itraconazole"
+    },
+    {
+      "alias": "Itraconazole capsule",
+      "canonical": "Itraconazole"
+    },
+    {
+      "alias": "Itraconazole syrup",
+      "canonical": "Itraconazole"
+    },
+    {
+      "alias": "Itraconazole injection",
+      "canonical": "Itraconazole"
+    },
+    {
+      "alias": "Itraconazole 500mg",
+      "canonical": "Itraconazole"
+    },
+    {
+      "alias": "Itraconazole 650mg",
+      "canonical": "Itraconazole"
+    },
+    {
+      "alias": "Itraconazole BD",
+      "canonical": "Itraconazole"
+    },
+    {
+      "alias": "Itraconazole OD",
+      "canonical": "Itraconazole"
+    },
+    {
+      "alias": "Promethazine tablet",
+      "canonical": "Promethazine"
+    },
+    {
+      "alias": "Promethazine capsule",
+      "canonical": "Promethazine"
+    },
+    {
+      "alias": "Promethazine syrup",
+      "canonical": "Promethazine"
+    },
+    {
+      "alias": "Promethazine injection",
+      "canonical": "Promethazine"
+    },
+    {
+      "alias": "Promethazine 500mg",
+      "canonical": "Promethazine"
+    },
+    {
+      "alias": "Promethazine 650mg",
+      "canonical": "Promethazine"
+    },
+    {
+      "alias": "Promethazine BD",
+      "canonical": "Promethazine"
+    },
+    {
+      "alias": "Promethazine OD",
+      "canonical": "Promethazine"
+    },
+    {
+      "alias": "Glimepiride tablet",
+      "canonical": "Glimepiride"
+    },
+    {
+      "alias": "Glimepiride capsule",
+      "canonical": "Glimepiride"
+    },
+    {
+      "alias": "Glimepiride syrup",
+      "canonical": "Glimepiride"
+    },
+    {
+      "alias": "Glimepiride injection",
+      "canonical": "Glimepiride"
+    },
+    {
+      "alias": "Glimepiride 500mg",
+      "canonical": "Glimepiride"
+    },
+    {
+      "alias": "Glimepiride 650mg",
+      "canonical": "Glimepiride"
+    },
+    {
+      "alias": "Glimepiride BD",
+      "canonical": "Glimepiride"
+    },
+    {
+      "alias": "Glimepiride OD",
+      "canonical": "Glimepiride"
+    },
+    {
+      "alias": "Cefixime tablet",
+      "canonical": "Cefixime"
+    },
+    {
+      "alias": "Cefixime capsule",
+      "canonical": "Cefixime"
+    },
+    {
+      "alias": "Cefixime syrup",
+      "canonical": "Cefixime"
+    },
+    {
+      "alias": "Cefixime injection",
+      "canonical": "Cefixime"
+    },
+    {
+      "alias": "Cefixime 500mg",
+      "canonical": "Cefixime"
+    },
+    {
+      "alias": "Cefixime 650mg",
+      "canonical": "Cefixime"
+    },
+    {
+      "alias": "Cefixime BD",
+      "canonical": "Cefixime"
+    },
+    {
+      "alias": "Cefixime OD",
+      "canonical": "Cefixime"
+    },
+    {
+      "alias": "Diclofenac tablet",
+      "canonical": "Diclofenac"
+    },
+    {
+      "alias": "Diclofenac capsule",
+      "canonical": "Diclofenac"
+    },
+    {
+      "alias": "Diclofenac syrup",
+      "canonical": "Diclofenac"
+    },
+    {
+      "alias": "Diclofenac injection",
+      "canonical": "Diclofenac"
+    },
+    {
+      "alias": "Diclofenac 500mg",
+      "canonical": "Diclofenac"
+    },
+    {
+      "alias": "Diclofenac 650mg",
+      "canonical": "Diclofenac"
+    },
+    {
+      "alias": "Diclofenac BD",
+      "canonical": "Diclofenac"
+    },
+    {
+      "alias": "Diclofenac OD",
+      "canonical": "Diclofenac"
+    },
+    {
+      "alias": "Zinc tablet",
+      "canonical": "Zinc"
+    },
+    {
+      "alias": "Zinc capsule",
+      "canonical": "Zinc"
+    },
+    {
+      "alias": "Zinc syrup",
+      "canonical": "Zinc"
+    },
+    {
+      "alias": "Zinc injection",
+      "canonical": "Zinc"
+    },
+    {
+      "alias": "Zinc 500mg",
+      "canonical": "Zinc"
+    },
+    {
+      "alias": "Zinc 650mg",
+      "canonical": "Zinc"
+    },
+    {
+      "alias": "Zinc BD",
+      "canonical": "Zinc"
+    },
+    {
+      "alias": "Zinc OD",
+      "canonical": "Zinc"
+    },
+    {
+      "alias": "Metformin tablet",
+      "canonical": "Metformin"
+    },
+    {
+      "alias": "Metformin capsule",
+      "canonical": "Metformin"
+    },
+    {
+      "alias": "Metformin syrup",
+      "canonical": "Metformin"
+    },
+    {
+      "alias": "Metformin injection",
+      "canonical": "Metformin"
+    },
+    {
+      "alias": "Metformin 500mg",
+      "canonical": "Metformin"
+    },
+    {
+      "alias": "Metformin 650mg",
+      "canonical": "Metformin"
+    },
+    {
+      "alias": "Metformin BD",
+      "canonical": "Metformin"
+    },
+    {
+      "alias": "Metformin OD",
+      "canonical": "Metformin"
+    },
+    {
+      "alias": "Dexamethasone tablet",
+      "canonical": "Dexamethasone"
+    },
+    {
+      "alias": "Dexamethasone capsule",
+      "canonical": "Dexamethasone"
+    },
+    {
+      "alias": "Dexamethasone syrup",
+      "canonical": "Dexamethasone"
+    },
+    {
+      "alias": "Dexamethasone injection",
+      "canonical": "Dexamethasone"
+    },
+    {
+      "alias": "Dexamethasone 500mg",
+      "canonical": "Dexamethasone"
+    },
+    {
+      "alias": "Dexamethasone 650mg",
+      "canonical": "Dexamethasone"
+    },
+    {
+      "alias": "Dexamethasone BD",
+      "canonical": "Dexamethasone"
+    },
+    {
+      "alias": "Dexamethasone OD",
+      "canonical": "Dexamethasone"
+    },
+    {
+      "alias": "Alprazolam tablet",
+      "canonical": "Alprazolam"
+    },
+    {
+      "alias": "Alprazolam capsule",
+      "canonical": "Alprazolam"
+    },
+    {
+      "alias": "Alprazolam syrup",
+      "canonical": "Alprazolam"
+    },
+    {
+      "alias": "Alprazolam injection",
+      "canonical": "Alprazolam"
+    },
+    {
+      "alias": "Alprazolam 500mg",
+      "canonical": "Alprazolam"
+    },
+    {
+      "alias": "Alprazolam 650mg",
+      "canonical": "Alprazolam"
+    },
+    {
+      "alias": "Alprazolam BD",
+      "canonical": "Alprazolam"
+    },
+    {
+      "alias": "Alprazolam OD",
+      "canonical": "Alprazolam"
+    },
+    {
+      "alias": "Levodopa tablet",
+      "canonical": "Levodopa"
+    },
+    {
+      "alias": "Levodopa capsule",
+      "canonical": "Levodopa"
+    },
+    {
+      "alias": "Levodopa syrup",
+      "canonical": "Levodopa"
+    },
+    {
+      "alias": "Levodopa injection",
+      "canonical": "Levodopa"
+    },
+    {
+      "alias": "Levodopa 500mg",
+      "canonical": "Levodopa"
+    },
+    {
+      "alias": "Levodopa 650mg",
+      "canonical": "Levodopa"
+    },
+    {
+      "alias": "Levodopa BD",
+      "canonical": "Levodopa"
+    },
+    {
+      "alias": "Levodopa OD",
+      "canonical": "Levodopa"
+    },
+    {
+      "alias": "Aluminium Hydroxide tablet",
+      "canonical": "Aluminium Hydroxide"
+    },
+    {
+      "alias": "Aluminium Hydroxide capsule",
+      "canonical": "Aluminium Hydroxide"
+    },
+    {
+      "alias": "Aluminium Hydroxide syrup",
+      "canonical": "Aluminium Hydroxide"
+    },
+    {
+      "alias": "Aluminium Hydroxide injection",
+      "canonical": "Aluminium Hydroxide"
+    },
+    {
+      "alias": "Aluminium Hydroxide 500mg",
+      "canonical": "Aluminium Hydroxide"
+    },
+    {
+      "alias": "Aluminium Hydroxide 650mg",
+      "canonical": "Aluminium Hydroxide"
+    },
+    {
+      "alias": "Aluminium Hydroxide BD",
+      "canonical": "Aluminium Hydroxide"
+    },
+    {
+      "alias": "Aluminium Hydroxide OD",
+      "canonical": "Aluminium Hydroxide"
+    },
+    {
+      "alias": "Mefenamic Acid tablet",
+      "canonical": "Mefenamic Acid"
+    },
+    {
+      "alias": "Mefenamic Acid capsule",
+      "canonical": "Mefenamic Acid"
+    },
+    {
+      "alias": "Mefenamic Acid syrup",
+      "canonical": "Mefenamic Acid"
+    },
+    {
+      "alias": "Mefenamic Acid injection",
+      "canonical": "Mefenamic Acid"
+    },
+    {
+      "alias": "Mefenamic Acid 500mg",
+      "canonical": "Mefenamic Acid"
+    },
+    {
+      "alias": "Mefenamic Acid 650mg",
+      "canonical": "Mefenamic Acid"
+    },
+    {
+      "alias": "Mefenamic Acid BD",
+      "canonical": "Mefenamic Acid"
+    },
+    {
+      "alias": "Mefenamic Acid OD",
+      "canonical": "Mefenamic Acid"
+    },
+    {
+      "alias": "Fluconazole tablet",
+      "canonical": "Fluconazole"
+    },
+    {
+      "alias": "Fluconazole capsule",
+      "canonical": "Fluconazole"
+    },
+    {
+      "alias": "Fluconazole syrup",
+      "canonical": "Fluconazole"
+    },
+    {
+      "alias": "Fluconazole injection",
+      "canonical": "Fluconazole"
+    },
+    {
+      "alias": "Fluconazole 500mg",
+      "canonical": "Fluconazole"
+    },
+    {
+      "alias": "Fluconazole 650mg",
+      "canonical": "Fluconazole"
+    },
+    {
+      "alias": "Fluconazole BD",
+      "canonical": "Fluconazole"
+    },
+    {
+      "alias": "Fluconazole OD",
+      "canonical": "Fluconazole"
+    },
+    {
+      "alias": "Carbimazole tablet",
+      "canonical": "Carbimazole"
+    },
+    {
+      "alias": "Carbimazole capsule",
+      "canonical": "Carbimazole"
+    },
+    {
+      "alias": "Carbimazole syrup",
+      "canonical": "Carbimazole"
+    },
+    {
+      "alias": "Carbimazole injection",
+      "canonical": "Carbimazole"
+    },
+    {
+      "alias": "Carbimazole 500mg",
+      "canonical": "Carbimazole"
+    },
+    {
+      "alias": "Carbimazole 650mg",
+      "canonical": "Carbimazole"
+    },
+    {
+      "alias": "Carbimazole BD",
+      "canonical": "Carbimazole"
+    },
+    {
+      "alias": "Carbimazole OD",
+      "canonical": "Carbimazole"
+    },
+    {
+      "alias": "Etoricoxib tablet",
+      "canonical": "Etoricoxib"
+    },
+    {
+      "alias": "Etoricoxib capsule",
+      "canonical": "Etoricoxib"
+    },
+    {
+      "alias": "Etoricoxib syrup",
+      "canonical": "Etoricoxib"
+    },
+    {
+      "alias": "Etoricoxib injection",
+      "canonical": "Etoricoxib"
+    },
+    {
+      "alias": "Etoricoxib 500mg",
+      "canonical": "Etoricoxib"
+    },
+    {
+      "alias": "Etoricoxib 650mg",
+      "canonical": "Etoricoxib"
+    },
+    {
+      "alias": "Etoricoxib BD",
+      "canonical": "Etoricoxib"
+    },
+    {
+      "alias": "Etoricoxib OD",
+      "canonical": "Etoricoxib"
+    },
+    {
+      "alias": "Aspirin tablet",
+      "canonical": "Aspirin"
+    },
+    {
+      "alias": "Aspirin capsule",
+      "canonical": "Aspirin"
+    },
+    {
+      "alias": "Aspirin syrup",
+      "canonical": "Aspirin"
+    },
+    {
+      "alias": "Aspirin injection",
+      "canonical": "Aspirin"
+    },
+    {
+      "alias": "Aspirin 500mg",
+      "canonical": "Aspirin"
+    },
+    {
+      "alias": "Aspirin 650mg",
+      "canonical": "Aspirin"
+    },
+    {
+      "alias": "Aspirin BD",
+      "canonical": "Aspirin"
+    },
+    {
+      "alias": "Aspirin OD",
+      "canonical": "Aspirin"
+    },
+    {
+      "alias": "Insulin tablet",
+      "canonical": "Insulin"
+    },
+    {
+      "alias": "Insulin capsule",
+      "canonical": "Insulin"
+    },
+    {
+      "alias": "Insulin syrup",
+      "canonical": "Insulin"
+    },
+    {
+      "alias": "Insulin injection",
+      "canonical": "Insulin"
+    },
+    {
+      "alias": "Insulin 500mg",
+      "canonical": "Insulin"
+    },
+    {
+      "alias": "Insulin 650mg",
+      "canonical": "Insulin"
+    },
+    {
+      "alias": "Insulin BD",
+      "canonical": "Insulin"
+    },
+    {
+      "alias": "Insulin OD",
+      "canonical": "Insulin"
+    },
+    {
+      "alias": "Paracetamol tablet",
+      "canonical": "Paracetamol"
+    },
+    {
+      "alias": "Paracetamol capsule",
+      "canonical": "Paracetamol"
+    },
+    {
+      "alias": "Paracetamol syrup",
+      "canonical": "Paracetamol"
+    },
+    {
+      "alias": "Paracetamol injection",
+      "canonical": "Paracetamol"
+    },
+    {
+      "alias": "Paracetamol 500mg",
+      "canonical": "Paracetamol"
+    },
+    {
+      "alias": "Paracetamol 650mg",
+      "canonical": "Paracetamol"
+    },
+    {
+      "alias": "Paracetamol BD",
+      "canonical": "Paracetamol"
+    },
+    {
+      "alias": "Paracetamol OD",
+      "canonical": "Paracetamol"
+    },
+    {
+      "alias": "Azithromycin tablet",
+      "canonical": "Azithromycin"
+    },
+    {
+      "alias": "Azithromycin capsule",
+      "canonical": "Azithromycin"
+    },
+    {
+      "alias": "Azithromycin syrup",
+      "canonical": "Azithromycin"
+    },
+    {
+      "alias": "Azithromycin injection",
+      "canonical": "Azithromycin"
+    },
+    {
+      "alias": "Azithromycin 500mg",
+      "canonical": "Azithromycin"
+    },
+    {
+      "alias": "Azithromycin 650mg",
+      "canonical": "Azithromycin"
+    },
+    {
+      "alias": "Azithromycin BD",
+      "canonical": "Azithromycin"
+    },
+    {
+      "alias": "Azithromycin OD",
+      "canonical": "Azithromycin"
+    },
+    {
+      "alias": "Atenolol tablet",
+      "canonical": "Atenolol"
+    },
+    {
+      "alias": "Atenolol capsule",
+      "canonical": "Atenolol"
+    },
+    {
+      "alias": "Atenolol syrup",
+      "canonical": "Atenolol"
+    },
+    {
+      "alias": "Atenolol injection",
+      "canonical": "Atenolol"
+    },
+    {
+      "alias": "Atenolol 500mg",
+      "canonical": "Atenolol"
+    },
+    {
+      "alias": "Atenolol 650mg",
+      "canonical": "Atenolol"
+    },
+    {
+      "alias": "Atenolol BD",
+      "canonical": "Atenolol"
+    },
+    {
+      "alias": "Atenolol OD",
+      "canonical": "Atenolol"
+    },
+    {
+      "alias": "Metoclopramide tablet",
+      "canonical": "Metoclopramide"
+    },
+    {
+      "alias": "Metoclopramide capsule",
+      "canonical": "Metoclopramide"
+    },
+    {
+      "alias": "Metoclopramide syrup",
+      "canonical": "Metoclopramide"
+    },
+    {
+      "alias": "Metoclopramide injection",
+      "canonical": "Metoclopramide"
+    },
+    {
+      "alias": "Metoclopramide 500mg",
+      "canonical": "Metoclopramide"
+    },
+    {
+      "alias": "Metoclopramide 650mg",
+      "canonical": "Metoclopramide"
+    },
+    {
+      "alias": "Metoclopramide BD",
+      "canonical": "Metoclopramide"
+    },
+    {
+      "alias": "Metoclopramide OD",
+      "canonical": "Metoclopramide"
+    },
+    {
+      "alias": "Ferric Ammonium Citrate tablet",
+      "canonical": "Ferric Ammonium Citrate"
+    },
+    {
+      "alias": "Ferric Ammonium Citrate capsule",
+      "canonical": "Ferric Ammonium Citrate"
+    },
+    {
+      "alias": "Ferric Ammonium Citrate syrup",
+      "canonical": "Ferric Ammonium Citrate"
+    },
+    {
+      "alias": "Ferric Ammonium Citrate injection",
+      "canonical": "Ferric Ammonium Citrate"
+    },
+    {
+      "alias": "Ferric Ammonium Citrate 500mg",
+      "canonical": "Ferric Ammonium Citrate"
+    },
+    {
+      "alias": "Ferric Ammonium Citrate 650mg",
+      "canonical": "Ferric Ammonium Citrate"
+    },
+    {
+      "alias": "Ferric Ammonium Citrate BD",
+      "canonical": "Ferric Ammonium Citrate"
+    },
+    {
+      "alias": "Ferric Ammonium Citrate OD",
+      "canonical": "Ferric Ammonium Citrate"
+    },
+    {
+      "alias": "Fexofenadine tablet",
+      "canonical": "Fexofenadine"
+    },
+    {
+      "alias": "Fexofenadine capsule",
+      "canonical": "Fexofenadine"
+    },
+    {
+      "alias": "Fexofenadine syrup",
+      "canonical": "Fexofenadine"
+    },
+    {
+      "alias": "Fexofenadine injection",
+      "canonical": "Fexofenadine"
+    },
+    {
+      "alias": "Fexofenadine 500mg",
+      "canonical": "Fexofenadine"
+    },
+    {
+      "alias": "Fexofenadine 650mg",
+      "canonical": "Fexofenadine"
+    },
+    {
+      "alias": "Fexofenadine BD",
+      "canonical": "Fexofenadine"
+    },
+    {
+      "alias": "Fexofenadine OD",
+      "canonical": "Fexofenadine"
+    },
+    {
+      "alias": "Losartan tablet",
+      "canonical": "Losartan"
+    },
+    {
+      "alias": "Losartan capsule",
+      "canonical": "Losartan"
+    },
+    {
+      "alias": "Losartan syrup",
+      "canonical": "Losartan"
+    },
+    {
+      "alias": "Losartan injection",
+      "canonical": "Losartan"
+    },
+    {
+      "alias": "Losartan 500mg",
+      "canonical": "Losartan"
+    },
+    {
+      "alias": "Losartan 650mg",
+      "canonical": "Losartan"
+    },
+    {
+      "alias": "Losartan BD",
+      "canonical": "Losartan"
+    },
+    {
+      "alias": "Losartan OD",
+      "canonical": "Losartan"
+    },
+    {
+      "alias": "Multivitamin tablet",
+      "canonical": "Multivitamin"
+    },
+    {
+      "alias": "Multivitamin capsule",
+      "canonical": "Multivitamin"
+    },
+    {
+      "alias": "Multivitamin syrup",
+      "canonical": "Multivitamin"
+    },
+    {
+      "alias": "Multivitamin injection",
+      "canonical": "Multivitamin"
+    },
+    {
+      "alias": "Multivitamin 500mg",
+      "canonical": "Multivitamin"
+    },
+    {
+      "alias": "Multivitamin 650mg",
+      "canonical": "Multivitamin"
+    },
+    {
+      "alias": "Multivitamin BD",
+      "canonical": "Multivitamin"
+    },
+    {
+      "alias": "Multivitamin OD",
+      "canonical": "Multivitamin"
+    },
+    {
+      "alias": "Cholecalciferol (Vitamin D3) tablet",
+      "canonical": "Cholecalciferol (Vitamin D3)"
+    },
+    {
+      "alias": "Cholecalciferol (Vitamin D3) capsule",
+      "canonical": "Cholecalciferol (Vitamin D3)"
+    },
+    {
+      "alias": "Cholecalciferol (Vitamin D3) syrup",
+      "canonical": "Cholecalciferol (Vitamin D3)"
+    },
+    {
+      "alias": "Cholecalciferol (Vitamin D3) injection",
+      "canonical": "Cholecalciferol (Vitamin D3)"
+    },
+    {
+      "alias": "Cholecalciferol (Vitamin D3) 500mg",
+      "canonical": "Cholecalciferol (Vitamin D3)"
+    },
+    {
+      "alias": "Cholecalciferol (Vitamin D3) 650mg",
+      "canonical": "Cholecalciferol (Vitamin D3)"
+    },
+    {
+      "alias": "Cholecalciferol (Vitamin D3) BD",
+      "canonical": "Cholecalciferol (Vitamin D3)"
+    },
+    {
+      "alias": "Cholecalciferol (Vitamin D3) OD",
+      "canonical": "Cholecalciferol (Vitamin D3)"
+    },
+    {
+      "alias": "Atorvastatin tablet",
+      "canonical": "Atorvastatin"
+    },
+    {
+      "alias": "Atorvastatin capsule",
+      "canonical": "Atorvastatin"
+    },
+    {
+      "alias": "Atorvastatin syrup",
+      "canonical": "Atorvastatin"
+    },
+    {
+      "alias": "Atorvastatin injection",
+      "canonical": "Atorvastatin"
+    },
+    {
+      "alias": "Atorvastatin 500mg",
+      "canonical": "Atorvastatin"
+    },
+    {
+      "alias": "Atorvastatin 650mg",
+      "canonical": "Atorvastatin"
+    },
+    {
+      "alias": "Atorvastatin BD",
+      "canonical": "Atorvastatin"
+    },
+    {
+      "alias": "Atorvastatin OD",
+      "canonical": "Atorvastatin"
+    },
+    {
+      "alias": "Norfloxacin tablet",
+      "canonical": "Norfloxacin"
+    },
+    {
+      "alias": "Norfloxacin capsule",
+      "canonical": "Norfloxacin"
+    },
+    {
+      "alias": "Norfloxacin syrup",
+      "canonical": "Norfloxacin"
+    },
+    {
+      "alias": "Norfloxacin injection",
+      "canonical": "Norfloxacin"
+    },
+    {
+      "alias": "Norfloxacin 500mg",
+      "canonical": "Norfloxacin"
+    },
+    {
+      "alias": "Norfloxacin 650mg",
+      "canonical": "Norfloxacin"
+    },
+    {
+      "alias": "Norfloxacin BD",
+      "canonical": "Norfloxacin"
+    },
+    {
+      "alias": "Norfloxacin OD",
+      "canonical": "Norfloxacin"
+    },
+    {
+      "alias": "Amlodipine tablet",
+      "canonical": "Amlodipine"
+    },
+    {
+      "alias": "Amlodipine capsule",
+      "canonical": "Amlodipine"
+    },
+    {
+      "alias": "Amlodipine syrup",
+      "canonical": "Amlodipine"
+    },
+    {
+      "alias": "Amlodipine injection",
+      "canonical": "Amlodipine"
+    },
+    {
+      "alias": "Amlodipine 500mg",
+      "canonical": "Amlodipine"
+    },
+    {
+      "alias": "Amlodipine 650mg",
+      "canonical": "Amlodipine"
+    },
+    {
+      "alias": "Amlodipine BD",
+      "canonical": "Amlodipine"
+    },
+    {
+      "alias": "Amlodipine OD",
+      "canonical": "Amlodipine"
+    },
+    {
+      "alias": "Metoprolol tablet",
+      "canonical": "Metoprolol"
+    },
+    {
+      "alias": "Metoprolol capsule",
+      "canonical": "Metoprolol"
+    },
+    {
+      "alias": "Metoprolol syrup",
+      "canonical": "Metoprolol"
+    },
+    {
+      "alias": "Metoprolol injection",
+      "canonical": "Metoprolol"
+    },
+    {
+      "alias": "Metoprolol 500mg",
+      "canonical": "Metoprolol"
+    },
+    {
+      "alias": "Metoprolol 650mg",
+      "canonical": "Metoprolol"
+    },
+    {
+      "alias": "Metoprolol BD",
+      "canonical": "Metoprolol"
+    },
+    {
+      "alias": "Metoprolol OD",
+      "canonical": "Metoprolol"
+    },
+    {
+      "alias": "Glibenclamide tablet",
+      "canonical": "Glibenclamide"
+    },
+    {
+      "alias": "Glibenclamide capsule",
+      "canonical": "Glibenclamide"
+    },
+    {
+      "alias": "Glibenclamide syrup",
+      "canonical": "Glibenclamide"
+    },
+    {
+      "alias": "Glibenclamide injection",
+      "canonical": "Glibenclamide"
+    },
+    {
+      "alias": "Glibenclamide 500mg",
+      "canonical": "Glibenclamide"
+    },
+    {
+      "alias": "Glibenclamide 650mg",
+      "canonical": "Glibenclamide"
+    },
+    {
+      "alias": "Glibenclamide BD",
+      "canonical": "Glibenclamide"
+    },
+    {
+      "alias": "Glibenclamide OD",
+      "canonical": "Glibenclamide"
+    },
+    {
+      "alias": "Isabgol tablet",
+      "canonical": "Isabgol"
+    },
+    {
+      "alias": "Isabgol capsule",
+      "canonical": "Isabgol"
+    },
+    {
+      "alias": "Isabgol syrup",
+      "canonical": "Isabgol"
+    },
+    {
+      "alias": "Isabgol injection",
+      "canonical": "Isabgol"
+    },
+    {
+      "alias": "Isabgol 500mg",
+      "canonical": "Isabgol"
+    },
+    {
+      "alias": "Isabgol 650mg",
+      "canonical": "Isabgol"
+    },
+    {
+      "alias": "Isabgol BD",
+      "canonical": "Isabgol"
+    },
+    {
+      "alias": "Isabgol OD",
+      "canonical": "Isabgol"
+    },
+    {
+      "alias": "Ferrous Ascorbate tablet",
+      "canonical": "Ferrous Ascorbate"
+    },
+    {
+      "alias": "Ferrous Ascorbate capsule",
+      "canonical": "Ferrous Ascorbate"
+    },
+    {
+      "alias": "Ferrous Ascorbate syrup",
+      "canonical": "Ferrous Ascorbate"
+    },
+    {
+      "alias": "Ferrous Ascorbate injection",
+      "canonical": "Ferrous Ascorbate"
+    },
+    {
+      "alias": "Ferrous Ascorbate 500mg",
+      "canonical": "Ferrous Ascorbate"
+    },
+    {
+      "alias": "Ferrous Ascorbate 650mg",
+      "canonical": "Ferrous Ascorbate"
+    },
+    {
+      "alias": "Ferrous Ascorbate BD",
+      "canonical": "Ferrous Ascorbate"
+    },
+    {
+      "alias": "Ferrous Ascorbate OD",
+      "canonical": "Ferrous Ascorbate"
+    },
+    {
+      "alias": "Ceftriaxone tablet",
+      "canonical": "Ceftriaxone"
+    },
+    {
+      "alias": "Ceftriaxone capsule",
+      "canonical": "Ceftriaxone"
+    },
+    {
+      "alias": "Ceftriaxone syrup",
+      "canonical": "Ceftriaxone"
+    },
+    {
+      "alias": "Ceftriaxone injection",
+      "canonical": "Ceftriaxone"
+    },
+    {
+      "alias": "Ceftriaxone 500mg",
+      "canonical": "Ceftriaxone"
+    },
+    {
+      "alias": "Ceftriaxone 650mg",
+      "canonical": "Ceftriaxone"
+    },
+    {
+      "alias": "Ceftriaxone BD",
+      "canonical": "Ceftriaxone"
+    },
+    {
+      "alias": "Ceftriaxone OD",
+      "canonical": "Ceftriaxone"
+    },
+    {
+      "alias": "Pantoprazole tablet",
+      "canonical": "Pantoprazole"
+    },
+    {
+      "alias": "Pantoprazole capsule",
+      "canonical": "Pantoprazole"
+    },
+    {
+      "alias": "Pantoprazole syrup",
+      "canonical": "Pantoprazole"
+    },
+    {
+      "alias": "Pantoprazole injection",
+      "canonical": "Pantoprazole"
+    },
+    {
+      "alias": "Pantoprazole 500mg",
+      "canonical": "Pantoprazole"
+    },
+    {
+      "alias": "Pantoprazole 650mg",
+      "canonical": "Pantoprazole"
+    },
+    {
+      "alias": "Pantoprazole BD",
+      "canonical": "Pantoprazole"
+    },
+    {
+      "alias": "Pantoprazole OD",
+      "canonical": "Pantoprazole"
+    },
+    {
+      "alias": "Sitagliptin tablet",
+      "canonical": "Sitagliptin"
+    },
+    {
+      "alias": "Sitagliptin capsule",
+      "canonical": "Sitagliptin"
+    },
+    {
+      "alias": "Sitagliptin syrup",
+      "canonical": "Sitagliptin"
+    },
+    {
+      "alias": "Sitagliptin injection",
+      "canonical": "Sitagliptin"
+    },
+    {
+      "alias": "Sitagliptin 500mg",
+      "canonical": "Sitagliptin"
+    },
+    {
+      "alias": "Sitagliptin 650mg",
+      "canonical": "Sitagliptin"
+    },
+    {
+      "alias": "Sitagliptin BD",
+      "canonical": "Sitagliptin"
+    },
+    {
+      "alias": "Sitagliptin OD",
+      "canonical": "Sitagliptin"
+    },
+    {
+      "alias": "Clotrimazole tablet",
+      "canonical": "Clotrimazole"
+    },
+    {
+      "alias": "Clotrimazole capsule",
+      "canonical": "Clotrimazole"
+    },
+    {
+      "alias": "Clotrimazole syrup",
+      "canonical": "Clotrimazole"
+    },
+    {
+      "alias": "Clotrimazole injection",
+      "canonical": "Clotrimazole"
+    },
+    {
+      "alias": "Clotrimazole 500mg",
+      "canonical": "Clotrimazole"
+    },
+    {
+      "alias": "Clotrimazole 650mg",
+      "canonical": "Clotrimazole"
+    },
+    {
+      "alias": "Clotrimazole BD",
+      "canonical": "Clotrimazole"
+    },
+    {
+      "alias": "Clotrimazole OD",
+      "canonical": "Clotrimazole"
+    },
+    {
+      "alias": "Levocetirizine tablet",
+      "canonical": "Levocetirizine"
+    },
+    {
+      "alias": "Levocetirizine capsule",
+      "canonical": "Levocetirizine"
+    },
+    {
+      "alias": "Levocetirizine syrup",
+      "canonical": "Levocetirizine"
+    },
+    {
+      "alias": "Levocetirizine injection",
+      "canonical": "Levocetirizine"
+    },
+    {
+      "alias": "Levocetirizine 500mg",
+      "canonical": "Levocetirizine"
+    },
+    {
+      "alias": "Levocetirizine 650mg",
+      "canonical": "Levocetirizine"
+    },
+    {
+      "alias": "Levocetirizine BD",
+      "canonical": "Levocetirizine"
+    },
+    {
+      "alias": "Levocetirizine OD",
+      "canonical": "Levocetirizine"
+    },
+    {
+      "alias": "Levothyroxine tablet",
+      "canonical": "Levothyroxine"
+    },
+    {
+      "alias": "Levothyroxine capsule",
+      "canonical": "Levothyroxine"
+    },
+    {
+      "alias": "Levothyroxine syrup",
+      "canonical": "Levothyroxine"
+    },
+    {
+      "alias": "Levothyroxine injection",
+      "canonical": "Levothyroxine"
+    },
+    {
+      "alias": "Levothyroxine 500mg",
+      "canonical": "Levothyroxine"
+    },
+    {
+      "alias": "Levothyroxine 650mg",
+      "canonical": "Levothyroxine"
+    },
+    {
+      "alias": "Levothyroxine BD",
+      "canonical": "Levothyroxine"
+    },
+    {
+      "alias": "Levothyroxine OD",
+      "canonical": "Levothyroxine"
+    },
+    {
+      "alias": "Chlorpheniramine tablet",
+      "canonical": "Chlorpheniramine"
+    },
+    {
+      "alias": "Chlorpheniramine capsule",
+      "canonical": "Chlorpheniramine"
+    },
+    {
+      "alias": "Chlorpheniramine syrup",
+      "canonical": "Chlorpheniramine"
+    },
+    {
+      "alias": "Chlorpheniramine injection",
+      "canonical": "Chlorpheniramine"
+    },
+    {
+      "alias": "Chlorpheniramine 500mg",
+      "canonical": "Chlorpheniramine"
+    },
+    {
+      "alias": "Chlorpheniramine 650mg",
+      "canonical": "Chlorpheniramine"
+    },
+    {
+      "alias": "Chlorpheniramine BD",
+      "canonical": "Chlorpheniramine"
+    },
+    {
+      "alias": "Chlorpheniramine OD",
+      "canonical": "Chlorpheniramine"
+    },
+    {
+      "alias": "Ramipril tablet",
+      "canonical": "Ramipril"
+    },
+    {
+      "alias": "Ramipril capsule",
+      "canonical": "Ramipril"
+    },
+    {
+      "alias": "Ramipril syrup",
+      "canonical": "Ramipril"
+    },
+    {
+      "alias": "Ramipril injection",
+      "canonical": "Ramipril"
+    },
+    {
+      "alias": "Ramipril 500mg",
+      "canonical": "Ramipril"
+    },
+    {
+      "alias": "Ramipril 650mg",
+      "canonical": "Ramipril"
+    },
+    {
+      "alias": "Ramipril BD",
+      "canonical": "Ramipril"
+    },
+    {
+      "alias": "Ramipril OD",
+      "canonical": "Ramipril"
+    },
+    {
+      "alias": "Lactulose tablet",
+      "canonical": "Lactulose"
+    },
+    {
+      "alias": "Lactulose capsule",
+      "canonical": "Lactulose"
+    },
+    {
+      "alias": "Lactulose syrup",
+      "canonical": "Lactulose"
+    },
+    {
+      "alias": "Lactulose injection",
+      "canonical": "Lactulose"
+    },
+    {
+      "alias": "Lactulose 500mg",
+      "canonical": "Lactulose"
+    },
+    {
+      "alias": "Lactulose 650mg",
+      "canonical": "Lactulose"
+    },
+    {
+      "alias": "Lactulose BD",
+      "canonical": "Lactulose"
+    },
+    {
+      "alias": "Lactulose OD",
+      "canonical": "Lactulose"
+    },
+    {
+      "alias": "Nimesulide tablet",
+      "canonical": "Nimesulide"
+    },
+    {
+      "alias": "Nimesulide capsule",
+      "canonical": "Nimesulide"
+    },
+    {
+      "alias": "Nimesulide syrup",
+      "canonical": "Nimesulide"
+    },
+    {
+      "alias": "Nimesulide injection",
+      "canonical": "Nimesulide"
+    },
+    {
+      "alias": "Nimesulide 500mg",
+      "canonical": "Nimesulide"
+    },
+    {
+      "alias": "Nimesulide 650mg",
+      "canonical": "Nimesulide"
+    },
+    {
+      "alias": "Nimesulide BD",
+      "canonical": "Nimesulide"
+    },
+    {
+      "alias": "Nimesulide OD",
+      "canonical": "Nimesulide"
+    },
+    {
+      "alias": "Mecobalamin (Vitamin B12) tablet",
+      "canonical": "Mecobalamin (Vitamin B12)"
+    },
+    {
+      "alias": "Mecobalamin (Vitamin B12) capsule",
+      "canonical": "Mecobalamin (Vitamin B12)"
+    },
+    {
+      "alias": "Mecobalamin (Vitamin B12) syrup",
+      "canonical": "Mecobalamin (Vitamin B12)"
+    },
+    {
+      "alias": "Mecobalamin (Vitamin B12) injection",
+      "canonical": "Mecobalamin (Vitamin B12)"
+    },
+    {
+      "alias": "Mecobalamin (Vitamin B12) 500mg",
+      "canonical": "Mecobalamin (Vitamin B12)"
+    },
+    {
+      "alias": "Mecobalamin (Vitamin B12) 650mg",
+      "canonical": "Mecobalamin (Vitamin B12)"
+    },
+    {
+      "alias": "Mecobalamin (Vitamin B12) BD",
+      "canonical": "Mecobalamin (Vitamin B12)"
+    },
+    {
+      "alias": "Mecobalamin (Vitamin B12) OD",
+      "canonical": "Mecobalamin (Vitamin B12)"
+    },
+    {
+      "alias": "Saccharomyces Boulardii (Probiotic) tablet",
+      "canonical": "Saccharomyces Boulardii (Probiotic)"
+    },
+    {
+      "alias": "Saccharomyces Boulardii (Probiotic) capsule",
+      "canonical": "Saccharomyces Boulardii (Probiotic)"
+    },
+    {
+      "alias": "Saccharomyces Boulardii (Probiotic) syrup",
+      "canonical": "Saccharomyces Boulardii (Probiotic)"
+    },
+    {
+      "alias": "Saccharomyces Boulardii (Probiotic) injection",
+      "canonical": "Saccharomyces Boulardii (Probiotic)"
+    },
+    {
+      "alias": "Saccharomyces Boulardii (Probiotic) 500mg",
+      "canonical": "Saccharomyces Boulardii (Probiotic)"
+    },
+    {
+      "alias": "Saccharomyces Boulardii (Probiotic) 650mg",
+      "canonical": "Saccharomyces Boulardii (Probiotic)"
+    },
+    {
+      "alias": "Saccharomyces Boulardii (Probiotic) BD",
+      "canonical": "Saccharomyces Boulardii (Probiotic)"
+    },
+    {
+      "alias": "Saccharomyces Boulardii (Probiotic) OD",
+      "canonical": "Saccharomyces Boulardii (Probiotic)"
+    },
+    {
+      "alias": "Telmisartan tablet",
+      "canonical": "Telmisartan"
+    },
+    {
+      "alias": "Telmisartan capsule",
+      "canonical": "Telmisartan"
+    },
+    {
+      "alias": "Telmisartan syrup",
+      "canonical": "Telmisartan"
+    },
+    {
+      "alias": "Telmisartan injection",
+      "canonical": "Telmisartan"
+    },
+    {
+      "alias": "Telmisartan 500mg",
+      "canonical": "Telmisartan"
+    },
+    {
+      "alias": "Telmisartan 650mg",
+      "canonical": "Telmisartan"
+    },
+    {
+      "alias": "Telmisartan BD",
+      "canonical": "Telmisartan"
+    },
+    {
+      "alias": "Telmisartan OD",
+      "canonical": "Telmisartan"
+    },
+    {
+      "alias": "Gabapentin tablet",
+      "canonical": "Gabapentin"
+    },
+    {
+      "alias": "Gabapentin capsule",
+      "canonical": "Gabapentin"
+    },
+    {
+      "alias": "Gabapentin syrup",
+      "canonical": "Gabapentin"
+    },
+    {
+      "alias": "Gabapentin injection",
+      "canonical": "Gabapentin"
+    },
+    {
+      "alias": "Gabapentin 500mg",
+      "canonical": "Gabapentin"
+    },
+    {
+      "alias": "Gabapentin 650mg",
+      "canonical": "Gabapentin"
+    },
+    {
+      "alias": "Gabapentin BD",
+      "canonical": "Gabapentin"
+    },
+    {
+      "alias": "Gabapentin OD",
+      "canonical": "Gabapentin"
+    },
+    {
+      "alias": "Rabeprazole tablet",
+      "canonical": "Rabeprazole"
+    },
+    {
+      "alias": "Rabeprazole capsule",
+      "canonical": "Rabeprazole"
+    },
+    {
+      "alias": "Rabeprazole syrup",
+      "canonical": "Rabeprazole"
+    },
+    {
+      "alias": "Rabeprazole injection",
+      "canonical": "Rabeprazole"
+    },
+    {
+      "alias": "Rabeprazole 500mg",
+      "canonical": "Rabeprazole"
+    },
+    {
+      "alias": "Rabeprazole 650mg",
+      "canonical": "Rabeprazole"
+    },
+    {
+      "alias": "Rabeprazole BD",
+      "canonical": "Rabeprazole"
+    },
+    {
+      "alias": "Rabeprazole OD",
+      "canonical": "Rabeprazole"
+    },
+    {
+      "alias": "Folic Acid tablet",
+      "canonical": "Folic Acid"
+    },
+    {
+      "alias": "Folic Acid capsule",
+      "canonical": "Folic Acid"
+    },
+    {
+      "alias": "Folic Acid syrup",
+      "canonical": "Folic Acid"
+    },
+    {
+      "alias": "Folic Acid injection",
+      "canonical": "Folic Acid"
+    },
+    {
+      "alias": "Folic Acid 500mg",
+      "canonical": "Folic Acid"
+    },
+    {
+      "alias": "Folic Acid 650mg",
+      "canonical": "Folic Acid"
+    },
+    {
+      "alias": "Folic Acid BD",
+      "canonical": "Folic Acid"
+    },
+    {
+      "alias": "Folic Acid OD",
+      "canonical": "Folic Acid"
+    },
+    {
+      "alias": "Ondansetron tablet",
+      "canonical": "Ondansetron"
+    },
+    {
+      "alias": "Ondansetron capsule",
+      "canonical": "Ondansetron"
+    },
+    {
+      "alias": "Ondansetron syrup",
+      "canonical": "Ondansetron"
+    },
+    {
+      "alias": "Ondansetron injection",
+      "canonical": "Ondansetron"
+    },
+    {
+      "alias": "Ondansetron 500mg",
+      "canonical": "Ondansetron"
+    },
+    {
+      "alias": "Ondansetron 650mg",
+      "canonical": "Ondansetron"
+    },
+    {
+      "alias": "Ondansetron BD",
+      "canonical": "Ondansetron"
+    },
+    {
+      "alias": "Ondansetron OD",
+      "canonical": "Ondansetron"
+    },
+    {
+      "alias": "Rosuvastatin tablet",
+      "canonical": "Rosuvastatin"
+    },
+    {
+      "alias": "Rosuvastatin capsule",
+      "canonical": "Rosuvastatin"
+    },
+    {
+      "alias": "Rosuvastatin syrup",
+      "canonical": "Rosuvastatin"
+    },
+    {
+      "alias": "Rosuvastatin injection",
+      "canonical": "Rosuvastatin"
+    },
+    {
+      "alias": "Rosuvastatin 500mg",
+      "canonical": "Rosuvastatin"
+    },
+    {
+      "alias": "Rosuvastatin 650mg",
+      "canonical": "Rosuvastatin"
+    },
+    {
+      "alias": "Rosuvastatin BD",
+      "canonical": "Rosuvastatin"
+    },
+    {
+      "alias": "Rosuvastatin OD",
+      "canonical": "Rosuvastatin"
+    },
+    {
+      "alias": "Clonazepam tablet",
+      "canonical": "Clonazepam"
+    },
+    {
+      "alias": "Clonazepam capsule",
+      "canonical": "Clonazepam"
+    },
+    {
+      "alias": "Clonazepam syrup",
+      "canonical": "Clonazepam"
+    },
+    {
+      "alias": "Clonazepam injection",
+      "canonical": "Clonazepam"
+    },
+    {
+      "alias": "Clonazepam 500mg",
+      "canonical": "Clonazepam"
+    },
+    {
+      "alias": "Clonazepam 650mg",
+      "canonical": "Clonazepam"
+    },
+    {
+      "alias": "Clonazepam BD",
+      "canonical": "Clonazepam"
+    },
+    {
+      "alias": "Clonazepam OD",
+      "canonical": "Clonazepam"
+    },
+    {
+      "alias": "Doxycycline tablet",
+      "canonical": "Doxycycline"
+    },
+    {
+      "alias": "Doxycycline capsule",
+      "canonical": "Doxycycline"
+    },
+    {
+      "alias": "Doxycycline syrup",
+      "canonical": "Doxycycline"
+    },
+    {
+      "alias": "Doxycycline injection",
+      "canonical": "Doxycycline"
+    },
+    {
+      "alias": "Doxycycline 500mg",
+      "canonical": "Doxycycline"
+    },
+    {
+      "alias": "Doxycycline 650mg",
+      "canonical": "Doxycycline"
+    },
+    {
+      "alias": "Doxycycline BD",
+      "canonical": "Doxycycline"
+    },
+    {
+      "alias": "Doxycycline OD",
+      "canonical": "Doxycycline"
+    },
+    {
+      "alias": "Pregabalin tablet",
+      "canonical": "Pregabalin"
+    },
+    {
+      "alias": "Pregabalin capsule",
+      "canonical": "Pregabalin"
+    },
+    {
+      "alias": "Pregabalin syrup",
+      "canonical": "Pregabalin"
+    },
+    {
+      "alias": "Pregabalin injection",
+      "canonical": "Pregabalin"
+    },
+    {
+      "alias": "Pregabalin 500mg",
+      "canonical": "Pregabalin"
+    },
+    {
+      "alias": "Pregabalin 650mg",
+      "canonical": "Pregabalin"
+    },
+    {
+      "alias": "Pregabalin BD",
+      "canonical": "Pregabalin"
+    },
+    {
+      "alias": "Pregabalin OD",
+      "canonical": "Pregabalin"
+    },
+    {
+      "alias": "Prednisolone tablet",
+      "canonical": "Prednisolone"
+    },
+    {
+      "alias": "Prednisolone capsule",
+      "canonical": "Prednisolone"
+    },
+    {
+      "alias": "Prednisolone syrup",
+      "canonical": "Prednisolone"
+    },
+    {
+      "alias": "Prednisolone injection",
+      "canonical": "Prednisolone"
+    },
+    {
+      "alias": "Prednisolone 500mg",
+      "canonical": "Prednisolone"
+    },
+    {
+      "alias": "Prednisolone 650mg",
+      "canonical": "Prednisolone"
+    },
+    {
+      "alias": "Prednisolone BD",
+      "canonical": "Prednisolone"
+    },
+    {
+      "alias": "Prednisolone OD",
+      "canonical": "Prednisolone"
+    },
+    {
+      "alias": "Etofylline tablet",
+      "canonical": "Etofylline"
+    },
+    {
+      "alias": "Etofylline capsule",
+      "canonical": "Etofylline"
+    },
+    {
+      "alias": "Etofylline syrup",
+      "canonical": "Etofylline"
+    },
+    {
+      "alias": "Etofylline injection",
+      "canonical": "Etofylline"
+    },
+    {
+      "alias": "Etofylline 500mg",
+      "canonical": "Etofylline"
+    },
+    {
+      "alias": "Etofylline 650mg",
+      "canonical": "Etofylline"
+    },
+    {
+      "alias": "Etofylline BD",
+      "canonical": "Etofylline"
+    },
+    {
+      "alias": "Etofylline OD",
+      "canonical": "Etofylline"
+    },
+    {
+      "alias": "Dolo 650 tablet",
+      "canonical": "Dolo 650"
+    },
+    {
+      "alias": "Dolo 650 capsule",
+      "canonical": "Dolo 650"
+    },
+    {
+      "alias": "Dolo 650 syrup",
+      "canonical": "Dolo 650"
+    },
+    {
+      "alias": "Dolo 650 injection",
+      "canonical": "Dolo 650"
+    },
+    {
+      "alias": "Dolo 650 500mg",
+      "canonical": "Dolo 650"
+    },
+    {
+      "alias": "Dolo 650 650mg",
+      "canonical": "Dolo 650"
+    },
+    {
+      "alias": "Dolo 650 BD",
+      "canonical": "Dolo 650"
+    },
+    {
+      "alias": "Dolo 650 OD",
+      "canonical": "Dolo 650"
+    },
+    {
+      "alias": "Diphenhydramine tablet",
+      "canonical": "Diphenhydramine"
+    },
+    {
+      "alias": "Diphenhydramine capsule",
+      "canonical": "Diphenhydramine"
+    },
+    {
+      "alias": "Diphenhydramine syrup",
+      "canonical": "Diphenhydramine"
+    },
+    {
+      "alias": "Diphenhydramine injection",
+      "canonical": "Diphenhydramine"
+    },
+    {
+      "alias": "Diphenhydramine 500mg",
+      "canonical": "Diphenhydramine"
+    },
+    {
+      "alias": "Diphenhydramine 650mg",
+      "canonical": "Diphenhydramine"
+    },
+    {
+      "alias": "Diphenhydramine BD",
+      "canonical": "Diphenhydramine"
+    },
+    {
+      "alias": "Diphenhydramine OD",
+      "canonical": "Diphenhydramine"
+    },
+    {
+      "alias": "Montelukast tablet",
+      "canonical": "Montelukast"
+    },
+    {
+      "alias": "Montelukast capsule",
+      "canonical": "Montelukast"
+    },
+    {
+      "alias": "Montelukast syrup",
+      "canonical": "Montelukast"
+    },
+    {
+      "alias": "Montelukast injection",
+      "canonical": "Montelukast"
+    },
+    {
+      "alias": "Montelukast 500mg",
+      "canonical": "Montelukast"
+    },
+    {
+      "alias": "Montelukast 650mg",
+      "canonical": "Montelukast"
+    },
+    {
+      "alias": "Montelukast BD",
+      "canonical": "Montelukast"
+    },
+    {
+      "alias": "Montelukast OD",
+      "canonical": "Montelukast"
+    },
+    {
+      "alias": "Zolpidem tablet",
+      "canonical": "Zolpidem"
+    },
+    {
+      "alias": "Zolpidem capsule",
+      "canonical": "Zolpidem"
+    },
+    {
+      "alias": "Zolpidem syrup",
+      "canonical": "Zolpidem"
+    },
+    {
+      "alias": "Zolpidem injection",
+      "canonical": "Zolpidem"
+    },
+    {
+      "alias": "Zolpidem 500mg",
+      "canonical": "Zolpidem"
+    },
+    {
+      "alias": "Zolpidem 650mg",
+      "canonical": "Zolpidem"
+    },
+    {
+      "alias": "Zolpidem BD",
+      "canonical": "Zolpidem"
+    },
+    {
+      "alias": "Zolpidem OD",
+      "canonical": "Zolpidem"
+    },
+    {
+      "alias": "Metronidazole tablet",
+      "canonical": "Metronidazole"
+    },
+    {
+      "alias": "Metronidazole capsule",
+      "canonical": "Metronidazole"
+    },
+    {
+      "alias": "Metronidazole syrup",
+      "canonical": "Metronidazole"
+    },
+    {
+      "alias": "Metronidazole injection",
+      "canonical": "Metronidazole"
+    },
+    {
+      "alias": "Metronidazole 500mg",
+      "canonical": "Metronidazole"
+    },
+    {
+      "alias": "Metronidazole 650mg",
+      "canonical": "Metronidazole"
+    },
+    {
+      "alias": "Metronidazole BD",
+      "canonical": "Metronidazole"
+    },
+    {
+      "alias": "Metronidazole OD",
+      "canonical": "Metronidazole"
+    },
+    {
+      "alias": "Vitamin B Complex tablet",
+      "canonical": "Vitamin B Complex"
+    },
+    {
+      "alias": "Vitamin B Complex capsule",
+      "canonical": "Vitamin B Complex"
+    },
+    {
+      "alias": "Vitamin B Complex syrup",
+      "canonical": "Vitamin B Complex"
+    },
+    {
+      "alias": "Vitamin B Complex injection",
+      "canonical": "Vitamin B Complex"
+    },
+    {
+      "alias": "Vitamin B Complex 500mg",
+      "canonical": "Vitamin B Complex"
+    },
+    {
+      "alias": "Vitamin B Complex 650mg",
+      "canonical": "Vitamin B Complex"
+    },
+    {
+      "alias": "Vitamin B Complex BD",
+      "canonical": "Vitamin B Complex"
+    },
+    {
+      "alias": "Vitamin B Complex OD",
+      "canonical": "Vitamin B Complex"
+    },
+    {
+      "alias": "Omeprazole tablet",
+      "canonical": "Omeprazole"
+    },
+    {
+      "alias": "Omeprazole capsule",
+      "canonical": "Omeprazole"
+    },
+    {
+      "alias": "Omeprazole syrup",
+      "canonical": "Omeprazole"
+    },
+    {
+      "alias": "Omeprazole injection",
+      "canonical": "Omeprazole"
+    },
+    {
+      "alias": "Omeprazole 500mg",
+      "canonical": "Omeprazole"
+    },
+    {
+      "alias": "Omeprazole 650mg",
+      "canonical": "Omeprazole"
+    },
+    {
+      "alias": "Omeprazole BD",
+      "canonical": "Omeprazole"
+    },
+    {
+      "alias": "Omeprazole OD",
+      "canonical": "Omeprazole"
+    },
+    {
+      "alias": "Esomeprazole tablet",
+      "canonical": "Esomeprazole"
+    },
+    {
+      "alias": "Esomeprazole capsule",
+      "canonical": "Esomeprazole"
+    },
+    {
+      "alias": "Esomeprazole syrup",
+      "canonical": "Esomeprazole"
+    },
+    {
+      "alias": "Esomeprazole injection",
+      "canonical": "Esomeprazole"
+    },
+    {
+      "alias": "Esomeprazole 500mg",
+      "canonical": "Esomeprazole"
+    },
+    {
+      "alias": "Esomeprazole 650mg",
+      "canonical": "Esomeprazole"
+    },
+    {
+      "alias": "Esomeprazole BD",
+      "canonical": "Esomeprazole"
+    },
+    {
+      "alias": "Esomeprazole OD",
+      "canonical": "Esomeprazole"
+    },
+    {
+      "alias": "Voglibose tablet",
+      "canonical": "Voglibose"
+    },
+    {
+      "alias": "Voglibose capsule",
+      "canonical": "Voglibose"
+    },
+    {
+      "alias": "Voglibose syrup",
+      "canonical": "Voglibose"
+    },
+    {
+      "alias": "Voglibose injection",
+      "canonical": "Voglibose"
+    },
+    {
+      "alias": "Voglibose 500mg",
+      "canonical": "Voglibose"
+    },
+    {
+      "alias": "Voglibose 650mg",
+      "canonical": "Voglibose"
+    },
+    {
+      "alias": "Voglibose BD",
+      "canonical": "Voglibose"
+    },
+    {
+      "alias": "Voglibose OD",
+      "canonical": "Voglibose"
+    }
+  ]
+}

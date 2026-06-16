@@ -1,0 +1,167 @@
+-- VaniRx — Additional Drugs by Speciality
+ALTER TABLE drugs ADD COLUMN IF NOT EXISTS
+  medicine_type VARCHAR(20) DEFAULT 'allopathic'
+  CHECK (medicine_type IN ('allopathic', 'homeopathic', 'ayurvedic'));
+
+UPDATE drugs SET medicine_type = 'allopathic' WHERE medicine_type IS NULL;
+
+-- DERMATOLOGY
+INSERT INTO drugs (brand_name, generic_name, category, schedule, common_dosages, standard_frequencies, typical_duration, phonetic_variants, medicine_type) VALUES
+('ISOTRET', 'Isotretinoin', 'Dermatology', 'H', '["10mg","20mg"]', '["OD","BD"]', '16-24 weeks', '["Isotret","Acutret","Roaccutane","Isotretinoin"]', 'allopathic'),
+('ACUTRET', 'Isotretinoin', 'Dermatology', 'H', '["10mg","20mg"]', '["OD"]', '16-24 weeks', '["Acutret","Isotret","Isotretinoin"]', 'allopathic'),
+('ADAFERIN', 'Adapalene', 'Dermatology', 'H', '["0.1% gel"]', '["OD"]', '12 weeks', '["Adaferin","Adapalene","Deriva"]', 'allopathic'),
+('DERIVA', 'Adapalene', 'Dermatology', 'H', '["0.1% gel"]', '["OD"]', '12 weeks', '["Deriva","Adaferin","Adapalene"]', 'allopathic'),
+('TERBICIP', 'Terbinafine', 'Antifungal / Dermatology', 'H', '["250mg","1% cream"]', '["OD"]', '2-6 weeks', '["Terbicip","Lamisil","Terbinafine"]', 'allopathic'),
+('LAMISIL', 'Terbinafine', 'Antifungal / Dermatology', 'H', '["250mg"]', '["OD"]', '2-6 weeks', '["Lamisil","Terbicip","Terbinafine"]', 'allopathic'),
+('BETNOVATE', 'Betamethasone Valerate', 'Corticosteroid Topical', 'H', '["0.1% cream","0.1% ointment"]', '["BD"]', '2-4 weeks', '["Betnovate","Betonovat","Betamethasone"]', 'allopathic'),
+('BETNOVATE-N', 'Betamethasone + Neomycin', 'Corticosteroid + Antibiotic Topical', 'H', '["0.1%+0.5% cream"]', '["BD"]', '2-4 weeks', '["Betnovate N","Betnovatn","Betamethasone Neomycin"]', 'allopathic'),
+('TENOVATE', 'Clobetasol Propionate', 'Corticosteroid Topical', 'H', '["0.05% cream"]', '["BD"]', '2 weeks', '["Tenovate","Dermovate","Clobetasol"]', 'allopathic'),
+('ACIVIR', 'Acyclovir', 'Antiviral', 'H', '["200mg","400mg","800mg","5% cream"]', '["TDS","QID"]', '5-7 days', '["Acivir","Zovirax","Acyclovir","Aciclovir"]', 'allopathic'),
+('ZOVIRAX', 'Acyclovir', 'Antiviral', 'H', '["200mg","400mg"]', '["TDS","QID"]', '5-7 days', '["Zovirax","Acivir","Acyclovir"]', 'allopathic'),
+('SCABOMA', 'Permethrin', 'Antiparasitic Topical', 'H', '["5% lotion"]', '["OD"]', '1-2 applications', '["Scaboma","Permethrin","Elimite"]', 'allopathic'),
+('PERSOL', 'Benzoyl Peroxide', 'Dermatology / Acne', 'OTC', '["2.5% gel","5% gel"]', '["OD","BD"]', '8-12 weeks', '["Persol","Benzac","Benzoyl Peroxide"]', 'allopathic'),
+('AZIDERM', 'Azelaic Acid', 'Dermatology', 'H', '["15% gel","20% cream"]', '["BD"]', '12 weeks', '["Aziderm","Azelex","Azelaic Acid"]', 'allopathic'),
+('MUPICIN', 'Mupirocin', 'Antibiotic Topical', 'H', '["2% ointment","2% cream"]', '["TDS"]', '5-10 days', '["Mupicin","Bactroban","Mupirocin"]', 'allopathic'),
+('NIZORAL', 'Ketoconazole', 'Antifungal Shampoo/Topical', 'H', '["2% shampoo","2% cream"]', '["BD"]', '2-4 weeks', '["Nizoral","Ketoconazole","Dandruf"]', 'allopathic'),
+('KENACORT', 'Triamcinolone', 'Corticosteroid', 'H', '["4mg","0.1% cream"]', '["OD"]', '5-7 days', '["Kenacort","Triamcinolone","Kenalog"]', 'allopathic'),
+('SOFRAMYCIN', 'Framycetin', 'Antibiotic Topical', 'H', '["1% cream"]', '["BD","TDS"]', '7-10 days', '["Soframycin","Framycetin","Sofra"]', 'allopathic'),
+
+-- OPHTHALMOLOGY
+('CIPLOX EYE', 'Ciprofloxacin Eye Drops', 'Ophthalmic Antibiotic', 'H', '["0.3% drops"]', '["QID"]', '7 days', '["Ciplox eye","Ciprofloxacin eye","Ocuflox"]', 'allopathic'),
+('VIGAMOX', 'Moxifloxacin Eye Drops', 'Ophthalmic Antibiotic', 'H', '["0.5% drops"]', '["TDS","QID"]', '7 days', '["Vigamox","Moxicip","Moxifloxacin eye"]', 'allopathic'),
+('MOXICIP', 'Moxifloxacin Eye Drops', 'Ophthalmic Antibiotic', 'H', '["0.5% drops"]', '["TDS"]', '7 days', '["Moxicip","Vigamox","Moxifloxacin"]', 'allopathic'),
+('TOBACIN', 'Tobramycin Eye Drops', 'Ophthalmic Antibiotic', 'H', '["0.3% drops"]', '["QID"]', '7 days', '["Tobacin","Tobrex","Tobramycin eye"]', 'allopathic'),
+('GLUCOMOL', 'Timolol Eye Drops', 'Antiglaucoma', 'H', '["0.25%","0.5% drops"]', '["BD"]', 'Ongoing', '["Glucomol","Timolol","Timoptic"]', 'allopathic'),
+('XALATAN', 'Latanoprost Eye Drops', 'Antiglaucoma', 'H', '["0.005% drops"]', '["OD"]', 'Ongoing', '["Xalatan","Latanoprost","Careprost"]', 'allopathic'),
+('COSOPT', 'Dorzolamide + Timolol Eye Drops', 'Antiglaucoma Combination', 'H', '["2%+0.5% drops"]', '["BD"]', 'Ongoing', '["Cosopt","Dorzox T","Dorzolamide Timolol"]', 'allopathic'),
+('PREDFORTE', 'Prednisolone Acetate Eye Drops', 'Ophthalmic Steroid', 'H', '["1% drops"]', '["QID"]', '7-14 days', '["Predforte","Pred forte","Prednisolone eye"]', 'allopathic'),
+('REFRESH TEARS', 'Carboxymethylcellulose', 'Ocular Lubricant', 'OTC', '["0.5% drops"]', '["QID"]', 'Ongoing PRN', '["Refresh tears","Refresh","CMC drops"]', 'allopathic'),
+('OPTIVE', 'Carboxymethylcellulose + Glycerin', 'Ocular Lubricant', 'OTC', '["drops"]', '["QID"]', 'Ongoing PRN', '["Optive","Opteev","Carboxymethyl eye"]', 'allopathic'),
+('NATACYN', 'Natamycin Eye Drops', 'Antifungal Ophthalmic', 'H', '["5% drops"]', '["QID"]', '14-21 days', '["Natacyn","Natamycin","Natamet"]', 'allopathic'),
+('OCUFLOX', 'Ofloxacin Eye Drops', 'Ophthalmic Antibiotic', 'H', '["0.3% drops"]', '["QID"]', '7 days', '["Ocuflox","Ofloxacin eye","Floxal"]', 'allopathic'),
+('BRIMODIN', 'Brimonidine Eye Drops', 'Antiglaucoma', 'H', '["0.2% drops"]', '["BD","TDS"]', 'Ongoing', '["Brimodin","Brimonidine","Alphagan"]', 'allopathic'),
+('ATROPINE EYE', 'Atropine Sulphate Eye Drops', 'Cycloplegic / Mydriatic', 'H', '["1% drops"]', '["OD","BD"]', 'Short-term', '["Atropine eye","Atropin","Atropine sulphate"]', 'allopathic'),
+
+-- ENT
+('FLOMIST', 'Fluticasone Nasal Spray', 'ENT / Nasal Steroid', 'H', '["50mcg spray"]', '["OD","BD"]', '4-8 weeks', '["Flomist","Flonase","Fluticasone nasal"]', 'allopathic'),
+('NASONEX', 'Mometasone Nasal Spray', 'ENT / Nasal Steroid', 'H', '["50mcg spray"]', '["OD"]', '4-8 weeks', '["Nasonex","Momate nasal","Mometasone nasal"]', 'allopathic'),
+('NASIVION', 'Oxymetazoline Nasal Drops', 'ENT / Decongestant', 'OTC', '["0.05% drops","0.025% drops"]', '["BD","TDS"]', '3-5 days only', '["Nasivion","Nasivin","Oxymetazoline"]', 'allopathic'),
+('OTRIVIN', 'Xylometazoline Nasal Drops', 'ENT / Decongestant', 'OTC', '["0.1% drops"]', '["TDS"]', '3-5 days only', '["Otrivin","Otriwin","Xylometazoline"]', 'allopathic'),
+('ZOFLOX EAR', 'Ofloxacin Ear Drops', 'ENT / Ear Drops', 'H', '["0.3% drops"]', '["BD","TDS"]', '7-10 days', '["Zoflox ear","Ofloxacin ear","Floxal ear"]', 'allopathic'),
+('CIPLOX-D EAR', 'Ciprofloxacin + Dexamethasone Ear Drops', 'ENT / Ear Drops', 'H', '["drops"]', '["TDS","QID"]', '7-10 days', '["Ciplox D ear","Ciprodex","Ciprofloxacin ear"]', 'allopathic'),
+('VERTIN', 'Betahistine', 'ENT / Antivertigo', 'H', '["8mg","16mg","24mg"]', '["BD","TDS"]', '4-8 weeks', '["Vertin","Betahistine","Betavert"]', 'allopathic'),
+('STUGERON', 'Cinnarizine', 'ENT / Antivertigo', 'H', '["25mg"]', '["TDS"]', '7-14 days', '["Stugeron","Cinnarizine","Stuggeron"]', 'allopathic'),
+('LORFAST', 'Loratadine', 'Antihistamine / ENT', 'OTC', '["10mg"]', '["OD"]', '5-7 days', '["Lorfast","Loratadine","Clarityne"]', 'allopathic'),
+('CEFPODOXIME', 'Cefpodoxime', 'Antibiotic / ENT', 'H', '["100mg","200mg"]', '["BD"]', '5-7 days', '["Cefpodoxime","Cepodem","Cefoprox"]', 'allopathic'),
+
+-- PSYCHIATRY
+('NEXITO', 'Escitalopram', 'Antidepressant / SSRI', 'H', '["5mg","10mg","20mg"]', '["OD"]', 'Long-term / Ongoing', '["Nexito","Stalopam","Escitalopram"]', 'allopathic'),
+('STALOPAM', 'Escitalopram', 'Antidepressant / SSRI', 'H', '["5mg","10mg"]', '["OD"]', 'Long-term / Ongoing', '["Stalopam","Nexito","Escitalopram"]', 'allopathic'),
+('SERTA', 'Sertraline', 'Antidepressant / SSRI', 'H', '["25mg","50mg","100mg"]', '["OD"]', 'Long-term / Ongoing', '["Serta","Daxid","Sertraline"]', 'allopathic'),
+('DAXID', 'Sertraline', 'Antidepressant / SSRI', 'H', '["50mg","100mg"]', '["OD"]', 'Long-term / Ongoing', '["Daxid","Serta","Sertraline"]', 'allopathic'),
+('FLUDAC', 'Fluoxetine', 'Antidepressant / SSRI', 'H', '["10mg","20mg"]', '["OD"]', 'Long-term / Ongoing', '["Fludac","Prozac","Fluoxetine"]', 'allopathic'),
+('VENLIFT', 'Venlafaxine', 'Antidepressant / SNRI', 'H', '["37.5mg","75mg","150mg"]', '["OD","BD"]', 'Long-term / Ongoing', '["Venlift","Effexor","Venlafaxine"]', 'allopathic'),
+('DULANE', 'Duloxetine', 'Antidepressant / SNRI', 'H', '["20mg","30mg","60mg"]', '["OD"]', 'Long-term / Ongoing', '["Dulane","Cymbalta","Duloxetine"]', 'allopathic'),
+('OLEANZ', 'Olanzapine', 'Antipsychotic', 'H', '["2.5mg","5mg","10mg"]', '["OD"]', 'Long-term / Physician directed', '["Oleanz","Olanex","Olanzapine"]', 'allopathic'),
+('OLANEX', 'Olanzapine', 'Antipsychotic', 'H', '["5mg","10mg"]', '["OD"]', 'Long-term / Physician directed', '["Olanex","Oleanz","Olanzapine"]', 'allopathic'),
+('RISNIA', 'Risperidone', 'Antipsychotic', 'H', '["0.5mg","1mg","2mg","4mg"]', '["OD","BD"]', 'Long-term / Physician directed', '["Risnia","Sizodon","Risperidone"]', 'allopathic'),
+('QUTIPIN', 'Quetiapine', 'Antipsychotic', 'H', '["25mg","50mg","100mg","200mg"]', '["OD","BD"]', 'Long-term / Physician directed', '["Qutipin","Seroquel","Quetiapine"]', 'allopathic'),
+('TRYPTOMER', 'Amitriptyline', 'Antidepressant / TCA', 'H', '["10mg","25mg","50mg"]', '["OD"]', 'Long-term / Ongoing', '["Tryptomer","Elavil","Amitriptyline"]', 'allopathic'),
+('ENCORATE', 'Sodium Valproate', 'Mood Stabilizer / Anticonvulsant', 'H', '["200mg","500mg"]', '["BD","TDS"]', 'Long-term / Ongoing', '["Encorate","Valparin","Sodium Valproate"]', 'allopathic'),
+('ARIP', 'Aripiprazole', 'Antipsychotic', 'H', '["5mg","10mg","15mg"]', '["OD"]', 'Long-term / Physician directed', '["Arip","Abilify","Aripiprazole"]', 'allopathic'),
+('MIRTAZ', 'Mirtazapine', 'Antidepressant', 'H', '["7.5mg","15mg","30mg"]', '["OD"]', 'Long-term / Ongoing', '["Mirtaz","Remeron","Mirtazapine"]', 'allopathic'),
+
+-- NEUROLOGY
+('LEVIPIL', 'Levetiracetam', 'Anticonvulsant', 'H', '["250mg","500mg","1000mg"]', '["BD"]', 'Long-term / Ongoing', '["Levipil","Keppra","Levetiracetam"]', 'allopathic'),
+('MAZETOL', 'Carbamazepine', 'Anticonvulsant', 'H', '["100mg","200mg","400mg"]', '["BD","TDS"]', 'Long-term / Ongoing', '["Mazetol","Tegretol","Carbamazepine"]', 'allopathic'),
+('EPTOIN', 'Phenytoin', 'Anticonvulsant', 'H', '["50mg","100mg"]', '["OD","BD"]', 'Long-term / Ongoing', '["Eptoin","Dilantin","Phenytoin"]', 'allopathic'),
+('VALPARIN', 'Sodium Valproate', 'Anticonvulsant', 'H', '["200mg","500mg"]', '["BD","TDS"]', 'Long-term / Ongoing', '["Valparin","Encorate","Valproate"]', 'allopathic'),
+('SUMINAT', 'Sumatriptan', 'Antimigraine', 'H', '["25mg","50mg","100mg"]', '["OD"]', 'PRN for attacks', '["Suminat","Imitrex","Sumatriptan"]', 'allopathic'),
+('TOPAMAC', 'Topiramate', 'Anticonvulsant / Antimigraine', 'H', '["25mg","50mg","100mg"]', '["BD"]', 'Long-term / Ongoing', '["Topamac","Epitomax","Topiramate"]', 'allopathic'),
+('DONAMEM', 'Donepezil', 'Antidementia', 'H', '["5mg","10mg"]', '["OD"]', 'Long-term / Ongoing', '["Donamem","Aricept","Donepezil"]', 'allopathic'),
+('MEMANTINE', 'Memantine', 'Antidementia', 'H', '["5mg","10mg"]', '["OD","BD"]', 'Long-term / Ongoing', '["Memantine","Namenda","Memofix"]', 'allopathic'),
+('BACLOFEN', 'Baclofen', 'Muscle Relaxant / Antispastic', 'H', '["10mg","25mg"]', '["TDS"]', 'Long-term / Ongoing', '["Baclofen","Lioresal","Baclof"]', 'allopathic'),
+('TRINEURO', 'Thiamine + B6 + B12', 'Neurological Vitamin', 'OTC', '["1 tablet"]', '["OD"]', '30-90 days', '["Trineuro","Trineurosol","Neurobion"]', 'allopathic'),
+('NEUROBION', 'Vitamin B1 + B6 + B12', 'Neurological Vitamin', 'OTC', '["1 tablet"]', '["OD"]', '30-90 days', '["Neurobion","Nurobion","B complex neuro"]', 'allopathic'),
+
+-- ENDOCRINOLOGY
+('BASALOG', 'Insulin Glargine', 'Insulin / Antidiabetic', 'H', '["100 units/ml pen"]', '["OD"]', 'Long-term / Ongoing', '["Basalog","Lantus","Insulin Glargine"]', 'allopathic'),
+('ACTRAPID', 'Insulin Regular', 'Insulin / Antidiabetic', 'H', '["100 units/ml"]', '["TDS"]', 'Long-term / Ongoing', '["Actrapid","Huminsulin R","Regular Insulin"]', 'allopathic'),
+('FORXIGA', 'Dapagliflozin', 'Antidiabetic / SGLT2 Inhibitor', 'H', '["5mg","10mg"]', '["OD"]', 'Long-term / Ongoing', '["Forxiga","Dapa","Dapagliflozin"]', 'allopathic'),
+('JARDIANCE', 'Empagliflozin', 'Antidiabetic / SGLT2 Inhibitor', 'H', '["10mg","25mg"]', '["OD"]', 'Long-term / Ongoing', '["Jardiance","Empaglu","Empagliflozin"]', 'allopathic'),
+('OSTEOFOS', 'Alendronate', 'Bisphosphonate / Osteoporosis', 'H', '["10mg","70mg"]', '["OD"]', 'Long-term / Ongoing', '["Osteofos","Fosamax","Alendronate"]', 'allopathic'),
+('CALCITRIOL', 'Calcitriol', 'Vitamin D Active / Endocrinology', 'H', '["0.25mcg","0.5mcg"]', '["OD","BD"]', 'Long-term / Ongoing', '["Calcitriol","Rocaltrol","Calcitrole"]', 'allopathic'),
+('PIOZ', 'Pioglitazone', 'Antidiabetic / Thiazolidinedione', 'H', '["15mg","30mg","45mg"]', '["OD"]', 'Long-term / Ongoing', '["Pioz","Actos","Pioglitazone"]', 'allopathic'),
+('GALVUS', 'Vildagliptin', 'Antidiabetic / DPP-4 Inhibitor', 'H', '["50mg"]', '["BD"]', 'Long-term / Ongoing', '["Galvus","Vildagliptin","Xiliarx"]', 'allopathic'),
+
+-- DENTISTRY
+('HEXIDINE', 'Chlorhexidine Mouthwash', 'Dental / Antiseptic', 'OTC', '["0.2% mouthwash"]', '["BD"]', '7-14 days', '["Hexidine","Chlorhex","Chlorhexidine"]', 'allopathic'),
+('CLINDAC', 'Clindamycin', 'Antibiotic / Dental', 'H', '["150mg","300mg"]', '["TDS","QID"]', '5-7 days', '["Clindac","Dalacin","Clindamycin"]', 'allopathic'),
+('ORNOF', 'Ornidazole', 'Antibiotic / Dental', 'H', '["500mg"]', '["BD"]', '5-7 days', '["Ornof","Dazolic","Ornidazole"]', 'allopathic'),
+('ZERODOL', 'Aceclofenac', 'Analgesic / NSAID', 'H', '["100mg"]', '["BD"]', '3-5 days', '["Zerodol","Hifenac","Aceclofenac"]', 'allopathic'),
+('SERRATIOPEPTIDASE', 'Serratiopeptidase', 'Enzyme / Anti-inflammatory', 'H', '["5mg","10mg"]', '["BD","TDS"]', '5-7 days', '["Serratiopeptidase","Serrapeptase","Sermase"]', 'allopathic'),
+('LIGNOCAINE GEL', 'Lignocaine Topical Gel', 'Dental / Local Anaesthetic', 'H', '["2% gel"]', '["PRN"]', 'PRN', '["Lignocaine gel","Lidocaine gel","Xylocaine gel"]', 'allopathic'),
+('KETOROL', 'Ketorolac', 'Analgesic / NSAID', 'H', '["10mg"]', '["TDS","QID"]', '3-5 days', '["Ketorol","Toradol","Ketorolac"]', 'allopathic'),
+
+-- PULMONARY
+('BUDECORT', 'Budesonide Inhaler', 'Inhaled Corticosteroid', 'H', '["100mcg","200mcg","400mcg"]', '["BD"]', 'Ongoing', '["Budecort","Pulmicort","Budesonide inhaler"]', 'allopathic'),
+('FORACORT', 'Formoterol + Budesonide', 'Inhaled LABA + ICS Combination', 'H', '["6+100mcg","6+200mcg"]', '["BD"]', 'Ongoing', '["Foracort","Symbicort","Formoterol Budesonide"]', 'allopathic'),
+('TIOVA', 'Tiotropium', 'Bronchodilator / LAMA', 'H', '["18mcg inhaler"]', '["OD"]', 'Ongoing', '["Tiova","Spiriva","Tiotropium"]', 'allopathic'),
+('LEVOFLOX', 'Levofloxacin', 'Antibiotic / Respiratory', 'H', '["250mg","500mg","750mg"]', '["OD"]', '5-7 days', '["Levoflox","Levaquin","Levofloxacin"]', 'allopathic'),
+('NAC', 'N-Acetylcysteine', 'Mucolytic', 'H', '["200mg","600mg"]', '["BD","TDS"]', '5-10 days', '["NAC","N-Acetylcysteine","Mucifree","Flumil"]', 'allopathic'),
+('MEDROL', 'Methylprednisolone', 'Corticosteroid / Respiratory', 'H', '["4mg","8mg","16mg"]', '["OD","BD"]', '5-14 days', '["Medrol","Methylprednisolone","Solumedrol"]', 'allopathic'),
+('THEO-ASTHALIN', 'Theophylline + Salbutamol', 'Bronchodilator Combination', 'H', '["1 tablet"]', '["BD","TDS"]', '5-7 days', '["Theo Asthalin","Theoasthalin","Theophylline Salbutamol"]', 'allopathic'),
+('IPRAVENT', 'Ipratropium Bromide', 'Bronchodilator / SAMA', 'H', '["20mcg inhaler","0.5mg nebule"]', '["TDS","QID"]', '5-7 days', '["Ipravent","Atrovent","Ipratropium"]', 'allopathic'),
+
+-- CARDIAC
+('LASIX', 'Furosemide', 'Diuretic', 'H', '["20mg","40mg","80mg"]', '["OD","BD"]', 'Ongoing / Physician directed', '["Lasix","Furosemide","Frusemide"]', 'allopathic'),
+('ALDACTONE', 'Spironolactone', 'Diuretic / Anti-aldosterone', 'H', '["25mg","50mg","100mg"]', '["OD","BD"]', 'Ongoing', '["Aldactone","Spironolactone","Spiron"]', 'allopathic'),
+('CONCOR', 'Bisoprolol', 'Antihypertensive / Beta Blocker', 'H', '["2.5mg","5mg","10mg"]', '["OD"]', 'Long-term / Ongoing', '["Concor","Bisocard","Bisoprolol"]', 'allopathic'),
+('DEPLATT', 'Clopidogrel', 'Antiplatelet', 'H', '["75mg"]', '["OD"]', 'Long-term / Ongoing', '["Deplatt","Plavix","Clopidogrel"]', 'allopathic'),
+('WARF', 'Warfarin', 'Anticoagulant', 'H', '["1mg","2mg","5mg"]', '["OD"]', 'Long-term / Physician directed', '["Warf","Coumadin","Warfarin"]', 'allopathic'),
+('SORBITRATE', 'Isosorbide Dinitrate', 'Antianginal', 'H', '["5mg","10mg","20mg"]', '["TDS","QID"]', 'Ongoing / PRN', '["Sorbitrate","Isosorbide","ISDN"]', 'allopathic'),
+('LANOXIN', 'Digoxin', 'Cardiac Glycoside', 'H', '["0.125mg","0.25mg"]', '["OD"]', 'Long-term / Physician directed', '["Lanoxin","Digoxin","Digitalis"]', 'allopathic'),
+('DYTOR', 'Torsemide', 'Diuretic', 'H', '["5mg","10mg","20mg"]', '["OD"]', 'Ongoing / Physician directed', '["Dytor","Torsemide","Torasemide"]', 'allopathic'),
+('FENOMAX', 'Fenofibrate', 'Antihyperlipidemic / Fibrate', 'H', '["145mg","160mg"]', '["OD"]', 'Long-term / Ongoing', '["Fenomax","Tricor","Fenofibrate"]', 'allopathic'),
+('APIXABAN', 'Apixaban', 'Anticoagulant / NOAC', 'H', '["2.5mg","5mg"]', '["BD"]', 'Long-term / Physician directed', '["Apixaban","Eliquis","Apigat"]', 'allopathic'),
+
+-- HOMEOPATHY
+('ARNICA MONTANA', 'Arnica Montana', 'Homeopathic', 'OTC', '["30C","200C","1M"]', '["TDS","QID"]', 'As directed', '["Arnica montana","Arnika","Arnica"]', 'homeopathic'),
+('BELLADONNA', 'Belladonna', 'Homeopathic', 'OTC', '["30C","200C"]', '["TDS","QID"]', 'As directed', '["Belladonna","Beladona","Deadly nightshade"]', 'homeopathic'),
+('NUX VOMICA', 'Nux Vomica', 'Homeopathic', 'OTC', '["30C","200C"]', '["TDS"]', 'As directed', '["Nux vomica","Nux vom","Nuxvomica"]', 'homeopathic'),
+('SULPHUR', 'Sulphur', 'Homeopathic', 'OTC', '["30C","200C"]', '["OD","TDS"]', 'As directed', '["Sulphur","Sulfur","Sulfer"]', 'homeopathic'),
+('BRYONIA', 'Bryonia Alba', 'Homeopathic', 'OTC', '["30C","200C"]', '["TDS"]', 'As directed', '["Bryonia","Briyonia","Bryonia alba"]', 'homeopathic'),
+('RHUS TOX', 'Rhus Toxicodendron', 'Homeopathic', 'OTC', '["30C","200C"]', '["TDS","QID"]', 'As directed', '["Rhus tox","Rhus toxicodendron","Rustox"]', 'homeopathic'),
+('PULSATILLA', 'Pulsatilla Nigricans', 'Homeopathic', 'OTC', '["30C","200C"]', '["TDS"]', 'As directed', '["Pulsatilla","Pulsatila","Windflower"]', 'homeopathic'),
+('LYCOPODIUM', 'Lycopodium Clavatum', 'Homeopathic', 'OTC', '["30C","200C","1M"]', '["OD","TDS"]', 'As directed', '["Lycopodium","Licopodium","Clubmoss"]', 'homeopathic'),
+('CALCAREA CARB', 'Calcarea Carbonica', 'Homeopathic', 'OTC', '["30C","200C"]', '["OD"]', 'As directed', '["Calcarea carb","Calc carb","Calcaria carb"]', 'homeopathic'),
+('ARSENICUM ALBUM', 'Arsenicum Album', 'Homeopathic', 'OTC', '["30C","200C"]', '["TDS"]', 'As directed', '["Arsenicum album","Ars alb","Arsenic alb"]', 'homeopathic'),
+('GELSEMIUM', 'Gelsemium Sempervirens', 'Homeopathic', 'OTC', '["30C","200C"]', '["TDS"]', 'As directed', '["Gelsemium","Gelsimium","Yellow jasmine"]', 'homeopathic'),
+('ACONITE', 'Aconitum Napellus', 'Homeopathic', 'OTC', '["30C","200C"]', '["QID"]', 'As directed', '["Aconite","Aconitum","Monkshood"]', 'homeopathic'),
+('APIS MELLIFICA', 'Apis Mellifica', 'Homeopathic', 'OTC', '["30C","200C"]', '["TDS","QID"]', 'As directed', '["Apis mellifica","Apis mel","Honeybee"]', 'homeopathic'),
+('IGNATIA', 'Ignatia Amara', 'Homeopathic', 'OTC', '["30C","200C"]', '["TDS"]', 'As directed', '["Ignatia","Ignachia","Ignatia amara"]', 'homeopathic'),
+('NATRUM MUR', 'Natrum Muriaticum', 'Homeopathic', 'OTC', '["30C","200C","1M"]', '["OD","TDS"]', 'As directed', '["Natrum mur","Nat mur","Natrium mur"]', 'homeopathic'),
+('PHOSPHORUS', 'Phosphorus', 'Homeopathic', 'OTC', '["30C","200C"]', '["TDS"]', 'As directed', '["Phosphorus","Fosfor","Phosphorous"]', 'homeopathic'),
+('CHAMOMILLA', 'Chamomilla', 'Homeopathic', 'OTC', '["30C","200C"]', '["TDS","QID"]', 'As directed', '["Chamomilla","Camomilla","Chamomile"]', 'homeopathic'),
+('SEPIA', 'Sepia Officinalis', 'Homeopathic', 'OTC', '["30C","200C"]', '["OD","TDS"]', 'As directed', '["Sepia","Sepia off","Cuttlefish"]', 'homeopathic'),
+('THUJA', 'Thuja Occidentalis', 'Homeopathic', 'OTC', '["30C","200C"]', '["OD"]', 'As directed', '["Thuja","Thuya","Arborvitae"]', 'homeopathic'),
+('HEPAR SULPH', 'Hepar Sulphuris Calcareum', 'Homeopathic', 'OTC', '["30C","200C"]', '["TDS"]', 'As directed', '["Hepar sulph","Hepar sulphuris","Heparsulph"]', 'homeopathic'),
+
+-- AYURVEDIC
+('ASHWAGANDHA', 'Withania Somnifera', 'Ayurvedic / Adaptogen', 'OTC', '["250mg","500mg","1 tsp powder"]', '["OD","BD"]', '90 days', '["Ashwagandha","Ashvagandha","Aswagandha","Withania"]', 'ayurvedic'),
+('TRIPHALA', 'Triphala Churna', 'Ayurvedic / Digestive', 'OTC', '["500mg","1 tsp churna"]', '["OD"]', '90 days', '["Triphala","Trifala","Triphalla","Triphala churna"]', 'ayurvedic'),
+('BRAHMI', 'Bacopa Monnieri', 'Ayurvedic / Nootropic', 'OTC', '["250mg","500mg"]', '["OD","BD"]', '90 days', '["Brahmi","Brahmy","Bacopa","Bramhi"]', 'ayurvedic'),
+('SHATAVARI', 'Asparagus Racemosus', 'Ayurvedic / Supplement', 'OTC', '["500mg","1 tsp powder"]', '["BD"]', '90 days', '["Shatavari","Shatawari","Satavar"]', 'ayurvedic'),
+('GILOY', 'Tinospora Cordifolia', 'Ayurvedic / Immunomodulator', 'OTC', '["500mg","juice"]', '["BD"]', '30-90 days', '["Giloy","Giloi","Guduchi","Tinospora"]', 'ayurvedic'),
+('TULSI', 'Ocimum Sanctum', 'Ayurvedic / Respiratory', 'OTC', '["500mg","drops"]', '["BD","TDS"]', '30 days', '["Tulsi","Tulasi","Holy basil","Tulasee"]', 'ayurvedic'),
+('AMLA', 'Emblica Officinalis', 'Ayurvedic / Supplement', 'OTC', '["500mg","juice"]', '["OD","BD"]', '90 days', '["Amla","Amlaki","Indian gooseberry","Aamla"]', 'ayurvedic'),
+('HARITAKI', 'Terminalia Chebula', 'Ayurvedic / Digestive', 'OTC', '["500mg","1 tsp churna"]', '["OD"]', '30-90 days', '["Haritaki","Haritaki churna","Harade"]', 'ayurvedic'),
+('TRIKATU', 'Ginger + Black Pepper + Long Pepper', 'Ayurvedic / Digestive', 'OTC', '["250mg","500mg"]', '["BD","TDS"]', '30 days', '["Trikatu","Trikatu churna","Trikatta"]', 'ayurvedic'),
+('SHILAJIT', 'Asphaltum Punjabinum', 'Ayurvedic / Tonic', 'OTC', '["250mg","300mg"]', '["OD","BD"]', '90 days', '["Shilajit","Shilajeet","Silajit"]', 'ayurvedic'),
+('ARJUNA', 'Terminalia Arjuna', 'Ayurvedic / Cardiac', 'OTC', '["500mg","bark extract"]', '["BD"]', '90 days', '["Arjuna","Arjun","Terminalia arjuna"]', 'ayurvedic'),
+('GOKSHURA', 'Tribulus Terrestris', 'Ayurvedic / Urinary', 'OTC', '["500mg"]', '["BD"]', '90 days', '["Gokshura","Gokhru","Tribulus","Gokshuradi"]', 'ayurvedic'),
+('NEEM', 'Azadirachta Indica', 'Ayurvedic / Dermatology', 'OTC', '["500mg","capsule"]', '["OD","BD"]', '30-90 days', '["Neem","Nim","Nimba","Azadirachta"]', 'ayurvedic'),
+('KUTKI', 'Picrorhiza Kurroa', 'Ayurvedic / Hepatic', 'OTC', '["250mg"]', '["BD"]', '30-60 days', '["Kutki","Kutaki","Picrorhiza"]', 'ayurvedic'),
+('PUNARNAVA', 'Boerhavia Diffusa', 'Ayurvedic / Diuretic', 'OTC', '["500mg","juice"]', '["BD"]', '30-60 days', '["Punarnava","Punernava","Boerhavia"]', 'ayurvedic')
+
+ON CONFLICT DO NOTHING;

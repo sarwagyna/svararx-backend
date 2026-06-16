@@ -1,0 +1,27 @@
+Extract lab report values from OCR text. Output ONLY valid JSON.
+
+JSON schema:
+{
+  "lab_name": "",
+  "sample_date": null,
+  "clinical_tests": [
+    {
+      "test_name": "",
+      "value": "",
+      "unit": "",
+      "reference_range": "",
+      "flag": "normal",
+      "notes": ""
+    }
+  ]
+}
+
+Rules:
+1. test_name: standard names (Hb, RBS, FBS, HbA1c, TLC, DLC, platelets, creatinine, etc.)
+2. value: numeric or text exactly as on report
+3. unit: mg/dL, g/dL, %, cells/cumm, etc.
+4. reference_range: as printed on report
+5. flag: normal | high | low | critical | unknown — compare value to reference when possible
+6. sample_date: ISO date YYYY-MM-DD if visible, else null
+7. Do not invent tests not present in the text
+8. If a row is unclear, still include test_name with notes describing ambiguity

@@ -1,0 +1,1023 @@
+[
+  {
+    "brand_name": "AUGMENTIN",
+    "generic_name": "Amoxicillin + Clavulanic Acid",
+    "category": "Antibiotic",
+    "schedule": "H",
+    "common_dosages": ["375mg", "625mg", "1000mg"],
+    "standard_frequencies": ["BD", "TDS"],
+    "typical_duration": "5-7 days",
+    "phonetic_variants": ["Ogmentin", "Augmantin", "Amoxclav"]
+  },
+  {
+    "brand_name": "AMOXIL",
+    "generic_name": "Amoxicillin",
+    "category": "Antibiotic",
+    "schedule": "H",
+    "common_dosages": ["250mg", "500mg"],
+    "standard_frequencies": ["TDS"],
+    "typical_duration": "5-7 days",
+    "phonetic_variants": ["Amoxil", "Mox", "Novamox"]
+  },
+  {
+    "brand_name": "NOVAMOX",
+    "generic_name": "Amoxicillin",
+    "category": "Antibiotic",
+    "schedule": "H",
+    "common_dosages": ["250mg", "500mg"],
+    "standard_frequencies": ["TDS"],
+    "typical_duration": "5-7 days",
+    "phonetic_variants": ["Novamox", "Amoxil", "Mox"]
+  },
+  {
+    "brand_name": "ZITHROMAX",
+    "generic_name": "Azithromycin",
+    "category": "Antibiotic",
+    "schedule": "H",
+    "common_dosages": ["250mg", "500mg"],
+    "standard_frequencies": ["OD"],
+    "typical_duration": "3-5 days",
+    "phonetic_variants": ["Zithromax", "Azithral", "Azee"]
+  },
+  {
+    "brand_name": "AZITHRAL",
+    "generic_name": "Azithromycin",
+    "category": "Antibiotic",
+    "schedule": "H",
+    "common_dosages": ["250mg", "500mg"],
+    "standard_frequencies": ["OD"],
+    "typical_duration": "3-5 days",
+    "phonetic_variants": ["Azithral", "Zithromax", "Azee"]
+  },
+  {
+    "brand_name": "CIPLOX",
+    "generic_name": "Ciprofloxacin",
+    "category": "Antibiotic",
+    "schedule": "H",
+    "common_dosages": ["250mg", "500mg", "750mg"],
+    "standard_frequencies": ["BD"],
+    "typical_duration": "5-7 days",
+    "phonetic_variants": ["Ciplox", "Cifran", "Ciprolet"]
+  },
+  {
+    "brand_name": "CIFRAN",
+    "generic_name": "Ciprofloxacin",
+    "category": "Antibiotic",
+    "schedule": "H",
+    "common_dosages": ["250mg", "500mg"],
+    "standard_frequencies": ["BD"],
+    "typical_duration": "5-7 days",
+    "phonetic_variants": ["Cifran", "Ciplox", "Ciprolet"]
+  },
+  {
+    "brand_name": "TAXIM-O",
+    "generic_name": "Cefixime",
+    "category": "Antibiotic",
+    "schedule": "H",
+    "common_dosages": ["100mg", "200mg", "400mg"],
+    "standard_frequencies": ["OD", "BD"],
+    "typical_duration": "5-7 days",
+    "phonetic_variants": ["Taxim O", "Cefix", "Zifi"]
+  },
+  {
+    "brand_name": "ZIFI",
+    "generic_name": "Cefixime",
+    "category": "Antibiotic",
+    "schedule": "H",
+    "common_dosages": ["100mg", "200mg"],
+    "standard_frequencies": ["OD", "BD"],
+    "typical_duration": "5-7 days",
+    "phonetic_variants": ["Zifi", "Taxim-O", "Cefix"]
+  },
+  {
+    "brand_name": "MONOCEF",
+    "generic_name": "Ceftriaxone",
+    "category": "Antibiotic",
+    "schedule": "H",
+    "common_dosages": ["250mg", "500mg", "1g"],
+    "standard_frequencies": ["OD", "BD"],
+    "typical_duration": "3-7 days",
+    "phonetic_variants": ["Monocef", "Oframax", "Rocephin"]
+  },
+  {
+    "brand_name": "DOXYCAP",
+    "generic_name": "Doxycycline",
+    "category": "Antibiotic",
+    "schedule": "H",
+    "common_dosages": ["100mg"],
+    "standard_frequencies": ["OD", "BD"],
+    "typical_duration": "7-14 days",
+    "phonetic_variants": ["Doxycap", "Doxt", "Biodoxi"]
+  },
+  {
+    "brand_name": "METROGYL",
+    "generic_name": "Metronidazole",
+    "category": "Antibiotic / Antiprotozoal",
+    "schedule": "H",
+    "common_dosages": ["200mg", "400mg"],
+    "standard_frequencies": ["TDS"],
+    "typical_duration": "5-7 days",
+    "phonetic_variants": ["Metrogyl", "Flagyl", "Metron"]
+  },
+  {
+    "brand_name": "FLAGYL",
+    "generic_name": "Metronidazole",
+    "category": "Antibiotic / Antiprotozoal",
+    "schedule": "H",
+    "common_dosages": ["200mg", "400mg"],
+    "standard_frequencies": ["TDS"],
+    "typical_duration": "5-7 days",
+    "phonetic_variants": ["Flagyl", "Metrogyl", "Metron"]
+  },
+  {
+    "brand_name": "NORFLOX",
+    "generic_name": "Norfloxacin",
+    "category": "Antibiotic",
+    "schedule": "H",
+    "common_dosages": ["400mg"],
+    "standard_frequencies": ["BD"],
+    "typical_duration": "3-7 days",
+    "phonetic_variants": ["Norflox", "Norbactin", "Norflox-TZ"]
+  },
+  {
+    "brand_name": "CLAVAM",
+    "generic_name": "Amoxicillin + Clavulanic Acid",
+    "category": "Antibiotic",
+    "schedule": "H",
+    "common_dosages": ["625mg", "1000mg"],
+    "standard_frequencies": ["BD", "TDS"],
+    "typical_duration": "5-7 days",
+    "phonetic_variants": ["Clavam", "Augmentin", "Moxclav"]
+  },
+  {
+    "brand_name": "PAN",
+    "generic_name": "Pantoprazole",
+    "category": "Antacid / PPI",
+    "schedule": "H",
+    "common_dosages": ["20mg", "40mg"],
+    "standard_frequencies": ["OD", "BD"],
+    "typical_duration": "14-28 days",
+    "phonetic_variants": ["Pan", "Pantop", "Pantocid"]
+  },
+  {
+    "brand_name": "PANTOCID",
+    "generic_name": "Pantoprazole",
+    "category": "Antacid / PPI",
+    "schedule": "H",
+    "common_dosages": ["20mg", "40mg"],
+    "standard_frequencies": ["OD", "BD"],
+    "typical_duration": "14-28 days",
+    "phonetic_variants": ["Pantocid", "Pan", "Pantop"]
+  },
+  {
+    "brand_name": "OMEZ",
+    "generic_name": "Omeprazole",
+    "category": "Antacid / PPI",
+    "schedule": "H",
+    "common_dosages": ["10mg", "20mg", "40mg"],
+    "standard_frequencies": ["OD", "BD"],
+    "typical_duration": "14-28 days",
+    "phonetic_variants": ["Omez", "Omeprazole", "Omiron"]
+  },
+  {
+    "brand_name": "RAZO",
+    "generic_name": "Rabeprazole",
+    "category": "Antacid / PPI",
+    "schedule": "H",
+    "common_dosages": ["10mg", "20mg"],
+    "standard_frequencies": ["OD", "BD"],
+    "typical_duration": "14-28 days",
+    "phonetic_variants": ["Razo", "Rablet", "Rabifast"]
+  },
+  {
+    "brand_name": "GELUSIL",
+    "generic_name": "Aluminium Hydroxide + Magnesium Hydroxide",
+    "category": "Antacid",
+    "schedule": "OTC",
+    "common_dosages": ["10ml", "20ml"],
+    "standard_frequencies": ["TDS", "QID"],
+    "typical_duration": "7-14 days",
+    "phonetic_variants": ["Gelusil", "Gelucil", "Jylusil"]
+  },
+  {
+    "brand_name": "DIGENE",
+    "generic_name": "Aluminium Hydroxide + Magnesium Hydroxide + Simethicone",
+    "category": "Antacid",
+    "schedule": "OTC",
+    "common_dosages": ["10ml", "20ml"],
+    "standard_frequencies": ["TDS", "QID"],
+    "typical_duration": "7-14 days",
+    "phonetic_variants": ["Digene", "Daijeene", "Dijin"]
+  },
+  {
+    "brand_name": "PANTODAC",
+    "generic_name": "Pantoprazole + Domperidone",
+    "category": "Antacid / Prokinetic",
+    "schedule": "H",
+    "common_dosages": ["40mg+10mg"],
+    "standard_frequencies": ["OD", "BD"],
+    "typical_duration": "14 days",
+    "phonetic_variants": ["Pantodac", "Pan-D", "Pantop-D"]
+  },
+  {
+    "brand_name": "NEXPRO",
+    "generic_name": "Esomeprazole",
+    "category": "Antacid / PPI",
+    "schedule": "H",
+    "common_dosages": ["20mg", "40mg"],
+    "standard_frequencies": ["OD"],
+    "typical_duration": "14-28 days",
+    "phonetic_variants": ["Nexpro", "Nexum", "Esomac"]
+  },
+  {
+    "brand_name": "AMLODAC",
+    "generic_name": "Amlodipine",
+    "category": "Antihypertensive / CCB",
+    "schedule": "H",
+    "common_dosages": ["2.5mg", "5mg", "10mg"],
+    "standard_frequencies": ["OD"],
+    "typical_duration": "Long-term / Ongoing",
+    "phonetic_variants": ["Amlodac", "Amlokind", "Stamlo"]
+  },
+  {
+    "brand_name": "STAMLO",
+    "generic_name": "Amlodipine",
+    "category": "Antihypertensive / CCB",
+    "schedule": "H",
+    "common_dosages": ["5mg", "10mg"],
+    "standard_frequencies": ["OD"],
+    "typical_duration": "Long-term / Ongoing",
+    "phonetic_variants": ["Stamlo", "Amlodac", "Amlokind"]
+  },
+  {
+    "brand_name": "TELMA",
+    "generic_name": "Telmisartan",
+    "category": "Antihypertensive / ARB",
+    "schedule": "H",
+    "common_dosages": ["20mg", "40mg", "80mg"],
+    "standard_frequencies": ["OD"],
+    "typical_duration": "Long-term / Ongoing",
+    "phonetic_variants": ["Telma", "Telmikind", "Sartel"]
+  },
+  {
+    "brand_name": "TELMIKIND",
+    "generic_name": "Telmisartan",
+    "category": "Antihypertensive / ARB",
+    "schedule": "H",
+    "common_dosages": ["40mg", "80mg"],
+    "standard_frequencies": ["OD"],
+    "typical_duration": "Long-term / Ongoing",
+    "phonetic_variants": ["Telmikind", "Telma", "Sartel"]
+  },
+  {
+    "brand_name": "LOSARTAN",
+    "generic_name": "Losartan",
+    "category": "Antihypertensive / ARB",
+    "schedule": "H",
+    "common_dosages": ["25mg", "50mg", "100mg"],
+    "standard_frequencies": ["OD"],
+    "typical_duration": "Long-term / Ongoing",
+    "phonetic_variants": ["Losartan", "Losar", "Losacar"]
+  },
+  {
+    "brand_name": "ATENOLOL",
+    "generic_name": "Atenolol",
+    "category": "Antihypertensive / Beta Blocker",
+    "schedule": "H",
+    "common_dosages": ["25mg", "50mg", "100mg"],
+    "standard_frequencies": ["OD"],
+    "typical_duration": "Long-term / Ongoing",
+    "phonetic_variants": ["Atenolol", "Aten", "Tenormin"]
+  },
+  {
+    "brand_name": "METOPROLOL",
+    "generic_name": "Metoprolol",
+    "category": "Antihypertensive / Beta Blocker",
+    "schedule": "H",
+    "common_dosages": ["25mg", "50mg"],
+    "standard_frequencies": ["OD", "BD"],
+    "typical_duration": "Long-term / Ongoing",
+    "phonetic_variants": ["Metoprolol", "Metolar", "Betaloc"]
+  },
+  {
+    "brand_name": "RAMIPRIL",
+    "generic_name": "Ramipril",
+    "category": "Antihypertensive / ACE Inhibitor",
+    "schedule": "H",
+    "common_dosages": ["1.25mg", "2.5mg", "5mg", "10mg"],
+    "standard_frequencies": ["OD"],
+    "typical_duration": "Long-term / Ongoing",
+    "phonetic_variants": ["Ramipril", "Cardace", "Ramistar"]
+  },
+  {
+    "brand_name": "CARDACE",
+    "generic_name": "Ramipril",
+    "category": "Antihypertensive / ACE Inhibitor",
+    "schedule": "H",
+    "common_dosages": ["2.5mg", "5mg"],
+    "standard_frequencies": ["OD"],
+    "typical_duration": "Long-term / Ongoing",
+    "phonetic_variants": ["Cardace", "Ramipril", "Ramistar"]
+  },
+  {
+    "brand_name": "AMLOKIND-AT",
+    "generic_name": "Amlodipine + Atenolol",
+    "category": "Antihypertensive Combination",
+    "schedule": "H",
+    "common_dosages": ["5mg+50mg"],
+    "standard_frequencies": ["OD"],
+    "typical_duration": "Long-term / Ongoing",
+    "phonetic_variants": ["Amlokind AT", "Amlopres AT", "Stamlo Beta"]
+  },
+  {
+    "brand_name": "GLYCOMET",
+    "generic_name": "Metformin",
+    "category": "Antidiabetic / Biguanide",
+    "schedule": "H",
+    "common_dosages": ["500mg", "850mg", "1000mg"],
+    "standard_frequencies": ["OD", "BD", "TDS"],
+    "typical_duration": "Long-term / Ongoing",
+    "phonetic_variants": ["Glycomet", "Glucophage", "Metformin"]
+  },
+  {
+    "brand_name": "GLUCOPHAGE",
+    "generic_name": "Metformin",
+    "category": "Antidiabetic / Biguanide",
+    "schedule": "H",
+    "common_dosages": ["500mg", "1000mg"],
+    "standard_frequencies": ["BD"],
+    "typical_duration": "Long-term / Ongoing",
+    "phonetic_variants": ["Glucophage", "Glycomet", "Metformin"]
+  },
+  {
+    "brand_name": "JANUVIA",
+    "generic_name": "Sitagliptin",
+    "category": "Antidiabetic / DPP-4 Inhibitor",
+    "schedule": "H",
+    "common_dosages": ["50mg", "100mg"],
+    "standard_frequencies": ["OD"],
+    "typical_duration": "Long-term / Ongoing",
+    "phonetic_variants": ["Januvia", "Istavel", "Sitaglip"]
+  },
+  {
+    "brand_name": "VOGLIBOSE",
+    "generic_name": "Voglibose",
+    "category": "Antidiabetic / Alpha Glucosidase Inhibitor",
+    "schedule": "H",
+    "common_dosages": ["0.2mg", "0.3mg"],
+    "standard_frequencies": ["TDS"],
+    "typical_duration": "Long-term / Ongoing",
+    "phonetic_variants": ["Voglibose", "Volix", "Voglo"]
+  },
+  {
+    "brand_name": "GLIMEPIRIDE",
+    "generic_name": "Glimepiride",
+    "category": "Antidiabetic / Sulfonylurea",
+    "schedule": "H",
+    "common_dosages": ["1mg", "2mg", "3mg", "4mg"],
+    "standard_frequencies": ["OD"],
+    "typical_duration": "Long-term / Ongoing",
+    "phonetic_variants": ["Glimepiride", "Amaryl", "Glimer"]
+  },
+  {
+    "brand_name": "AMARYL",
+    "generic_name": "Glimepiride",
+    "category": "Antidiabetic / Sulfonylurea",
+    "schedule": "H",
+    "common_dosages": ["1mg", "2mg"],
+    "standard_frequencies": ["OD"],
+    "typical_duration": "Long-term / Ongoing",
+    "phonetic_variants": ["Amaryl", "Glimepiride", "Glimer"]
+  },
+  {
+    "brand_name": "DAONIL",
+    "generic_name": "Glibenclamide",
+    "category": "Antidiabetic / Sulfonylurea",
+    "schedule": "H",
+    "common_dosages": ["2.5mg", "5mg"],
+    "standard_frequencies": ["OD", "BD"],
+    "typical_duration": "Long-term / Ongoing",
+    "phonetic_variants": ["Daonil", "Glynase", "Glucovance"]
+  },
+  {
+    "brand_name": "CROCIN",
+    "generic_name": "Paracetamol",
+    "category": "Antipyretic / Analgesic",
+    "schedule": "OTC",
+    "common_dosages": ["325mg", "500mg", "650mg"],
+    "standard_frequencies": ["TDS", "QID"],
+    "typical_duration": "3-5 days",
+    "phonetic_variants": ["Crocin", "Croxin", "Croceen"]
+  },
+  {
+    "brand_name": "DOLO",
+    "generic_name": "Paracetamol",
+    "category": "Antipyretic / Analgesic",
+    "schedule": "OTC",
+    "common_dosages": ["650mg"],
+    "standard_frequencies": ["TDS", "QID"],
+    "typical_duration": "3-5 days",
+    "phonetic_variants": ["Dolo", "Dollo", "Dolo 650"]
+  },
+  {
+    "brand_name": "COMBIFLAM",
+    "generic_name": "Ibuprofen + Paracetamol",
+    "category": "Analgesic / NSAID Combination",
+    "schedule": "OTC",
+    "common_dosages": ["400mg+325mg"],
+    "standard_frequencies": ["TDS"],
+    "typical_duration": "3-5 days",
+    "phonetic_variants": ["Combiflam", "Combeeflam", "Combiflame"]
+  },
+  {
+    "brand_name": "BRUFEN",
+    "generic_name": "Ibuprofen",
+    "category": "Analgesic / NSAID",
+    "schedule": "H",
+    "common_dosages": ["200mg", "400mg", "600mg"],
+    "standard_frequencies": ["TDS"],
+    "typical_duration": "3-5 days",
+    "phonetic_variants": ["Brufen", "Broofen", "Ibugesic"]
+  },
+  {
+    "brand_name": "VOVERAN",
+    "generic_name": "Diclofenac",
+    "category": "Analgesic / NSAID",
+    "schedule": "H",
+    "common_dosages": ["50mg", "75mg", "100mg"],
+    "standard_frequencies": ["BD", "TDS"],
+    "typical_duration": "3-5 days",
+    "phonetic_variants": ["Voveran", "Voltaren", "Diclofenac"]
+  },
+  {
+    "brand_name": "ETORICOX",
+    "generic_name": "Etoricoxib",
+    "category": "Analgesic / COX-2 Inhibitor",
+    "schedule": "H",
+    "common_dosages": ["60mg", "90mg", "120mg"],
+    "standard_frequencies": ["OD"],
+    "typical_duration": "5-7 days",
+    "phonetic_variants": ["Etoricox", "Arcoxia", "Etody"]
+  },
+  {
+    "brand_name": "MEFTAL-SPAS",
+    "generic_name": "Mefenamic Acid + Dicyclomine",
+    "category": "Analgesic / Antispasmodic",
+    "schedule": "H",
+    "common_dosages": ["250mg+10mg"],
+    "standard_frequencies": ["TDS"],
+    "typical_duration": "3-5 days",
+    "phonetic_variants": ["Meftal Spas", "Meftalspas", "Meftall Spas"]
+  },
+  {
+    "brand_name": "NIMESULIDE",
+    "generic_name": "Nimesulide",
+    "category": "Analgesic / NSAID",
+    "schedule": "H",
+    "common_dosages": ["100mg"],
+    "standard_frequencies": ["BD"],
+    "typical_duration": "3-5 days",
+    "phonetic_variants": ["Nimesulide", "Nise", "Nimulid"]
+  },
+  {
+    "brand_name": "NISE",
+    "generic_name": "Nimesulide",
+    "category": "Analgesic / NSAID",
+    "schedule": "H",
+    "common_dosages": ["100mg"],
+    "standard_frequencies": ["BD"],
+    "typical_duration": "3-5 days",
+    "phonetic_variants": ["Nise", "Nimesulide", "Nimulid"]
+  },
+  {
+    "brand_name": "CETIRIZINE",
+    "generic_name": "Cetirizine",
+    "category": "Antihistamine",
+    "schedule": "OTC",
+    "common_dosages": ["5mg", "10mg"],
+    "standard_frequencies": ["OD"],
+    "typical_duration": "5-7 days",
+    "phonetic_variants": ["Cetirizine", "Cetriz", "Alerid"]
+  },
+  {
+    "brand_name": "ALERID",
+    "generic_name": "Cetirizine",
+    "category": "Antihistamine",
+    "schedule": "OTC",
+    "common_dosages": ["10mg"],
+    "standard_frequencies": ["OD"],
+    "typical_duration": "5-7 days",
+    "phonetic_variants": ["Alerid", "Cetirizine", "Cetriz"]
+  },
+  {
+    "brand_name": "MONTAIR",
+    "generic_name": "Montelukast",
+    "category": "Antihistamine / Leukotriene Antagonist",
+    "schedule": "H",
+    "common_dosages": ["4mg", "5mg", "10mg"],
+    "standard_frequencies": ["OD"],
+    "typical_duration": "Ongoing / 4 weeks",
+    "phonetic_variants": ["Montair", "Singulair", "Montair LC"]
+  },
+  {
+    "brand_name": "MONTAIR-LC",
+    "generic_name": "Montelukast + Levocetirizine",
+    "category": "Antihistamine Combination",
+    "schedule": "H",
+    "common_dosages": ["10mg+5mg"],
+    "standard_frequencies": ["OD"],
+    "typical_duration": "7-14 days",
+    "phonetic_variants": ["Montair LC", "Montairlc", "Montirlc"]
+  },
+  {
+    "brand_name": "LEVOCET",
+    "generic_name": "Levocetirizine",
+    "category": "Antihistamine",
+    "schedule": "OTC",
+    "common_dosages": ["5mg"],
+    "standard_frequencies": ["OD"],
+    "typical_duration": "5-7 days",
+    "phonetic_variants": ["Levocet", "Levocetirizine", "Xyzal"]
+  },
+  {
+    "brand_name": "ALLEGRA",
+    "generic_name": "Fexofenadine",
+    "category": "Antihistamine",
+    "schedule": "OTC",
+    "common_dosages": ["120mg", "180mg"],
+    "standard_frequencies": ["OD", "BD"],
+    "typical_duration": "5-7 days",
+    "phonetic_variants": ["Allegra", "Allergy", "Fexova"]
+  },
+  {
+    "brand_name": "BECOSULES",
+    "generic_name": "Vitamin B Complex + Vitamin C",
+    "category": "Vitamin / Supplement",
+    "schedule": "OTC",
+    "common_dosages": ["1 capsule"],
+    "standard_frequencies": ["OD"],
+    "typical_duration": "30 days",
+    "phonetic_variants": ["Becosules", "Becosool", "Beco sules"]
+  },
+  {
+    "brand_name": "REVITAL",
+    "generic_name": "Multivitamin + Minerals",
+    "category": "Vitamin / Supplement",
+    "schedule": "OTC",
+    "common_dosages": ["1 capsule"],
+    "standard_frequencies": ["OD"],
+    "typical_duration": "30 days",
+    "phonetic_variants": ["Revital", "Rivital", "Revitall"]
+  },
+  {
+    "brand_name": "SHELCAL",
+    "generic_name": "Calcium Carbonate + Vitamin D3",
+    "category": "Vitamin / Supplement",
+    "schedule": "OTC",
+    "common_dosages": ["500mg+250IU", "500mg+1000IU"],
+    "standard_frequencies": ["OD", "BD"],
+    "typical_duration": "90 days",
+    "phonetic_variants": ["Shelcal", "Shilcal", "Shelkal"]
+  },
+  {
+    "brand_name": "CALCIROL",
+    "generic_name": "Cholecalciferol (Vitamin D3)",
+    "category": "Vitamin / Supplement",
+    "schedule": "OTC",
+    "common_dosages": ["60000IU sachet"],
+    "standard_frequencies": ["OD"],
+    "typical_duration": "8-12 weeks (weekly sachet)",
+    "phonetic_variants": ["Calcirol", "Calciral", "D-Rise"]
+  },
+  {
+    "brand_name": "D-RISE",
+    "generic_name": "Cholecalciferol (Vitamin D3)",
+    "category": "Vitamin / Supplement",
+    "schedule": "OTC",
+    "common_dosages": ["60000IU"],
+    "standard_frequencies": ["OD"],
+    "typical_duration": "8-12 weeks (weekly sachet)",
+    "phonetic_variants": ["D-Rise", "Drise", "Calcirol"]
+  },
+  {
+    "brand_name": "NUROKIND",
+    "generic_name": "Mecobalamin (Vitamin B12)",
+    "category": "Vitamin / Supplement",
+    "schedule": "OTC",
+    "common_dosages": ["500mcg"],
+    "standard_frequencies": ["OD", "BD"],
+    "typical_duration": "30-90 days",
+    "phonetic_variants": ["Nurokind", "Nurokiind", "Mecobal"]
+  },
+  {
+    "brand_name": "METHYLCOBALAMIN",
+    "generic_name": "Mecobalamin (Vitamin B12)",
+    "category": "Vitamin / Supplement",
+    "schedule": "OTC",
+    "common_dosages": ["500mcg", "1500mcg"],
+    "standard_frequencies": ["OD"],
+    "typical_duration": "30-90 days",
+    "phonetic_variants": ["Methylcobalamin", "Methycobalamin", "Methyl B12"]
+  },
+  {
+    "brand_name": "FERONIA-XT",
+    "generic_name": "Ferrous Ascorbate + Folic Acid",
+    "category": "Hematinic / Iron Supplement",
+    "schedule": "OTC",
+    "common_dosages": ["100mg+1.5mg"],
+    "standard_frequencies": ["OD"],
+    "typical_duration": "90 days",
+    "phonetic_variants": ["Feronia XT", "Feroniaxt", "Feronia"]
+  },
+  {
+    "brand_name": "AUTRIN",
+    "generic_name": "Ferric Ammonium Citrate + Folic Acid + Cyanocobalamin",
+    "category": "Hematinic / Iron Supplement",
+    "schedule": "OTC",
+    "common_dosages": ["1 capsule"],
+    "standard_frequencies": ["OD"],
+    "typical_duration": "90 days",
+    "phonetic_variants": ["Autrin", "Otrin", "Autreen"]
+  },
+  {
+    "brand_name": "DEXONA",
+    "generic_name": "Dexamethasone",
+    "category": "Corticosteroid",
+    "schedule": "H",
+    "common_dosages": ["0.5mg", "1mg"],
+    "standard_frequencies": ["OD", "BD"],
+    "typical_duration": "3-5 days (short course)",
+    "phonetic_variants": ["Dexona", "Decadron", "Dexamethasone"]
+  },
+  {
+    "brand_name": "WYSOLONE",
+    "generic_name": "Prednisolone",
+    "category": "Corticosteroid",
+    "schedule": "H",
+    "common_dosages": ["5mg", "10mg", "20mg"],
+    "standard_frequencies": ["OD", "BD"],
+    "typical_duration": "5-14 days",
+    "phonetic_variants": ["Wysolone", "Waisolone", "Prednisolone"]
+  },
+  {
+    "brand_name": "ASTHALIN",
+    "generic_name": "Salbutamol",
+    "category": "Bronchodilator",
+    "schedule": "H",
+    "common_dosages": ["2mg", "4mg", "100mcg inhaler"],
+    "standard_frequencies": ["TDS", "QID"],
+    "typical_duration": "5-7 days",
+    "phonetic_variants": ["Asthalin", "Astallin", "Ventolin"]
+  },
+  {
+    "brand_name": "VENTOLIN",
+    "generic_name": "Salbutamol",
+    "category": "Bronchodilator",
+    "schedule": "H",
+    "common_dosages": ["100mcg inhaler"],
+    "standard_frequencies": ["TDS", "QID"],
+    "typical_duration": "Ongoing / PRN",
+    "phonetic_variants": ["Ventolin", "Asthalin", "Astallin"]
+  },
+  {
+    "brand_name": "DERIPHYLLIN",
+    "generic_name": "Etofylline + Theophylline",
+    "category": "Bronchodilator",
+    "schedule": "H",
+    "common_dosages": ["150mg tablet"],
+    "standard_frequencies": ["BD", "TDS"],
+    "typical_duration": "5-7 days",
+    "typical_duration": "5-7 days",
+    "phonetic_variants": ["Deriphyllin", "Deriphyllin retard", "Derifyllin"]
+  },
+  {
+    "brand_name": "ALEX",
+    "generic_name": "Chlorpheniramine + Dextromethorphan + Phenylephrine",
+    "category": "Cough / Cold Combination",
+    "schedule": "H",
+    "common_dosages": ["5ml", "10ml"],
+    "standard_frequencies": ["TDS", "QID"],
+    "typical_duration": "5-7 days",
+    "phonetic_variants": ["Alex", "Alexx", "Alex syrup"]
+  },
+  {
+    "brand_name": "BENADRYL",
+    "generic_name": "Diphenhydramine + Ammonium Chloride",
+    "category": "Cough Suppressant / Antihistamine",
+    "schedule": "OTC",
+    "common_dosages": ["10ml"],
+    "standard_frequencies": ["TDS", "QID"],
+    "typical_duration": "5-7 days",
+    "phonetic_variants": ["Benadryl", "Benadrill", "Benedryl"]
+  },
+  {
+    "brand_name": "ASCORIL",
+    "generic_name": "Salbutamol + Bromhexine + Guaifenesin",
+    "category": "Cough / Expectorant Combination",
+    "schedule": "H",
+    "common_dosages": ["5ml", "10ml"],
+    "standard_frequencies": ["TDS"],
+    "typical_duration": "5-7 days",
+    "phonetic_variants": ["Ascoril", "Ascoryl", "Ascorill"]
+  },
+  {
+    "brand_name": "AMBROLITE",
+    "generic_name": "Ambroxol",
+    "category": "Mucolytic / Expectorant",
+    "schedule": "OTC",
+    "common_dosages": ["30mg"],
+    "standard_frequencies": ["BD", "TDS"],
+    "typical_duration": "5-7 days",
+    "phonetic_variants": ["Ambrolite", "Ambrodil", "Ambroxol"]
+  },
+  {
+    "brand_name": "SPORANOX",
+    "generic_name": "Itraconazole",
+    "category": "Antifungal",
+    "schedule": "H",
+    "common_dosages": ["100mg", "200mg"],
+    "standard_frequencies": ["OD", "BD"],
+    "typical_duration": "7-28 days",
+    "phonetic_variants": ["Sporanox", "Canditral", "Itrasys"]
+  },
+  {
+    "brand_name": "FLUCONAZOLE",
+    "generic_name": "Fluconazole",
+    "category": "Antifungal",
+    "schedule": "H",
+    "common_dosages": ["50mg", "150mg", "200mg"],
+    "standard_frequencies": ["OD"],
+    "typical_duration": "1-14 days",
+    "phonetic_variants": ["Fluconazole", "Flucos", "Syscan"]
+  },
+  {
+    "brand_name": "CLOTRIMAZOLE",
+    "generic_name": "Clotrimazole",
+    "category": "Antifungal (Topical)",
+    "schedule": "OTC",
+    "common_dosages": ["1% cream"],
+    "standard_frequencies": ["BD", "TDS"],
+    "typical_duration": "14-28 days",
+    "phonetic_variants": ["Clotrimazole", "Candid", "Canesten"]
+  },
+  {
+    "brand_name": "CANDID-B",
+    "generic_name": "Clotrimazole + Beclomethasone",
+    "category": "Antifungal + Steroid (Topical)",
+    "schedule": "H",
+    "common_dosages": ["1%+0.025% cream"],
+    "standard_frequencies": ["BD"],
+    "typical_duration": "14 days",
+    "phonetic_variants": ["Candid-B", "Candid B", "CandidBee"]
+  },
+  {
+    "brand_name": "PHENERGAN",
+    "generic_name": "Promethazine",
+    "category": "Antihistamine / Antiemetic",
+    "schedule": "H",
+    "common_dosages": ["10mg", "25mg"],
+    "standard_frequencies": ["OD", "BD"],
+    "typical_duration": "3-5 days",
+    "phonetic_variants": ["Phenergan", "Fennergan", "Promethazine"]
+  },
+  {
+    "brand_name": "PERINORM",
+    "generic_name": "Metoclopramide",
+    "category": "Antiemetic / Prokinetic",
+    "schedule": "H",
+    "common_dosages": ["10mg"],
+    "standard_frequencies": ["TDS"],
+    "typical_duration": "3-5 days",
+    "phonetic_variants": ["Perinorm", "Reglan", "Metaclopramide"]
+  },
+  {
+    "brand_name": "DOMCET",
+    "generic_name": "Domperidone",
+    "category": "Antiemetic / Prokinetic",
+    "schedule": "H",
+    "common_dosages": ["10mg"],
+    "standard_frequencies": ["TDS"],
+    "typical_duration": "3-5 days",
+    "phonetic_variants": ["Domcet", "Domperi", "Domstal"]
+  },
+  {
+    "brand_name": "DOMSTAL",
+    "generic_name": "Domperidone",
+    "category": "Antiemetic / Prokinetic",
+    "schedule": "H",
+    "common_dosages": ["10mg"],
+    "standard_frequencies": ["TDS"],
+    "typical_duration": "3-5 days",
+    "phonetic_variants": ["Domstal", "Domcet", "Domperi"]
+  },
+  {
+    "brand_name": "ORS",
+    "generic_name": "Oral Rehydration Salts",
+    "category": "Rehydration / Electrolyte",
+    "schedule": "OTC",
+    "common_dosages": ["1 sachet in 1L water"],
+    "standard_frequencies": ["QID"],
+    "typical_duration": "3-5 days",
+    "phonetic_variants": ["ORS", "Electral", "Oralyte"]
+  },
+  {
+    "brand_name": "ELECTRAL",
+    "generic_name": "Oral Rehydration Salts",
+    "category": "Rehydration / Electrolyte",
+    "schedule": "OTC",
+    "common_dosages": ["1 sachet"],
+    "standard_frequencies": ["QID"],
+    "typical_duration": "3-5 days",
+    "phonetic_variants": ["Electral", "Electrul", "Ilectral"]
+  },
+  {
+    "brand_name": "SPORLAC",
+    "generic_name": "Saccharomyces Boulardii (Probiotic)",
+    "category": "Probiotic",
+    "schedule": "OTC",
+    "common_dosages": ["250mg"],
+    "standard_frequencies": ["BD"],
+    "typical_duration": "5-10 days",
+    "phonetic_variants": ["Sporlac", "Sporlak", "Yeast Plus"]
+  },
+  {
+    "brand_name": "ECONORM",
+    "generic_name": "Saccharomyces Boulardii (Probiotic)",
+    "category": "Probiotic",
+    "schedule": "OTC",
+    "common_dosages": ["250mg sachet"],
+    "standard_frequencies": ["BD"],
+    "typical_duration": "5-10 days",
+    "phonetic_variants": ["Econorm", "Ikonomm", "Sporlac"]
+  },
+  {
+    "brand_name": "SOFTOVAC",
+    "generic_name": "Isabgol + Senna + Lactulose",
+    "category": "Laxative",
+    "schedule": "OTC",
+    "common_dosages": ["1 teaspoon"],
+    "standard_frequencies": ["OD"],
+    "typical_duration": "3-7 days",
+    "phonetic_variants": ["Softovac", "Softovec", "Softobac"]
+  },
+  {
+    "brand_name": "DUPHALAC",
+    "generic_name": "Lactulose",
+    "category": "Laxative",
+    "schedule": "OTC",
+    "common_dosages": ["10ml", "15ml"],
+    "standard_frequencies": ["OD", "BD"],
+    "typical_duration": "7-14 days",
+    "phonetic_variants": ["Duphalac", "Duphelac", "Laculose"]
+  },
+  {
+    "brand_name": "THYRONORM",
+    "generic_name": "Levothyroxine",
+    "category": "Thyroid Hormone Replacement",
+    "schedule": "H",
+    "common_dosages": ["25mcg", "50mcg", "75mcg", "100mcg"],
+    "standard_frequencies": ["OD"],
+    "typical_duration": "Long-term / Ongoing",
+    "phonetic_variants": ["Thyronorm", "Thiranorm", "Eltroxin"]
+  },
+  {
+    "brand_name": "ELTROXIN",
+    "generic_name": "Levothyroxine",
+    "category": "Thyroid Hormone Replacement",
+    "schedule": "H",
+    "common_dosages": ["50mcg", "100mcg"],
+    "standard_frequencies": ["OD"],
+    "typical_duration": "Long-term / Ongoing",
+    "phonetic_variants": ["Eltroxin", "Thyronorm", "Tiranorm"]
+  },
+  {
+    "brand_name": "NEOMERCAZOLE",
+    "generic_name": "Carbimazole",
+    "category": "Antithyroid",
+    "schedule": "H",
+    "common_dosages": ["5mg", "10mg"],
+    "standard_frequencies": ["TDS"],
+    "typical_duration": "12-18 months",
+    "phonetic_variants": ["Neomercazole", "Carbimazole", "Methimazole"]
+  },
+  {
+    "brand_name": "ROSUVASTATIN",
+    "generic_name": "Rosuvastatin",
+    "category": "Antihyperlipidemic / Statin",
+    "schedule": "H",
+    "common_dosages": ["5mg", "10mg", "20mg", "40mg"],
+    "standard_frequencies": ["OD"],
+    "typical_duration": "Long-term / Ongoing",
+    "phonetic_variants": ["Rosuvastatin", "Rozavel", "Crestor"]
+  },
+  {
+    "brand_name": "ROZAVEL",
+    "generic_name": "Rosuvastatin",
+    "category": "Antihyperlipidemic / Statin",
+    "schedule": "H",
+    "common_dosages": ["10mg", "20mg"],
+    "standard_frequencies": ["OD"],
+    "typical_duration": "Long-term / Ongoing",
+    "phonetic_variants": ["Rozavel", "Rosuvastatin", "Crestor"]
+  },
+  {
+    "brand_name": "ATORVASTATIN",
+    "generic_name": "Atorvastatin",
+    "category": "Antihyperlipidemic / Statin",
+    "schedule": "H",
+    "common_dosages": ["10mg", "20mg", "40mg", "80mg"],
+    "standard_frequencies": ["OD"],
+    "typical_duration": "Long-term / Ongoing",
+    "phonetic_variants": ["Atorvastatin", "Atorva", "Lipitor"]
+  },
+  {
+    "brand_name": "CLONAZEPAM",
+    "generic_name": "Clonazepam",
+    "category": "Anxiolytic / Anticonvulsant",
+    "schedule": "H1",
+    "common_dosages": ["0.25mg", "0.5mg", "1mg", "2mg"],
+    "standard_frequencies": ["OD", "BD"],
+    "typical_duration": "Short-term / Physician directed",
+    "phonetic_variants": ["Clonazepam", "Clonafit", "Rivotril"]
+  },
+  {
+    "brand_name": "ALPRAZOLAM",
+    "generic_name": "Alprazolam",
+    "category": "Anxiolytic",
+    "schedule": "H1",
+    "common_dosages": ["0.25mg", "0.5mg", "1mg"],
+    "standard_frequencies": ["OD", "BD", "TDS"],
+    "typical_duration": "Short-term / Physician directed",
+    "phonetic_variants": ["Alprazolam", "Alprax", "Restyl"]
+  },
+  {
+    "brand_name": "ALPRAX",
+    "generic_name": "Alprazolam",
+    "category": "Anxiolytic",
+    "schedule": "H1",
+    "common_dosages": ["0.25mg", "0.5mg"],
+    "standard_frequencies": ["BD", "TDS"],
+    "typical_duration": "Short-term / Physician directed",
+    "phonetic_variants": ["Alprax", "Alprazolam", "Restyl"]
+  },
+  {
+    "brand_name": "ZOLFRESH",
+    "generic_name": "Zolpidem",
+    "category": "Hypnotic / Sedative",
+    "schedule": "H1",
+    "common_dosages": ["5mg", "10mg"],
+    "standard_frequencies": ["OD"],
+    "typical_duration": "Short-term / Physician directed",
+    "phonetic_variants": ["Zolfresh", "Zolpidem", "Stilnox"]
+  },
+  {
+    "brand_name": "GABAPIN",
+    "generic_name": "Gabapentin",
+    "category": "Neuropathic Pain / Anticonvulsant",
+    "schedule": "H",
+    "common_dosages": ["100mg", "300mg", "400mg"],
+    "standard_frequencies": ["TDS"],
+    "typical_duration": "Ongoing / Physician directed",
+    "phonetic_variants": ["Gabapin", "Gabapentin", "Gabaneuron"]
+  },
+  {
+    "brand_name": "PREGABALIN",
+    "generic_name": "Pregabalin",
+    "category": "Neuropathic Pain / Anticonvulsant",
+    "schedule": "H",
+    "common_dosages": ["75mg", "150mg", "300mg"],
+    "standard_frequencies": ["BD"],
+    "typical_duration": "Ongoing / Physician directed",
+    "phonetic_variants": ["Pregabalin", "Pregeb", "Lyrica"]
+  },
+  {
+    "brand_name": "SYNDOPA",
+    "generic_name": "Levodopa + Carbidopa",
+    "category": "Antiparkinson",
+    "schedule": "H",
+    "common_dosages": ["100mg+10mg", "250mg+25mg"],
+    "standard_frequencies": ["TDS", "QID"],
+    "typical_duration": "Long-term / Ongoing",
+    "phonetic_variants": ["Syndopa", "Sindopa", "Sinemet"]
+  },
+  {
+    "brand_name": "FOLVITE",
+    "generic_name": "Folic Acid",
+    "category": "Vitamin / Supplement",
+    "schedule": "OTC",
+    "common_dosages": ["5mg"],
+    "standard_frequencies": ["OD"],
+    "typical_duration": "90 days",
+    "phonetic_variants": ["Folvite", "Folvik", "Folic Acid"]
+  },
+  {
+    "brand_name": "ZINCOVIT",
+    "generic_name": "Zinc + Multivitamin",
+    "category": "Vitamin / Supplement",
+    "schedule": "OTC",
+    "common_dosages": ["1 tablet"],
+    "standard_frequencies": ["OD"],
+    "typical_duration": "30 days",
+    "phonetic_variants": ["Zincovit", "Zinkovat", "Zincovite"]
+  }
+]

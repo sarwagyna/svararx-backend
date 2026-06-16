@@ -1,0 +1,190 @@
+{
+  "cases": [
+    {
+      "id": "pure_english",
+      "transcript": "Diagnosis type 2 diabetes. Metformin 500 milligram twice daily for 30 days after food. Atorvastatin 10 milligram once daily at bedtime for 1 month.",
+      "expected_drugs": ["METFORMIN", "ATORVASTATIN"],
+      "llm_response": {
+        "drugs": [
+          {"name": "METFORMIN", "generic_name": "Metformin", "dose": "500mg", "frequency": "BD", "duration": "30 days", "instructions": "after food", "flagged": false},
+          {"name": "ATORVASTATIN", "generic_name": "Atorvastatin", "dose": "10mg", "frequency": "HS", "duration": "1 month", "instructions": "at bedtime", "flagged": false}
+        ],
+        "diagnosis": "Type 2 diabetes",
+        "structuring_confidence": 0.95
+      }
+    },
+    {
+      "id": "telugu_english_mix",
+      "transcript": "Patient ki fever and cough undi. Paracetamol 650 mg roju mooḍu sarlu for 5 days tinadaniki tarvata. Azithromycin 500 mg roju okasari for 3 days.",
+      "expected_drugs": ["PARACETAMOL", "AZITHROMYCIN"],
+      "llm_response": {
+        "drugs": [
+          {"name": "PARACETAMOL", "dose": "650mg", "frequency": "TDS", "duration": "5 days", "instructions": "after food", "flagged": false},
+          {"name": "AZITHROMYCIN", "dose": "500mg", "frequency": "OD", "duration": "3 days", "flagged": false}
+        ],
+        "chief_complaint": "Fever and cough",
+        "structuring_confidence": 0.9
+      }
+    },
+    {
+      "id": "telugu_bd_pattern",
+      "transcript": "Hypertension. Amlodipine 5 mg oka tablet roju rendu sarlu continue. Pantoprazole 40 mg tinadaniki mundu for 14 days.",
+      "expected_drugs": ["AMLODIPINE", "PANTOPRAZOLE"],
+      "llm_response": {
+        "drugs": [
+          {"name": "AMLODIPINE", "dose": "1 tablet", "frequency": "BD", "duration": "continue", "flagged": false},
+          {"name": "PANTOPRAZOLE", "dose": "40mg", "frequency": "OD", "duration": "14 days", "instructions": "before food", "flagged": false}
+        ],
+        "structuring_confidence": 0.88
+      }
+    },
+    {
+      "id": "drug_heavy",
+      "transcript": "Hypertension and dyslipidemia. Amlodipine 5 mg once daily. Pantoprazole 40 mg before breakfast for 14 days. Cetirizine 10 mg at bedtime for 7 days. Omeprazole 20 mg once daily for 10 days.",
+      "expected_drugs": ["AMLODIPINE", "PANTOPRAZOLE", "CETIRIZINE", "OMEPRAZOLE"],
+      "llm_response": {
+        "drugs": [
+          {"name": "AMLODIPINE", "dose": "5mg", "frequency": "OD", "duration": "30 days", "flagged": false},
+          {"name": "PANTOPRAZOLE", "dose": "40mg", "frequency": "OD", "duration": "14 days", "instructions": "before breakfast", "flagged": false},
+          {"name": "CETIRIZINE", "dose": "10mg", "frequency": "HS", "duration": "7 days", "flagged": false},
+          {"name": "OMEPRAZOLE", "dose": "20mg", "frequency": "OD", "duration": "10 days", "flagged": false}
+        ],
+        "diagnosis": "Hypertension with dyslipidemia",
+        "structuring_confidence": 0.92
+      }
+    },
+    {
+      "id": "sos_pattern",
+      "transcript": "Post appendectomy day 5. Amoxicillin clavulanate 625 mg twice daily for 5 days after food. Paracetamol for pain avasaram aithe.",
+      "expected_drugs": ["AMOXICILLIN", "PARACETAMOL"],
+      "llm_response": {
+        "drugs": [
+          {"name": "AMOXICILLIN", "dose": "625mg", "frequency": "BD", "duration": "5 days", "instructions": "after food", "flagged": false},
+          {"name": "PARACETAMOL", "dose": "650mg", "frequency": "SOS", "duration": "5 days", "instructions": "as needed for pain", "flagged": false}
+        ],
+        "diagnosis": "Post appendectomy recovery",
+        "structuring_confidence": 0.87
+      }
+    },
+    {
+      "id": "follow_up_visit",
+      "transcript": "Follow up visit for diabetes control. Continue Metformin oka tablet roju rendu sarlu for 30 days. HbA1c review in 3 months.",
+      "expected_drugs": ["METFORMIN"],
+      "llm_response": {
+        "drugs": [
+          {"name": "METFORMIN", "dose": "1 tablet", "frequency": "BD", "duration": "30 days", "flagged": false}
+        ],
+        "diagnosis": "Type 2 diabetes follow-up",
+        "follow_up_days": 90,
+        "structuring_confidence": 0.91
+      }
+    },
+    {
+      "id": "duration_rojulu",
+      "transcript": "Viral fever. Azithromycin 500 mg roju okasari for 3 rōjulu. Paracetamol 650 mg TDS for 5 rōjulu.",
+      "expected_drugs": ["AZITHROMYCIN", "PARACETAMOL"],
+      "llm_response": {
+        "drugs": [
+          {"name": "AZITHROMYCIN", "dose": "500mg", "frequency": "OD", "duration": "3 days", "flagged": false},
+          {"name": "PARACETAMOL", "dose": "650mg", "frequency": "TDS", "duration": "5 days", "flagged": false}
+        ],
+        "structuring_confidence": 0.89
+      }
+    },
+    {
+      "id": "qid_regimen",
+      "transcript": "Severe gastritis. Sucralfate 1 gram four times daily before food for 2 weeks.",
+      "expected_drugs": ["SUCRALFATE"],
+      "llm_response": {
+        "drugs": [
+          {"name": "SUCRALFATE", "dose": "1g", "frequency": "QID", "duration": "2 weeks", "instructions": "before food", "flagged": false}
+        ],
+        "structuring_confidence": 0.86
+      }
+    },
+    {
+      "id": "weekly_dose",
+      "transcript": "Vitamin D deficiency. Cholecalciferol 60000 IU once weekly for 8 weeks.",
+      "expected_drugs": ["CHOLECALCIFEROL"],
+      "llm_response": {
+        "drugs": [
+          {"name": "CHOLECALCIFEROL", "dose": "60000 IU", "frequency": "weekly", "duration": "8 weeks", "flagged": false}
+        ],
+        "structuring_confidence": 0.84
+      }
+    },
+    {
+      "id": "unclear_drug_flagged",
+      "transcript": "Give metro something tablet twice daily for 10 days.",
+      "expected_drugs": ["metro something"],
+      "llm_response": {
+        "drugs": [
+          {"name": "metro something", "dose": "1 tablet", "frequency": "BD", "duration": "10 days", "flagged": true}
+        ],
+        "structuring_confidence": 0.4
+      }
+    },
+    {
+      "id": "asthma_inhaler",
+      "transcript": "Bronchial asthma. Salbutamol inhaler SOS. Montelukast 10 mg roju okasari at bedtime for 1 month.",
+      "expected_drugs": ["SALBUTAMOL", "MONTELUKAST"],
+      "llm_response": {
+        "drugs": [
+          {"name": "SALBUTAMOL", "dose": "inhaler", "frequency": "SOS", "duration": "continue", "route": "inhalation", "flagged": false},
+          {"name": "MONTELUKAST", "dose": "10mg", "frequency": "HS", "duration": "1 month", "flagged": false}
+        ],
+        "structuring_confidence": 0.88
+      }
+    },
+    {
+      "id": "thyroid_od",
+      "transcript": "Hypothyroidism. Levothyroxine 50 mcg roju okasari empty stomach for 3 months.",
+      "expected_drugs": ["LEVOTHYROXINE"],
+      "llm_response": {
+        "drugs": [
+          {"name": "LEVOTHYROXINE", "dose": "50mcg", "frequency": "OD", "duration": "3 months", "instructions": "empty stomach", "flagged": false}
+        ],
+        "diagnosis": "Hypothyroidism",
+        "structuring_confidence": 0.93
+      }
+    },
+    {
+      "id": "skin_topical",
+      "transcript": "Fungal infection. Clotrimazole cream apply twice daily for 2 weeks. Cetirizine 10 mg at bedtime for 5 days.",
+      "expected_drugs": ["CLOTRIMAZOLE", "CETIRIZINE"],
+      "llm_response": {
+        "drugs": [
+          {"name": "CLOTRIMAZOLE", "dose": "cream", "frequency": "BD", "duration": "2 weeks", "route": "topical", "flagged": false},
+          {"name": "CETIRIZINE", "dose": "10mg", "frequency": "HS", "duration": "5 days", "flagged": false}
+        ],
+        "structuring_confidence": 0.9
+      }
+    },
+    {
+      "id": "diabetes_triple",
+      "transcript": "Uncontrolled diabetes. Metformin 500 mg BD, Glimepiride 1 mg OD before food, Atorvastatin 10 mg HS for 1 month.",
+      "expected_drugs": ["METFORMIN", "GLIMEPIRIDE", "ATORVASTATIN"],
+      "llm_response": {
+        "drugs": [
+          {"name": "METFORMIN", "dose": "500mg", "frequency": "BD", "duration": "1 month", "flagged": false},
+          {"name": "GLIMEPIRIDE", "dose": "1mg", "frequency": "OD", "duration": "1 month", "instructions": "before food", "flagged": false},
+          {"name": "ATORVASTATIN", "dose": "10mg", "frequency": "HS", "duration": "1 month", "flagged": false}
+        ],
+        "structuring_confidence": 0.94
+      }
+    },
+    {
+      "id": "uti_short_course",
+      "transcript": "UTI. Nitrofurantoin 100 mg roju rendu sarlu for 5 rōjulu. Plenty of fluids.",
+      "expected_drugs": ["NITROFURANTOIN"],
+      "llm_response": {
+        "drugs": [
+          {"name": "NITROFURANTOIN", "dose": "100mg", "frequency": "BD", "duration": "5 days", "flagged": false}
+        ],
+        "chief_complaint": "UTI",
+        "notes": "Plenty of fluids",
+        "structuring_confidence": 0.91
+      }
+    }
+  ]
+}

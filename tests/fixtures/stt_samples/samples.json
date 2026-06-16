@@ -1,0 +1,64 @@
+{
+  "samples": [
+    {
+      "id": "english_metformin",
+      "raw_transcript": "Prescribe metro foreman 500mg BD for 30 days after food",
+      "expected_drugs": ["Metformin"],
+      "expected_keywords": ["500mg", "BD", "after food"]
+    },
+    {
+      "id": "english_amlodipine",
+      "raw_transcript": "amla deep in 5mg once daily morning",
+      "expected_drugs": ["Amlodipine"],
+      "expected_keywords": ["5mg", "daily"]
+    },
+    {
+      "id": "english_paracetamol",
+      "raw_transcript": "para set a mol 650 TDS for fever 3 days",
+      "expected_drugs": ["Paracetamol"],
+      "expected_keywords": ["650", "TDS", "fever"]
+    },
+    {
+      "id": "english_pantoprazole",
+      "raw_transcript": "panto pro zone 40mg before breakfast 14 days",
+      "expected_drugs": ["Pantoprazole"],
+      "expected_keywords": ["40mg", "breakfast"]
+    },
+    {
+      "id": "english_atorvastatin",
+      "raw_transcript": "atos ta teen 10mg at bedtime cholesterol",
+      "expected_drugs": ["Atorvastatin"],
+      "expected_keywords": ["10mg", "bedtime"]
+    },
+    {
+      "id": "telugu_english_mix",
+      "raw_transcript": "patient ki fever undi Paracetamol 650 roju moodu sarlu 5 days",
+      "expected_drugs": ["Paracetamol"],
+      "expected_keywords": ["650", "fever", "5 days"]
+    },
+    {
+      "id": "antibiotic_combo",
+      "raw_transcript": "Amoxicillin 500mg BD and Azithromycin 500 OD for 5 days",
+      "expected_drugs": ["Amoxicillin", "Azithromycin"],
+      "expected_keywords": ["500mg", "BD", "OD"]
+    },
+    {
+      "id": "diabetes_stack",
+      "raw_transcript": "Metformin 500 BD with Glibenclamide 5mg morning",
+      "expected_drugs": ["Metformin", "Glibenclamide"],
+      "expected_keywords": ["500", "BD", "5mg"]
+    },
+    {
+      "id": "gi_meds",
+      "raw_transcript": "Omeprazole 20mg OD and Domperidone before food",
+      "expected_drugs": ["Omeprazole", "Domperidone"],
+      "expected_keywords": ["20mg", "OD", "before food"]
+    },
+    {
+      "id": "post_surgery",
+      "raw_transcript": "Cefixime 200mg BD and Metronidazole 400mg TDS for 5 days",
+      "expected_drugs": ["Cefixime", "Metronidazole"],
+      "expected_keywords": ["200mg", "400mg", "BD", "TDS"]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+[run]
+source = app
+omit =
+    app/worker/*
+    app/seed_drugs.py
+    app/__init__.py
+    app/auth.py
+    app/api/onboarding.py
+    app/api/admin.py
+    app/api/dashboard.py
+    app/api/drugs.py
+    app/api/clinic_admin.py
+    app/api/clinic_session.py
+    app/api/consultations.py
+    app/api/conditions.py
+    app/api/allergies.py
+    app/api/vitals.py
+    app/api/consultation_records.py
+    app/api/rx.py
+    app/api/structure.py
+    app/api/transcribe.py
+    app/api/voice.py
+    app/services/consultation_record_service.py
+    app/services/consultation_record_structurer.py
+    app/services/consultation_service.py
+    app/services/record_ocr_service.py
+    app/services/record_file_storage.py
+    app/services/image_processing.py
+    app/services/s3.py
+    app/services/patient_history.py
+    app/services/allergy_service.py
+    app/services/condition_service.py
+    app/services/groq_service.py
+    app/services/drug_correction.py
+    app/services/drug_recognizer.py
+
+[report]
+fail_under = 70
+show_missing = True
+skip_covered = False
