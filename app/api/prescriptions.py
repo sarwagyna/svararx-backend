@@ -36,7 +36,7 @@ from app.services.consultation_service import (
 from app.services.consultation_record_service import sync_record_on_prescription_approve
 from app.services.allergy_service import fetch_patient_allergies, format_allergy_prompt
 from app.services.pdf_generator import generate_prescription_pdf
-from app.services.s3 import upload_pdf_to_s3
+from app.services.s3 import upload_pdf_to_s3, presign_s3_url
 from app.services.patient_history import (
     verify_patient_access,
     fetch_patient_history,
@@ -211,6 +211,23 @@ async def approve_prescription(
         if membership.role != "admin" and membership.role != "compounder" and prescription.doctor_id != doctor.id:
             raise HTTPException(status_code=403, detail="Access denied for this prescription.")
         if prescription.status != "draft":
+            # Idempotent re-approval: a duplicate submit (e.g. double-click or a
+            # retry after a flaky network response) lands here once the draft has
+            # already been approved. Return the existing prescription instead of a
+            # 409 so the client lands on the success state rather than an error.
+            if prescription.status in ("approved", "pdf_generated"):
+                approval_time_ms = int((time.monotonic() - t_start) * 1000)
+                return ApproveResponse(
+                    prescription_id=prescription.id,
+                    pdf_url=presign_s3_url(prescription.pdf_s3_key, settings)
+                    or pdf_url_for(prescription.id, prescription.pdf_s3_key, prescription.status),
+                    pdf_base64=None,
+                    status=prescription.status,
+                    pdf_generation_time_ms=0,
+                    upload_time_ms=0,
+                    approval_time_ms=approval_time_ms,
+                    sla_exceeded=False,
+                )
             raise HTTPException(status_code=409, detail="Prescription is not a draft.")
         prescription.patient_id = body.patient_id
         prescription.doctor_id = approving_doctor.id

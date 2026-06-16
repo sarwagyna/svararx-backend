@@ -83,6 +83,27 @@ async def upload_bytes_to_s3(
     return url
 
 
+def presign_s3_url(
+    s3_key: str,
+    settings: Settings,
+    expiry_seconds: int = 3600,
+) -> str | None:
+    """Generate a pre-signed GET URL for an existing object, or None if unavailable."""
+    if not s3_key or not settings.aws_access_key_id or not settings.aws_secret_access_key:
+        return None
+    s3_client = boto3.client(
+        "s3",
+        region_name=settings.aws_region,
+        aws_access_key_id=settings.aws_access_key_id,
+        aws_secret_access_key=settings.aws_secret_access_key,
+    )
+    return s3_client.generate_presigned_url(
+        "get_object",
+        Params={"Bucket": settings.aws_s3_bucket, "Key": s3_key},
+        ExpiresIn=expiry_seconds,
+    )
+
+
 def download_bytes_from_s3(s3_key: str, settings: Settings) -> bytes:
     """Download object bytes from S3 (sync — use in thread pool)."""
     if not settings.aws_access_key_id or not settings.aws_secret_access_key:
