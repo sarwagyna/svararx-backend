@@ -4,7 +4,7 @@ from logging.config import fileConfig
 from alembic import context
 from sqlalchemy.ext.asyncio import create_async_engine
 
-from app.config import resolve_database_url
+from app.config import asyncpg_connect_args, resolve_database_url
 from app.db_base import Base
 
 # Register all models on Base.metadata without initializing the app DB engine.
@@ -47,7 +47,8 @@ def do_run_migrations(connection):
 
 
 async def run_async_migrations() -> None:
-    engine = create_async_engine(_migration_database_url())
+    url = _migration_database_url()
+    engine = create_async_engine(url, connect_args=asyncpg_connect_args(url))
     async with engine.connect() as connection:
         await connection.run_sync(do_run_migrations)
     await engine.dispose()

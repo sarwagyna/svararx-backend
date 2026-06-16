@@ -1,11 +1,17 @@
 from __future__ import annotations
 
 import os
+import re
+import ssl
 from functools import lru_cache
 from typing import Any
+from urllib.parse import quote, unquote, urlparse
 
 from pydantic import computed_field, model_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
+
+_SUPABASE_DIRECT_HOST = re.compile(r"^db\.([a-z0-9]+)\.supabase\.co$", re.IGNORECASE)
+_RAILWAY_ENV_KEYS = ("RAILWAY_ENVIRONMENT", "RAILWAY_SERVICE_ID", "RAILWAY_PROJECT_ID")
 
 
 def normalize_async_database_url(url: str) -> str:
@@ -18,15 +24,81 @@ def normalize_async_database_url(url: str) -> str:
     return url
 
 
+def _parse_database_url(url: str):
+    return urlparse(url.replace("postgresql+asyncpg://", "postgresql://", 1))
+
+
+def database_hostname(url: str) -> str:
+    return (_parse_database_url(url).hostname or "").lower()
+
+
+def is_railway_deploy() -> bool:
+    return any(os.environ.get(key) for key in _RAILWAY_ENV_KEYS)
+
+
+def _build_asyncpg_url(user: str, password: str, host: str, port: str, db: str) -> str:
+    return (
+        f"postgresql+asyncpg://{quote(user, safe='')}:"
+        f"{quote(password, safe='')}@{host}:{port}/{quote(db, safe='')}"
+    )
+
+
+def upgrade_supabase_url_for_deploy(url: str) -> str:
+    """
+    Supabase direct hosts (db.<ref>.supabase.co) are IPv6-only. Railway and many
+    hosts cannot reach them unless outbound IPv6 is enabled. Prefer the IPv4
+    pooler host from the Supabase dashboard, or set SUPABASE_DB_POOLER_HOST.
+    """
+    normalized = normalize_async_database_url(url)
+    host = database_hostname(normalized)
+    if not host or ".pooler.supabase.com" in host:
+        return normalized
+
+    match = _SUPABASE_DIRECT_HOST.match(host)
+    if not match:
+        return normalized
+
+    pooler_host = os.environ.get("SUPABASE_DB_POOLER_HOST", "").strip()
+    if not pooler_host:
+        if is_railway_deploy():
+            raise RuntimeError(
+                "DATABASE_URL uses Supabase direct host "
+                f"({host}), which is IPv6-only and unreachable from Railway by default. "
+                "In Supabase → Project Settings → Database, copy the **Connection pooler** URI "
+                "(Transaction mode, port 6543) into Railway DATABASE_URL, or set "
+                "SUPABASE_DB_POOLER_HOST=aws-0-<region>.pooler.supabase.com and redeploy."
+            )
+        return normalized
+
+    parsed = _parse_database_url(normalized)
+    project_ref = match.group(1)
+    password = unquote(parsed.password or "")
+    db = (parsed.path or "/postgres").lstrip("/") or "postgres"
+    port = os.environ.get("SUPABASE_DB_POOLER_PORT", "6543").strip() or "6543"
+    user = parsed.username or "postgres"
+    if not user.startswith("postgres."):
+        user = f"postgres.{project_ref}"
+
+    return _build_asyncpg_url(user, password, pooler_host, port, db)
+
+
+def asyncpg_connect_args(url: str) -> dict[str, Any]:
+    """TLS is required for Supabase Postgres endpoints."""
+    host = database_hostname(url)
+    if host.endswith(".supabase.co") or host.endswith(".pooler.supabase.com"):
+        return {"ssl": ssl.create_default_context()}
+    return {}
+
+
 def resolve_database_url() -> str:
     """
     Resolve a database URL from common deployment env vars.
     Used by Alembic and Settings so migrations do not require AI API keys.
     """
-    for key in ("DATABASE_URL", "DATABASE_PRIVATE_URL", "TEST_DATABASE_URL"):
+    for key in ("DATABASE_POOLER_URL", "DATABASE_URL", "DATABASE_PRIVATE_URL", "TEST_DATABASE_URL"):
         raw = os.environ.get(key)
         if raw and raw.strip():
-            return normalize_async_database_url(raw)
+            return upgrade_supabase_url_for_deploy(raw)
 
     user = os.environ.get("PGUSER") or os.environ.get("POSTGRES_USER")
     password = os.environ.get("PGPASSWORD") or os.environ.get("POSTGRES_PASSWORD")
@@ -35,7 +107,7 @@ def resolve_database_url() -> str:
     db = os.environ.get("PGDATABASE") or os.environ.get("POSTGRES_DB")
 
     if user and password and db and host:
-        return f"postgresql+asyncpg://{user}:{password}@{host}:{port}/{db}"
+        return upgrade_supabase_url_for_deploy(_build_asyncpg_url(user, password, host, port, db))
     return ""
 
 

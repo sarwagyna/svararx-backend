@@ -13,7 +13,7 @@ def _ensure_engine():
     if _engine is not None:
         return
 
-    from app.config import get_settings
+    from app.config import asyncpg_connect_args, get_settings
 
     settings = get_settings()
     if not settings.database_url:
@@ -26,6 +26,7 @@ def _ensure_engine():
         settings.database_url,
         echo=settings.environment == "development",
         pool_pre_ping=True,
+        connect_args=asyncpg_connect_args(settings.database_url),
     )
     _async_session_local = async_sessionmaker(
         _engine,
