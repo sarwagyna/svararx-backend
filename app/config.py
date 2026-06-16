@@ -139,22 +139,40 @@ def _ssl_context_for(host: str) -> ssl.SSLContext | None:
     return ctx
 
 
+def is_transaction_pooler(url: str) -> bool:
+    """
+    Supabase transaction pooler runs pgbouncer in transaction mode, which is
+    incompatible with asyncpg prepared-statement caching. Detect it by the
+    pooler host and the 6543 port.
+    """
+    parsed = _parse_database_url(url)
+    host = (parsed.hostname or "").lower()
+    port = parsed.port
+    return ".pooler.supabase.com" in host and (port == 6543 or port is None)
+
+
 def asyncpg_connect_args(url: str) -> dict[str, Any]:
-    """TLS is required for Supabase and most managed Postgres endpoints."""
+    """TLS + pgbouncer-safe args for Supabase / managed Postgres endpoints."""
     host = database_hostname(url)
+    args: dict[str, Any] = {}
+
     needs_tls = (
         host.endswith(".supabase.co")
         or host.endswith(".supabase.com")
         or os.environ.get("DB_SSL_MODE", "").strip().lower()
         not in ("", "disable")
     )
-    if not needs_tls:
-        return {}
+    if needs_tls:
+        ctx = _ssl_context_for(host)
+        if ctx is not None:
+            args["ssl"] = ctx
 
-    ctx = _ssl_context_for(host)
-    if ctx is None:
-        return {}
-    return {"ssl": ctx}
+    # Disable prepared-statement caching on transaction-mode poolers so asyncpg
+    # does not raise "prepared statement does not exist" across pooled backends.
+    if is_transaction_pooler(url):
+        args["statement_cache_size"] = 0
+
+    return args
 
 
 def resolve_database_url() -> str:

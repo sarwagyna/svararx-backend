@@ -109,6 +109,21 @@ def test_asyncpg_connect_args_no_tls_for_local():
     assert asyncpg_connect_args(url) == {}
 
 
+def test_asyncpg_connect_args_disables_cache_on_transaction_pooler(monkeypatch):
+    monkeypatch.delenv("DB_SSL_MODE", raising=False)
+    url = "postgresql+asyncpg://postgres.ref:secret@aws-0-ap-south-1.pooler.supabase.com:6543/postgres"
+    args = asyncpg_connect_args(url)
+    assert args.get("statement_cache_size") == 0
+    assert "ssl" in args
+
+
+def test_asyncpg_connect_args_session_pooler_keeps_cache(monkeypatch):
+    monkeypatch.delenv("DB_SSL_MODE", raising=False)
+    url = "postgresql+asyncpg://postgres.ref:secret@aws-0-ap-south-1.pooler.supabase.com:5432/postgres"
+    args = asyncpg_connect_args(url)
+    assert "statement_cache_size" not in args
+
+
 def test_normalize_strips_ssl_query():
     url = "postgresql+asyncpg://postgres:secret@db.example.com:5432/postgres?ssl=require"
     assert (
