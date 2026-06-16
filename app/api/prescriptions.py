@@ -202,10 +202,11 @@ async def approve_prescription(
             for ack in body.allergy_acknowledgments
         ]
 
-    if body.prescription_id:
-        prescription = await db.get(Prescription, body.prescription_id)
-        if not prescription:
-            raise HTTPException(status_code=404, detail="Prescription not found.")
+    # Look up the draft if an id was supplied. A missing draft (stale id from an
+    # aborted attempt) is not fatal — fall through and create a fresh approved
+    # prescription instead of returning 404.
+    prescription = await db.get(Prescription, body.prescription_id) if body.prescription_id else None
+    if prescription:
         if prescription.clinic_id != clinic_id:
             raise HTTPException(status_code=403, detail="Prescription does not belong to your clinic.")
         if membership.role != "admin" and membership.role != "compounder" and prescription.doctor_id != doctor.id:
