@@ -148,9 +148,11 @@ async def approve_prescription(
             detail="Doctor PIN required to approve. Compounder cannot approve directly.",
         )
     elif body.approving_doctor_id and body.approving_doctor_id != doctor.id:
-        approving_doctor = await db.get(Doctor, body.approving_doctor_id)
-        if not approving_doctor:
-            raise HTTPException(status_code=404, detail="Approving doctor not found.")
+        # Non-token path (regular doctor). A stale/invalid active-doctor id from
+        # the client must not block approval — fall back to the authenticated
+        # doctor instead of 404'ing.
+        candidate = await db.get(Doctor, body.approving_doctor_id)
+        approving_doctor = candidate if candidate and candidate.is_active else doctor
 
     patient = await db.get(Patient, body.patient_id)
     if not patient:
