@@ -1,12 +1,14 @@
 """Consultation ↔ prescription linking helpers."""
 from __future__ import annotations
 
+import logging
 from datetime import datetime, timezone
 
-from fastapi import HTTPException
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.models import Consultation
+
+logger = logging.getLogger(__name__)
 
 
 async def complete_consultation_with_prescription(
@@ -15,12 +17,24 @@ async def complete_consultation_with_prescription(
     doctor_id: str,
     prescription_id: str,
 ) -> None:
+    """
+    Best-effort link of a consultation to its prescription.
+
+    Linking is a side effect of approval — a stale/mismatched consultation id
+    must never fail the approval (the prescription is already committed by then),
+    so we log and skip instead of raising.
+    """
     if not consultation_id:
         return
 
     consultation = await db.get(Consultation, consultation_id)
     if not consultation or consultation.doctor_id != doctor_id:
-        raise HTTPException(status_code=404, detail="Consultation not found.")
+        logger.warning(
+            "Skipping consultation link: %s not found or doctor mismatch (doctor=%s)",
+            consultation_id,
+            doctor_id,
+        )
+        return
     if consultation.completed_at:
         return
 
